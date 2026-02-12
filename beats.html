@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beats — Raise Up Entertainment LLC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/img/logo.png" alt="Raise Up Entertainment LLC logo">
+      <span class="brand__text">
+        <strong>Raise Up</strong><span>Entertainment LLC</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a class="activeLink" href="beats.html">Beats</a>
+      <a href="packs.html">Sound Packs</a>
+      <a href="index.html#licenses">Licenses</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <a class="btn btn--ghost" href="index.html">Home</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <h2>Beats</h2>
+        <p class="muted">Click play to preview. Use your Stripe license buttons to sell.</p>
+      </div>
+      <div class="filters">
+        <input class="input" id="searchInput" type="search" placeholder="Search beats..." />
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="table__row table__headRow">
+        <div>Track</div>
+        <div class="hideSm">BPM</div>
+        <div class="hideSm">Key</div>
+        <div>Licenses</div>
+      </div>
+
+      <!-- ✅ COPY/PASTE THIS BLOCK FOR EACH BEAT -->
+      <div class="table__row beatRow"
+        data-title="Club"
+        data-bpm="128"
+        data-key="Am"
+        data-audio="assets/audio/Club.mp3">
+
+        <div class="trackCell">
+          <button class="iconBtn playBtn" type="button">▶</button>
+          <div class="trackText">
+            <div class="trackTitle">Club</div>
+            <div class="trackSub muted">Preview MP3</div>
+          </div>
+        </div>
+
+        <div class="hideSm">128</div>
+        <div class="hideSm">Am</div>
+
+        <div class="licenseCell">
+          <button class="btn btn--small btn--ghost buyBtn"
+            data-stripe-url="PASTE_LEASE_STRIPE_LINK">
+            Lease
+          </button>
+
+          <button class="btn btn--small buyBtn"
+            data-stripe-url="PASTE_PREMIUM_STRIPE_LINK">
+            Premium
+          </button>
+
+          <button class="btn btn--small btn--primary buyBtn"
+            data-stripe-url="PASTE_EXCLUSIVE_STRIPE_LINK">
+            Exclusive
+          </button>
+        </div>
+      </div>
+
+      <!-- Example beats -->
+      <div class="table__row beatRow"
+        data-title="Dark Detroit"
+        data-bpm="140"
+        data-key="Dm"
+        data-audio="assets/audio/Dark Detroit.mp3">
+        <div class="trackCell">
+          <button class="iconBtn playBtn" type="button">▶</button>
+          <div class="trackText">
+            <div class="trackTitle">Dark Detroit</div>
+            <div class="trackSub muted">Preview MP3</div>
+          </div>
+        </div>
+        <div class="hideSm">140</div>
+        <div class="hideSm">Dm</div>
+        <div class="licenseCell">
+          <button class="btn btn--small btn--ghost buyBtn" data-stripe-url="PASTE_LEASE_STRIPE_LINK">Lease</button>
+          <button class="btn btn--small buyBtn" data-stripe-url="PASTE_PREMIUM_STRIPE_LINK">Premium</button>
+          <button class="btn btn--small btn--primary buyBtn" data-stripe-url="PASTE_EXCLUSIVE_STRIPE_LINK">Exclusive</button>
+        </div>
+      </div>
+
+      <div class="table__row beatRow"
+        data-title="Motovation"
+        data-bpm="135"
+        data-key="Fm"
+        data-audio="assets/audio/Motovation.mp3">
+        <div class="trackCell">
+          <button class="iconBtn playBtn" type="button">▶</button>
+          <div class="trackText">
+            <div class="trackTitle">Motovation</div>
+            <div class="trackSub muted">Preview MP3</div>
+          </div>
+        </div>
+        <div class="hideSm">135</div>
+        <div class="hideSm">Fm</div>
+        <div class="licenseCell">
+          <button class="btn btn--small btn--ghost buyBtn" data-stripe-url="PASTE_LEASE_STRIPE_LINK">Lease</button>
+          <button class="btn btn--small buyBtn" data-stripe-url="PASTE_PREMIUM_STRIPE_LINK">Premium</button>
+          <button class="btn btn--small btn--primary buyBtn" data-stripe-url="PASTE_EXCLUSIVE_STRIPE_LINK">Exclusive</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- Email + Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Stay in the loop</h2>
+          <p class="muted">Drop your email to get new beat drops + discounts.</p>
+
+          <form class="subscribe" onsubmit="return false;">
+            <input class="input" type="email" placeholder="you@email.com" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+
+          <p class="tiny muted">No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="contactCard">
+          <h3>Bookings / Questions</h3>
+          <p class="muted">Need a custom beat, mix, or studio work? Hit us up.</p>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Email: <a href="mailto:bookings@raiseupentertainmentllc.com">bookings@raiseupentertainmentllc.com</a></span>
+          </div>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>IG/TikTok: @RaiseUpEntertainmentLLC</span>
+          </div>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Turnaround: 24–72 hrs (typical)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--small">
+          <span class="brand__mark" aria-hidden="true">RU</span>
+          <span class="brand__text">
+            <strong>Raise Up</strong><span>Entertainment LLC</span>
+          </span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> Raise Up Entertainment LLC. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <a href="#beats">Beats</a>
+        <a href="#packs">Sound Packs</a>
+        <a href="#licenses">Licenses</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+<!-- Sticky player -->
+<div class="player player--open" id="player" aria-hidden="false">
+  <div class="container player__inner">
+    <button class="iconBtn" id="playerToggle" type="button">▶</button>
+    <div class="player__meta">
+      <div class="player__title" id="playerTitle">Not playing</div>
+      <div class="player__sub muted" id="playerSub">Select a beat to preview</div>
+    </div>
+    <div class="player__progress">
+      <span class="tiny muted" id="curTime">0:00</span>
+      <input class="range" id="seek" type="range" min="0" max="100" value="0" />
+      <span class="tiny muted" id="durTime">0:00</span>
+    </div>
+    <audio id="audio"></audio>
+  </div>
+</div>
+
+<script>
+  const audio = document.getElementById('audio');
+  const playerToggle = document.getElementById('playerToggle');
+  const playerTitle = document.getElementById('playerTitle');
+  const playerSub = document.getElementById('playerSub');
+  const seek = document.getElementById('seek');
+  const curTime = document.getElementById('curTime');
+  const durTime = document.getElementById('durTime');
+
+  let currentBtn = null;
+
+  function fmtTime(sec){
+    if (!isFinite(sec)) return '0:00';
+    const m = Math.floor(sec/60);
+    const s = Math.floor(sec%60);
+    return `${m}:${String(s).padStart(2,'0')}`;
+  }
+
+  function setIcon(playing){
+    document.querySelectorAll('.playBtn').forEach(b => b.textContent = '▶');
+    if (currentBtn) currentBtn.textContent = playing ? '❚❚' : '▶';
+    playerToggle.textContent = playing ? '❚❚' : '▶';
+  }
+
+  document.querySelectorAll('.beatRow').forEach(row => {
+    const btn = row.querySelector('.playBtn');
+    btn.addEventListener('click', async () => {
+      const url = row.dataset.audio;
+      if (!url) return alert('Missing MP3 path');
+      if (audio.src !== url) audio.src = url;
+      currentBtn = btn;
+      playerTitle.textContent = row.dataset.title || 'Beat';
+      playerSub.textContent = `${row.dataset.bpm || '-'} BPM • ${row.dataset.key || '-'}`;
+      try {
+        if (audio.paused) { await audio.play(); setIcon(true); }
+        else { audio.pause(); setIcon(false); }
+      } catch {
+        alert('Click play again (browser blocked autoplay).');
+      }
+    });
+  });
+
+  playerToggle.addEventListener('click', () => {
+    if (!audio.src) return;
+    if (audio.paused) audio.play().then(() => setIcon(true));
+    else { audio.pause(); setIcon(false); }
+  });
+
+  audio.addEventListener('loadedmetadata', () => durTime.textContent = fmtTime(audio.duration));
+  audio.addEventListener('timeupdate', () => {
+    curTime.textContent = fmtTime(audio.currentTime);
+    if (isFinite(audio.duration) && audio.duration > 0) {
+      seek.value = String((audio.currentTime / audio.duration) * 100);
+    }
+  });
+  seek.addEventListener('input', () => {
+    if (!isFinite(audio.duration) || audio.duration <= 0) return;
+    audio.currentTime = (Number(seek.value) / 100) * audio.duration;
+  });
+  audio.addEventListener('ended', () => setIcon(false));
+
+  // Stripe buttons
+  document.querySelectorAll('.buyBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const url = btn.dataset.stripeUrl;
+      if (!url) return alert('Paste your Stripe link into data-stripe-url');
+      window.open(url, '_blank', 'noopener');
+    });
+  });
+
+  // Search
+  const searchInput = document.getElementById('searchInput');
+  const rows = Array.from(document.querySelectorAll('.beatRow'));
+  searchInput.addEventListener('input', () => {
+    const q = (searchInput.value || '').toLowerCase().trim();
+    rows.forEach(r => {
+      const hay = (r.dataset.title || '').toLowerCase();
+      r.style.display = hay.includes(q) ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

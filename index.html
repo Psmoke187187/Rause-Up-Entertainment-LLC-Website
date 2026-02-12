@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raise Up Entertainment LLC — Beats & Sound Packs</title>
+  <meta name="description" content="Raise Up Entertainment LLC — Premium instrumentals, licenses, and sound packs." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#">
+        <img class="brand__logo" src="assets/img/logo.png" alt="Raise Up Entertainment LLC logo">
+
+        <span class="brand__text">
+          <strong>Raise Up</strong><span>Entertainment LLC</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="beats.html">Beats</a>
+        <a href="packs.html">Sound Packs</a>
+        <a href="#licenses">Licenses</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="openCartBtn" type="button" aria-label="Open cart">
+          Cart <span class="badge" id="cartCount">0</span>
+        </button>
+        <a class="btn" href="#beats">Shop Beats</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav">
+      <a href="#beats">Beats</a>
+      <a href="#packs">Sound Packs</a>
+      <a href="#licenses">Licenses</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="pill">Exclusive sound • Clean mixes • Fast delivery</p>
+        <h1>Premium Beats for Artists Who Want to Stand Out.</h1>
+        <p class="sub">
+          Shop instrumentals from Raise Up Entertainment LLC. Preview, pick a license,
+          and get instant delivery.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="beats.html">Browse Beats</a>
+          <a class="btn btn--ghost" href="#licenses">View Licenses</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num">WAV + MP3</div>
+            <div class="stat__label">Instant downloads</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Stems*</div>
+            <div class="stat__label">Available on select licenses</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">24/7</div>
+            <div class="stat__label">Checkout & delivery</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="glassCard">
+          <div class="glassCard__top">
+            <div>
+              <p class="muted">Now Trending</p>
+              <h3 class="glassTitle">“Club”</h3>
+              <p class="glassMeta">Hip-Hop • 145 BPM • Am</p>
+            </div>
+            <button class="iconBtn" id="trendPlay" type="button" aria-label="Play trending beat">
+              ▶
+            </button>
+          </div>
+
+          <div class="wave">
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+            <div class="wave__bar"></div>
+          </div>
+
+          <div class="glassCard__bottom">
+            <button class="btn btn--primary addBtn"
+              data-type="beat"
+              data-id="b1"
+              data-title="Club"
+              data-price="29.99"
+              data-audio="assets/audio/Club.mp3"
+              data-bpm="145"
+              data-key="Am"
+              type="button">
+              Add Lease — $29.99
+            </button>
+            <a class="btn btn--ghost" href="beats.html">See more beats</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heroGlow" aria-hidden="true"></div>
+  </section>
+
+  <!-- Beats -->
+  <section class="section" id="beats">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Beats</h2>
+          <p class="muted">Preview tracks, then choose a license</p>
+        </div>
+
+        <div class="filters">
+          <input class="input" id="searchInput" type="search" placeholder="Search beats (name, tag, bpm, key)..." />
+          <select class="select" id="sortSelect" aria-label="Sort beats">
+            <option value="featured">Sort: Featured</option>
+            <option value="priceLow">Price: Low → High</option>
+            <option value="priceHigh">Price: High → Low</option>
+            <option value="bpmLow">BPM: Low → High</option>
+            <option value="bpmHigh">BPM: High → Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="table">
+        <div class="table__row table__headRow">
+          <div>Track</div>
+          <div class="hideMd">Tags</div>
+          <div class="hideSm">BPM</div>
+          <div class="hideSm">Key</div>
+          <div>Licenses</div>
+        </div>
+
+       <!-- Beat Row 1 -->
+<div class="table__row beatRow"
+  data-title="Club"
+  data-tags="club party hype"
+  data-bpm="128"
+  data-key="Am"
+  data-price="29.99"
+  data-audio="assets/audio/Club.mp3">
+
+  <div class="trackCell">
+    <button class="iconBtn playBtn" type="button" aria-label="Play Club">▶</button>
+    <div class="trackText">
+      <div class="trackTitle">Club</div>
+      <div class="trackSub muted">Club / Party</div>
+    </div>
+  </div>
+
+  <div class="tags hideMd">
+    <span class="tag">Club</span><span class="tag">Party</span><span class="tag">Hype</span>
+  </div>
+
+  <div class="hideSm">128</div>
+  <div class="hideSm">Am</div>
+
+  <div class="licenseCell">
+    <button class="btn btn--small btn--ghost addBtn"
+      data-type="beat" data-id="club-lease"
+      data-title="Club (Lease)"
+      data-price="29.99"
+      data-audio="assets/audio/Club.mp3"
+      data-stripe-url="https://buy.stripe.com/test_eVq5kC2D9ggPfBx1vIdfG00"
+      type="button">
+      Lease $29.99
+    </button>
+
+    <button class="btn btn--small addBtn"
+      data-type="beat" data-id="club-premium"
+      data-title="Club (Premium)"
+      data-price="59.99"
+      data-audio="assets/audio/Club.mp3"
+      data-stripe-url="https://buy.stripe.com/cNi6oGa5Be8H60XeiudfG03"
+      type="button">
+      Premium $59.99
+    </button>
+
+    <button class="btn btn--small btn--primary addBtn"
+      data-type="beat" data-id="club-exclusive"
+      data-title="Club (Exclusive)"
+      data-price="249.99"
+      data-audio="assets/audio/Club.mp3"
+      data-stripe-url="https://buy.stripe.com/00w6oGcdJ5Cb4WTdeqdfG05"
+      type="button">
+      Exclusive $249.99
+    </button>
+  </div>
+</div>
+
+
+        <!-- Beat Row 2 -->
+<div class="table__row beatRow"
+  data-title="Dark Detroit"
+  data-tags="detroit dark street"
+  data-bpm="140"
+  data-key="Dm"
+  data-price="29.99"
+  data-audio="assets/audio/Dark Detroit.mp3">
+
+  <div class="trackCell">
+    <button class="iconBtn playBtn" type="button" aria-label="Play Dark Detroit">▶</button>
+    <div class="trackText">
+      <div class="trackTitle">Dark Detroit</div>
+      <div class="trackSub muted">Detroit / Dark</div>
+    </div>
+  </div>
+
+  <div class="tags hideMd">
+    <span class="tag">Detroit</span><span class="tag">Dark</span><span class="tag">Street</span>
+  </div>
+
+  <div class="hideSm">140</div>
+  <div class="hideSm">Dm</div>
+
+  <div class="licenseCell">
+    <button class="btn btn--small btn--ghost addBtn"
+      data-type="beat" data-id="dark-detroit-lease"
+      data-title="Dark Detroit (Lease)"
+      data-price="29.99"
+      data-audio="assets/audio/Dark Detroit.mp3"
+      data-stripe-url="https://buy.stripe.com/28E8wOb9Fc0zahdgqCdfG06"
+      type="button">
+      Lease $29.99
+    </button>
+
+    <button class="btn btn--small addBtn"
+      data-type="beat" data-id="dark-detroit-premium"
+      data-title="Dark Detroit (Premium)"
+      data-price="59.99"
+      data-audio="assets/audio/Dark Detroit.mp3"
+      data-stripe-url="https://buy.stripe.com/28EbJ07Xt9Sr3SP0rEdfG07"
+      type="button">
+      Premium $59.99
+    </button>
+
+    <button class="btn btn--small btn--primary addBtn"
+      data-type="beat" data-id="dark-detroit-exclusive"
+      data-title="Dark Detroit (Exclusive)"
+      data-price="249.99"
+      data-audio="assets/audio/Dark Detroit.mp3"
+      data-stripe-url="https://buy.stripe.com/00w6oGcdJ5Cb4WTdeqdfG05"
+      type="button">
+      Exclusive $249.99
+    </button>
+  </div>
+</div>
+
+
+        <!-- Beat Row 3 -->
+<div class="table__row beatRow"
+  data-title="Motovation"
+  data-tags="motivation hustle grind"
+  data-bpm="135"
+  data-key="Fm"
+  data-price="29.99"
+  data-audio="assets/audio/Motovation.mp3">
+
+  <div class="trackCell">
+    <button class="iconBtn playBtn" type="button" aria-label="Play Motovation">▶</button>
+    <div class="trackText">
+      <div class="trackTitle">Motovation</div>
+      <div class="trackSub muted">Motivation / Hustle</div>
+    </div>
+  </div>
+
+  <div class="tags hideMd">
+    <span class="tag">Motivation</span><span class="tag">Hustle</span><span class="tag">Grind</span>
+  </div>
+
+  <div class="hideSm">135</div>
+  <div class="hideSm">Fm</div>
+
+  <div class="licenseCell">
+    <button class="btn btn--small btn--ghost addBtn"
+      data-type="beat" data-id="motovation-lease"
+      data-title="Motovation (Lease)"
+      data-price="29.99"
+      data-audio="assets/audio/Motovation.mp3"
+      data-stripe-url="https://buy.stripe.com/5kQ3cudhN3u31KH5LYdfG09"
+      type="button">
+      Lease $29.99
+    </button>
+
+    <button class="btn btn--small addBtn"
+      data-type="beat" data-id="motovation-premium"
+      data-title="Motovation (Premium)"
+      data-price="59.99"
+      data-audio="assets/audio/Motovation.mp3"
+      data-stripe-url="https://buy.stripe.com/7sY28q4Lh6GfgFB1vIdfG0a"
+      type="button">
+      Premium $59.99
+    </button>
+
+    <button class="btn btn--small btn--primary addBtn"
+      data-type="beat" data-id="motovation-exclusive"
+      data-title="Motovation (Exclusive)"
+      data-price="249.99"
+      data-audio="assets/audio/Motovation.mp3"
+      data-stripe-url="https://buy.stripe.com/8x2dR8dhN6GfcpleiudfG0b"
+      type="button">
+      Exclusive $249.99
+    </button>
+  </div>
+</div>
+
+
+      </div>
+
+      <div class="note muted">
+        * Stems are optional — set what each license includes on your checkout page.
+      </div>
+    </div>
+  </section>
+
+  <!-- Sound Packs -->
+  <!-- Sound Packs -->
+<section class="section section--alt" id="packs">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <h2>Sound Packs</h2>
+        <p class="muted">Browse drum kits, melody packs, and one-shots.</p>
+      </div>
+      <a class="btn btn--primary" href="packs.html">View Sound Packs</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Licenses -->
+  <section class="section" id="licenses">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2>Licenses</h2>
+          <p class="muted">Example structure — adjust terms on your official license page / checkout.</p>
+        </div>
+      </div>
+
+      <div class="licenseGrid">
+        <div class="licenseCard">
+          <h3>Lease</h3>
+          <ul>
+            <li>MP3/WAV (your choice)</li>
+            <li>Basic distribution</li>
+            <li>Great for starting artists</li>
+          </ul>
+          <a class="btn btn--ghost" href="#beats">Pick a beat</a>
+        </div>
+
+        <div class="licenseCard">
+          <h3>Premium</h3>
+          <ul>
+            <li>WAV + MP3</li>
+            <li>Higher usage limits</li>
+            <li>Better for serious releases</li>
+          </ul>
+          <a class="btn" href="#beats">Pick a beat</a>
+        </div>
+
+        <div class="licenseCard licenseCard--featured">
+          <h3>Exclusive</h3>
+          <ul>
+            <li>Full ownership-style terms (as defined by you)</li>
+            <li>Beat removed after purchase</li>
+            <li>Stems optional / add-on</li>
+          </ul>
+          <a class="btn btn--primary" href="#beats">Shop exclusives</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email + Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Stay in the loop</h2>
+          <p class="muted">Drop your email to get new beat drops + discounts.</p>
+
+          <form class="subscribe" onsubmit="return false;">
+            <input class="input" type="email" placeholder="you@email.com" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+
+          <p class="tiny muted">No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="contactCard">
+          <h3>Bookings / Questions</h3>
+          <p class="muted">Need a custom beat, mix, or studio work? Hit us up.</p>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Email: <a href="mailto:bookings@raiseupentertainmentllc.com">bookings@raiseupentertainmentllc.com</a></span>
+          </div>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>IG/TikTok: @RaiseUpEntertainmentLLC</span>
+          </div>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Turnaround: 24–72 hrs (typical)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--small">
+          <span class="brand__mark" aria-hidden="true">RU</span>
+          <span class="brand__text">
+            <strong>Raise Up</strong><span>Entertainment LLC</span>
+          </span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> Raise Up Entertainment LLC. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <a href="#beats">Beats</a>
+        <a href="#packs">Sound Packs</a>
+        <a href="#licenses">Licenses</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__overlay" id="drawerOverlay"></div>
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Cart">
+      <div class="drawer__head">
+        <h3>Cart</h3>
+        <button class="iconBtn" id="closeCartBtn" type="button" aria-label="Close cart">✕</button>
+      </div>
+
+      <div class="drawer__body" id="cartItems">
+        <p class="muted">Your cart is empty.</p>
+      </div>
+
+      <div class="drawer__foot">
+        <div class="totals">
+          <span class="muted">Total</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <!-- Replace this button with Stripe Checkout later -->
+        <button class="btn btn--primary btn--block" id="checkoutBtn" type="button">
+          Checkout (Demo)
+        </button>
+        <p class="tiny muted">
+          To accept payments: connect Stripe Checkout or Shopify Buy Button.
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Player -->
+  <div class="player" id="player" aria-hidden="true">
+    <div class="container player__inner">
+      <button class="iconBtn" id="playerToggle" type="button" aria-label="Play/Pause">▶</button>
+
+      <div class="player__meta">
+        <div class="player__title" id="playerTitle">Not playing</div>
+        <div class="player__sub muted" id="playerSub">Select a beat to preview</div>
+      </div>
+
+      <div class="player__progress">
+        <span class="tiny muted" id="curTime">0:00</span>
+        <input class="range" id="seek" type="range" min="0" max="100" value="0" />
+        <span class="tiny muted" id="durTime">0:00</span>
+      </div>
+
+      <div class="player__actions">
+        <button class="btn btn--small btn--ghost" id="stopBtn" type="button">Stop</button>
+        <button class="btn btn--small" id="addCurrentBtn" type="button">Add License</button>
+      </div>
+
+      <audio id="audio"></audio>
+    </div>
+  </div>
+
+  <script>
+    // ---------- Mobile menu ----------
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger?.addEventListener('click', () => {
+      mobileNav.classList.toggle('mobileNav--open');
+      hamburger.classList.toggle('hamburger--open');
+    });
+    mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.remove('mobileNav--open');
+      hamburger.classList.remove('hamburger--open');
+    }));
+
+    // ---------- Year ----------
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---------- Cart (demo) ----------
+    const cart = [];
+    const cartCount = document.getElementById('cartCount');
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+
+    function money(n) {
+      return new Intl.NumberFormat(undefined, { style: 'currency', currency: 'USD' }).format(n);
+    }
+
+    function renderCart() {
+      cartCount.textContent = String(cart.length);
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = '<p class="muted">Your cart is empty.</p>';
+        cartTotal.textContent = money(0);
+        return;
+      }
+
+      let total = 0;
+      cartItems.innerHTML = cart.map((item, idx) => {
+        total += item.price;
+        return `
+          <div class="cartItem">
+            <div class="cartItem__info">
+              <div class="cartItem__title">${item.title}</div>
+              <div class="cartItem__meta muted">${item.type.toUpperCase()}</div>
+            </div>
+            <div class="cartItem__right">
+              <div class="cartItem__price">${money(item.price)}</div>
+              <button class="linkBtn" data-remove="${idx}" type="button">Remove</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      cartTotal.textContent = money(total);
+
+      cartItems.querySelectorAll('[data-remove]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const i = Number(btn.getAttribute('data-remove'));
+          cart.splice(i, 1);
+          renderCart();
+        });
+      });
+    }
+
+    document.querySelectorAll('.addBtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // 1) If this button has a Stripe link, go to Stripe checkout
+    const stripeUrl = btn.dataset.stripeUrl;
+    if (stripeUrl) {
+      window.open(stripeUrl, '_blank', 'noopener');
+      return;
+    }
+
+    // 2) Otherwise, keep the normal cart behavior (your original code)
+    const item = {
+      type: btn.dataset.type || 'item',
+      id: btn.dataset.id || crypto.randomUUID(),
+      title: btn.dataset.title || 'Item',
+      price: Number(btn.dataset.price || 0),
+      audio: btn.dataset.audio || ''
+    };
+    cart.push(item);
+    renderCart();
+    openDrawer();
+  });
+});
+
+
+    // ---------- Drawer ----------
+    const drawer = document.getElementById('drawer');
+    const openCartBtn = document.getElementById('openCartBtn');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+
+    function openDrawer() {
+      drawer.classList.add('drawer--open');
+      drawer.setAttribute('aria-hidden', 'false');
+    }
+    function closeDrawer() {
+      drawer.classList.remove('drawer--open');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
+
+    openCartBtn?.addEventListener('click', openDrawer);
+    closeCartBtn?.addEventListener('click', closeDrawer);
+    drawerOverlay?.addEventListener('click', closeDrawer);
+
+    document.getElementById('checkoutBtn')?.addEventListener('click', () => {
+      alert('Demo checkout. Connect Stripe Checkout / Shopify Buy Button for real payments.');
+    });
+
+    // ---------- Audio Player ----------
+    const player = document.getElementById('player');
+    const audio = document.getElementById('audio');
+    const playerToggle = document.getElementById('playerToggle');
+    const stopBtn = document.getElementById('stopBtn');
+    const seek = document.getElementById('seek');
+    const curTime = document.getElementById('curTime');
+    const durTime = document.getElementById('durTime');
+    const playerTitle = document.getElementById('playerTitle');
+    const playerSub = document.getElementById('playerSub');
+    const addCurrentBtn = document.getElementById('addCurrentBtn');
+
+    let currentTrack = null;
+
+    function fmtTime(sec) {
+      if (!isFinite(sec)) return '0:00';
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return `${m}:${String(s).padStart(2,'0')}`;
+    }
+
+    function showPlayer() {
+      player.classList.add('player--open');
+      player.setAttribute('aria-hidden', 'false');
+    }
+
+    function setPlayIcon(isPlaying) {
+      playerToggle.textContent = isPlaying ? '❚❚' : '▶';
+      document.querySelectorAll('.playBtn').forEach(b => b.textContent = '▶');
+      if (currentTrack?.rowBtn) currentTrack.rowBtn.textContent = isPlaying ? '❚❚' : '▶';
+    }
+
+    async function playTrack({ title, bpm, key, audioUrl, rowBtn }) {
+      if (!audioUrl) {
+        alert('Add your audio file in /assets/audio and update the data-audio path.');
+        return;
+      }
+
+      currentTrack = { title, bpm, key, audioUrl, rowBtn };
+      playerTitle.textContent = title;
+      playerSub.textContent = `${bpm || '-'} BPM • ${key || '-'}`;
+      showPlayer();
+
+      if (audio.src !== audioUrl) audio.src = audioUrl;
+
+      try {
+        await audio.play();
+        setPlayIcon(true);
+      } catch (e) {
+        console.warn(e);
+        alert('Browser blocked autoplay. Click play again.');
+      }
+    }
+
+    function togglePlay() {
+      if (!audio.src) return;
+      if (audio.paused) audio.play().then(() => setPlayIcon(true));
+      else { audio.pause(); setPlayIcon(false); }
+    }
+
+    function stop() {
+      audio.pause();
+      audio.currentTime = 0;
+      setPlayIcon(false);
+      seek.value = 0;
+      curTime.textContent = '0:00';
+    }
+
+    // Row play buttons
+    document.querySelectorAll('.beatRow').forEach(row => {
+      const btn = row.querySelector('.playBtn');
+      btn.addEventListener('click', async () => {
+        const isSame = currentTrack && currentTrack.audioUrl === row.dataset.audio;
+        if (isSame && !audio.paused) { audio.pause(); setPlayIcon(false); return; }
+        await playTrack({
+          title: row.dataset.title,
+          bpm: row.dataset.bpm,
+          key: row.dataset.key,
+          audioUrl: row.dataset.audio,
+          rowBtn: btn
+        });
+      });
+    });
+
+    // Trending card play
+    document.getElementById('trendPlay')?.addEventListener('click', async () => {
+      await playTrack({
+        title: 'Club',
+        bpm: '145',
+        key: 'Am',
+        audioUrl: 'assets/audio/Club.mp3',
+        rowBtn: null
+      });
+    });
+
+    playerToggle.addEventListener('click', togglePlay);
+    stopBtn.addEventListener('click', stop);
+
+    audio.addEventListener('loadedmetadata', () => {
+      durTime.textContent = fmtTime(audio.duration);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      curTime.textContent = fmtTime(audio.currentTime);
+      if (isFinite(audio.duration) && audio.duration > 0) {
+        seek.value = String((audio.currentTime / audio.duration) * 100);
+      }
+    });
+
+    seek.addEventListener('input', () => {
+      if (!isFinite(audio.duration) || audio.duration <= 0) return;
+      audio.currentTime = (Number(seek.value) / 100) * audio.duration;
+    });
+
+    audio.addEventListener('ended', () => setPlayIcon(false));
+
+    // Add current license (demo)
+    addCurrentBtn.addEventListener('click', () => {
+      if (!currentTrack) return;
+      cart.push({
+        type: 'beat',
+        id: crypto.randomUUID(),
+        title: `${currentTrack.title} (Lease)`,
+        price: 29.99,
+        audio: currentTrack.audioUrl
+      });
+      renderCart();
+      openDrawer();
+    });
+
+    // ---------- Search + sort ----------
+    const searchInput = document.getElementById('searchInput');
+    const sortSelect = document.getElementById('sortSelect');
+    const rows = Array.from(document.querySelectorAll('.beatRow'));
+
+    function applyFilters() {
+      const q = (searchInput.value || '').toLowerCase().trim();
+
+      // filter
+      rows.forEach(r => {
+        const hay = [
+          r.dataset.title, r.dataset.tags, r.dataset.bpm, r.dataset.key
+        ].join(' ').toLowerCase();
+        r.style.display = hay.includes(q) ? '' : 'none';
+      });
+
+      // sort (only visible ones)
+      const visible = rows.filter(r => r.style.display !== 'none');
+      const mode = sortSelect.value;
+
+      const getNum = (r, key) => Number(r.dataset[key] || 0);
+
+      visible.sort((a, b) => {
+        if (mode === 'priceLow') return getNum(a, 'price') - getNum(b, 'price');
+        if (mode === 'priceHigh') return getNum(b, 'price') - getNum(a, 'price');
+        if (mode === 'bpmLow') return getNum(a, 'bpm') - getNum(b, 'bpm');
+        if (mode === 'bpmHigh') return getNum(b, 'bpm') - getNum(a, 'bpm');
+        return 0; // featured (keep order)
+      });
+
+      // re-append in sorted order
+      const table = document.querySelector('.table');
+      visible.forEach(r => table.appendChild(r));
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    sortSelect.addEventListener('change', applyFilters);
+
+    // initial render
+    // Sound pack category toggle
+document.querySelectorAll('.packTab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.packTab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.packGroup').forEach(g => g.classList.remove('show'));
+
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.pack).classList.add('show');
+  });
+});
+    // Sound Packs dropdown filter
+const packSelect = document.getElementById('packSelect');
+const packGroups = Array.from(document.querySelectorAll('.packGroup'));
+
+function showPackGroup(val) {
+  packGroups.forEach(g => {
+    const group = g.dataset.pack;
+    const shouldShow = (val === 'all') || (group === val);
+    g.style.display = shouldShow ? '' : 'none';
+  });
+}
+
+packSelect?.addEventListener('change', (e) => {
+  showPackGroup(e.target.value);
+});
+
+// default view
+showPackGroup(packSelect?.value || 'drums');
+
+    renderCart();
+  </script>
+</body>
+</html>

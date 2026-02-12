@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sound Packs — Raise Up Entertainment LLC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/img/logo.png" alt="Raise Up Entertainment LLC logo">
+      <span class="brand__text">
+        <strong>Raise Up</strong><span>Entertainment LLC</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="beats.html">Beats</a>
+      <a class="activeLink" href="packs.html">Sound Packs</a>
+      <a href="index.html#licenses">Licenses</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <a class="btn btn--ghost" href="index.html">Home</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <h2>Sound Packs</h2>
+        <p class="muted">Click to buy (Stripe) or download (if you choose direct downloads).</p>
+      </div>
+
+      <div class="packsFilter">
+        <label class="tiny muted" for="packSelect">Category</label>
+        <select class="select" id="packSelect">
+          <option value="drums">Drum Kits</option>
+          <option value="melodies">Melody Packs</option>
+          <option value="oneshots">One-Shots</option>
+          <option value="all">Show All</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- DRUMS -->
+    <div class="packGroup" data-pack="drums">
+      <h3 style="margin: 10px 0 14px;">Drum Kits</h3>
+      <div class="grid">
+
+        <!-- ✅ COPY/PASTE THIS CARD FOR EACH ZIP -->
+        <article class="card">
+          <div class="card__top">
+            <h3>RU Drum Kits Vol. 1</h3>
+            <p class="muted">ZIP Download</p>
+          </div>
+          <div class="card__bottom">
+            <div class="price">$4.99</div>
+
+            <!-- OPTION A: Direct download -->
+            <a class="btn btn--primary" href="assets/packs/drums/ru-drum-kits-vol-1.zip" download>Download</a>
+
+            <!-- OPTION B: Stripe
+            <button class="btn btn--primary buyBtn" data-stripe-url="PASTE_STRIPE_LINK">Buy & Download</button>
+            -->
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- MELODIES -->
+    <div class="packGroup" data-pack="melodies" style="display:none;">
+      <h3 style="margin: 10px 0 14px;">Melody Packs</h3>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Example Melody Pack</h3>
+            <p class="muted">ZIP Download</p>
+          </div>
+          <div class="card__bottom">
+            <div class="price">$4.99</div>
+            <a class="btn btn--primary" href="assets/packs/melodies/example-melody-pack.zip" download>Download</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ONE SHOTS -->
+    <div class="packGroup" data-pack="oneshots" style="display:none;">
+      <h3 style="margin: 10px 0 14px;">One-Shots</h3>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Rare Skips</h3>
+            <p class="muted">ZIP Download</p>
+          </div>
+          <div class="card__bottom">
+            <div class="price">$4.99</div>
+            <a class="btn btn--primary" href="assets/packs/oneshots/rare-skips.zip" download>Download</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- Email + Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Stay in the loop</h2>
+          <p class="muted">Drop your email to get new beat drops + discounts.</p>
+
+          <form class="subscribe" onsubmit="return false;">
+            <input class="input" type="email" placeholder="you@email.com" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+
+          <p class="tiny muted">No spam. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="contactCard">
+          <h3>Bookings / Questions</h3>
+          <p class="muted">Need a custom beat, mix, or studio work? Hit us up.</p>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Email: <a href="mailto:bookings@raiseupentertainmentllc.com">bookings@raiseupentertainmentllc.com</a></span>
+          </div>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>IG/TikTok: @RaiseUpEntertainmentLLC</span>
+          </div>
+          <div class="contactLine">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Turnaround: 24–72 hrs (typical)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--small">
+          <span class="brand__mark" aria-hidden="true">RU</span>
+          <span class="brand__text">
+            <strong>Raise Up</strong><span>Entertainment LLC</span>
+          </span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> Raise Up Entertainment LLC. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <a href="#beats">Beats</a>
+        <a href="#packs">Sound Packs</a>
+        <a href="#licenses">Licenses</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+<script>
+  // Dropdown filter
+  const packSelect = document.getElementById('packSelect');
+  const groups = Array.from(document.querySelectorAll('.packGroup'));
+
+  function show(val){
+    groups.forEach(g => {
+      const group = g.dataset.pack;
+      g.style.display = (val === 'all' || val === group) ? '' : 'none';
+    });
+  }
+
+  packSelect.addEventListener('change', e => show(e.target.value));
+  show(packSelect.value);
+
+  // Stripe buttons (if you use them)
+  document.querySelectorAll('.buyBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const url = btn.dataset.stripeUrl;
+      if (!url) return alert('Paste your Stripe link into data-stripe-url');
+      window.open(url, '_blank', 'noopener');
+    });
+  });
+</script>
+
+</body>
+</html>
