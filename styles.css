@@ -189,6 +189,20 @@ img { max-width: 100%; display: block; }
 }
 .nav a:hover{ color: rgba(238,240,255,0.95); }
 
+.nav a.activeLink{
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 1px 6px;
+}
+
 .topbar__actions{
   display: flex;
   align-items: center;
@@ -694,6 +708,6 @@ img { max-width: 100%; display: block; }
   height: 44px;
   width: auto;
   display: block;
-  border-radius: 10px; /* optional */
+  border-radius: 10px;
 }
 

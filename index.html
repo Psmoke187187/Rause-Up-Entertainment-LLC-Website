@@ -13,7 +13,7 @@
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#">
-        <img class="brand__logo" src="assets/img/logo.png" alt="Raise Up Entertainment LLC logo">
+        <img class="brand__logo" src="assets/img/logo.svg" alt="Raise Up Entertainment LLC logo">
 
         <span class="brand__text">
           <strong>Raise Up</strong><span>Entertainment LLC</span>
@@ -665,7 +665,8 @@
       playerSub.textContent = `${bpm || '-'} BPM • ${key || '-'}`;
       showPlayer();
 
-      if (audio.src !== audioUrl) audio.src = audioUrl;
+      const normalizedAudioUrl = new URL(audioUrl, window.location.href).href;
+      if (audio.src !== normalizedAudioUrl) audio.src = normalizedAudioUrl;
 
       try {
         await audio.play();
@@ -694,13 +695,14 @@
     document.querySelectorAll('.beatRow').forEach(row => {
       const btn = row.querySelector('.playBtn');
       btn.addEventListener('click', async () => {
-        const isSame = currentTrack && currentTrack.audioUrl === row.dataset.audio;
+        const rowAudioUrl = new URL(row.dataset.audio || '', window.location.href).href;
+        const isSame = currentTrack && currentTrack.audioUrl === rowAudioUrl;
         if (isSame && !audio.paused) { audio.pause(); setPlayIcon(false); return; }
         await playTrack({
           title: row.dataset.title,
           bpm: row.dataset.bpm,
           key: row.dataset.key,
-          audioUrl: row.dataset.audio,
+          audioUrl: rowAudioUrl,
           rowBtn: btn
         });
       });
@@ -712,7 +714,7 @@
         title: 'Club',
         bpm: '145',
         key: 'Am',
-        audioUrl: 'assets/audio/Club.mp3',
+        audioUrl: new URL('assets/audio/Club.mp3', window.location.href).href,
         rowBtn: null
       });
     });
@@ -737,6 +739,10 @@
     });
 
     audio.addEventListener('ended', () => setPlayIcon(false));
+    audio.addEventListener('error', () => {
+      setPlayIcon(false);
+      alert('Could not load this beat preview. Make sure the MP3 exists in assets/audio and file names match exactly.');
+    });
 
     // Add current license (demo)
     addCurrentBtn.addEventListener('click', () => {
@@ -791,35 +797,6 @@
     sortSelect.addEventListener('change', applyFilters);
 
     // initial render
-    // Sound pack category toggle
-document.querySelectorAll('.packTab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.packTab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.packGroup').forEach(g => g.classList.remove('show'));
-
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.pack).classList.add('show');
-  });
-});
-    // Sound Packs dropdown filter
-const packSelect = document.getElementById('packSelect');
-const packGroups = Array.from(document.querySelectorAll('.packGroup'));
-
-function showPackGroup(val) {
-  packGroups.forEach(g => {
-    const group = g.dataset.pack;
-    const shouldShow = (val === 'all') || (group === val);
-    g.style.display = shouldShow ? '' : 'none';
-  });
-}
-
-packSelect?.addEventListener('change', (e) => {
-  showPackGroup(e.target.value);
-});
-
-// default view
-showPackGroup(packSelect?.value || 'drums');
-
     renderCart();
   </script>
 </body>

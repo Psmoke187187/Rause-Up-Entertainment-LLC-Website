@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Beats — Raise Up Entertainment LLC</title>
+  <meta name="description" content="Preview and license beats from Raise Up Entertainment LLC." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,7 +12,7 @@
 <header class="topbar">
   <div class="container topbar__inner">
     <a class="brand" href="index.html">
-      <img class="brand__logo" src="assets/img/logo.png" alt="Raise Up Entertainment LLC logo">
+      <img class="brand__logo" src="assets/img/logo.svg" alt="Raise Up Entertainment LLC logo">
       <span class="brand__text">
         <strong>Raise Up</strong><span>Entertainment LLC</span>
       </span>
@@ -30,16 +31,20 @@
   </div>
 </header>
 
-<section class="section">
+<section class="section" id="beats">
   <div class="container">
     <div class="section__head">
       <div>
         <h2>Beats</h2>
-        <p class="muted">Click play to preview. Use your Stripe license buttons to sell.</p>
+        <p class="muted">Click play to preview beats and use your Stripe license buttons to sell.</p>
       </div>
       <div class="filters">
         <input class="input" id="searchInput" type="search" placeholder="Search beats..." />
       </div>
+    </div>
+
+    <div class="note" id="audioHelp" hidden>
+      <p class="muted tiny">If playback fails, upload your MP3 files to <code>assets/audio</code> and keep the same file names used in each beat row’s <code>data-audio</code> value.</p>
     </div>
 
     <div class="table">
@@ -50,15 +55,9 @@
         <div>Licenses</div>
       </div>
 
-      <!-- ✅ COPY/PASTE THIS BLOCK FOR EACH BEAT -->
-      <div class="table__row beatRow"
-        data-title="Club"
-        data-bpm="128"
-        data-key="Am"
-        data-audio="assets/audio/Club.mp3">
-
+      <div class="table__row beatRow" data-title="Club" data-bpm="128" data-key="Am" data-audio="assets/audio/Club.mp3">
         <div class="trackCell">
-          <button class="iconBtn playBtn" type="button">▶</button>
+          <button class="iconBtn playBtn" type="button" aria-label="Play Club">▶</button>
           <div class="trackText">
             <div class="trackTitle">Club</div>
             <div class="trackSub muted">Preview MP3</div>
@@ -69,31 +68,15 @@
         <div class="hideSm">Am</div>
 
         <div class="licenseCell">
-          <button class="btn btn--small btn--ghost buyBtn"
-            data-stripe-url="PASTE_LEASE_STRIPE_LINK">
-            Lease
-          </button>
-
-          <button class="btn btn--small buyBtn"
-            data-stripe-url="PASTE_PREMIUM_STRIPE_LINK">
-            Premium
-          </button>
-
-          <button class="btn btn--small btn--primary buyBtn"
-            data-stripe-url="PASTE_EXCLUSIVE_STRIPE_LINK">
-            Exclusive
-          </button>
+          <button class="btn btn--small btn--ghost buyBtn" data-stripe-url="PASTE_LEASE_STRIPE_LINK">Lease</button>
+          <button class="btn btn--small buyBtn" data-stripe-url="PASTE_PREMIUM_STRIPE_LINK">Premium</button>
+          <button class="btn btn--small btn--primary buyBtn" data-stripe-url="PASTE_EXCLUSIVE_STRIPE_LINK">Exclusive</button>
         </div>
       </div>
 
-      <!-- Example beats -->
-      <div class="table__row beatRow"
-        data-title="Dark Detroit"
-        data-bpm="140"
-        data-key="Dm"
-        data-audio="assets/audio/Dark Detroit.mp3">
+      <div class="table__row beatRow" data-title="Dark Detroit" data-bpm="140" data-key="Dm" data-audio="assets/audio/Dark Detroit.mp3">
         <div class="trackCell">
-          <button class="iconBtn playBtn" type="button">▶</button>
+          <button class="iconBtn playBtn" type="button" aria-label="Play Dark Detroit">▶</button>
           <div class="trackText">
             <div class="trackTitle">Dark Detroit</div>
             <div class="trackSub muted">Preview MP3</div>
@@ -108,13 +91,9 @@
         </div>
       </div>
 
-      <div class="table__row beatRow"
-        data-title="Motovation"
-        data-bpm="135"
-        data-key="Fm"
-        data-audio="assets/audio/Motovation.mp3">
+      <div class="table__row beatRow" data-title="Motovation" data-bpm="135" data-key="Fm" data-audio="assets/audio/Motovation.mp3">
         <div class="trackCell">
-          <button class="iconBtn playBtn" type="button">▶</button>
+          <button class="iconBtn playBtn" type="button" aria-label="Play Motovation">▶</button>
           <div class="trackText">
             <div class="trackTitle">Motovation</div>
             <div class="trackSub muted">Preview MP3</div>
@@ -128,70 +107,55 @@
           <button class="btn btn--small btn--primary buyBtn" data-stripe-url="PASTE_EXCLUSIVE_STRIPE_LINK">Exclusive</button>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-  <!-- Email + Contact -->
-  <section class="section section--alt" id="contact">
-    <div class="container">
-      <div class="split">
-        <div>
-          <h2>Stay in the loop</h2>
-          <p class="muted">Drop your email to get new beat drops + discounts.</p>
 
-          <form class="subscribe" onsubmit="return false;">
-            <input class="input" type="email" placeholder="you@email.com" required />
-            <button class="btn btn--primary" type="submit">Subscribe</button>
-          </form>
+<section class="section section--alt" id="contact">
+  <div class="container">
+    <div class="split">
+      <div>
+        <h2>Stay in the loop</h2>
+        <p class="muted">Drop your email to get new beat drops + discounts.</p>
+        <form class="subscribe" onsubmit="return false;">
+          <input class="input" type="email" placeholder="you@email.com" required />
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </form>
+        <p class="tiny muted">No spam. Unsubscribe anytime.</p>
+      </div>
 
-          <p class="tiny muted">No spam. Unsubscribe anytime.</p>
-        </div>
-
-        <div class="contactCard">
-          <h3>Bookings / Questions</h3>
-          <p class="muted">Need a custom beat, mix, or studio work? Hit us up.</p>
-          <div class="contactLine">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Email: <a href="mailto:bookings@raiseupentertainmentllc.com">bookings@raiseupentertainmentllc.com</a></span>
-          </div>
-          <div class="contactLine">
-            <span class="dot" aria-hidden="true"></span>
-            <span>IG/TikTok: @RaiseUpEntertainmentLLC</span>
-          </div>
-          <div class="contactLine">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Turnaround: 24–72 hrs (typical)</span>
-          </div>
-        </div>
+      <div class="contactCard">
+        <h3>Bookings / Questions</h3>
+        <p class="muted">Need a custom beat, mix, or studio work? Hit us up.</p>
+        <div class="contactLine"><span class="dot" aria-hidden="true"></span><span>Email: <a href="mailto:bookings@raiseupentertainmentllc.com">bookings@raiseupentertainmentllc.com</a></span></div>
+        <div class="contactLine"><span class="dot" aria-hidden="true"></span><span>IG/TikTok: @RaiseUpEntertainmentLLC</span></div>
+        <div class="contactLine"><span class="dot" aria-hidden="true"></span><span>Turnaround: 24–72 hrs (typical)</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__left">
-        <div class="brand brand--small">
-          <span class="brand__mark" aria-hidden="true">RU</span>
-          <span class="brand__text">
-            <strong>Raise Up</strong><span>Entertainment LLC</span>
-          </span>
-        </div>
-        <p class="tiny muted">© <span id="year"></span> Raise Up Entertainment LLC. All rights reserved.</p>
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <div class="brand brand--small">
+        <span class="brand__mark" aria-hidden="true">RU</span>
+        <span class="brand__text"><strong>Raise Up</strong><span>Entertainment LLC</span></span>
       </div>
-      <div class="footer__right">
-        <a href="#beats">Beats</a>
-        <a href="#packs">Sound Packs</a>
-        <a href="#licenses">Licenses</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <p class="tiny muted">© <span id="year"></span> Raise Up Entertainment LLC. All rights reserved.</p>
     </div>
-  </footer>
-<!-- Sticky player -->
+    <div class="footer__right">
+      <a href="beats.html">Beats</a>
+      <a href="packs.html">Sound Packs</a>
+      <a href="index.html#licenses">Licenses</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
 <div class="player player--open" id="player" aria-hidden="false">
   <div class="container player__inner">
-    <button class="iconBtn" id="playerToggle" type="button">▶</button>
+    <button class="iconBtn" id="playerToggle" type="button" aria-label="Play/Pause">▶</button>
     <div class="player__meta">
       <div class="player__title" id="playerTitle">Not playing</div>
       <div class="player__sub muted" id="playerSub">Select a beat to preview</div>
@@ -201,11 +165,13 @@
       <input class="range" id="seek" type="range" min="0" max="100" value="0" />
       <span class="tiny muted" id="durTime">0:00</span>
     </div>
-    <audio id="audio"></audio>
+    <audio id="audio" preload="metadata"></audio>
   </div>
 </div>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
   const audio = document.getElementById('audio');
   const playerToggle = document.getElementById('playerToggle');
   const playerTitle = document.getElementById('playerTitle');
@@ -213,74 +179,113 @@
   const seek = document.getElementById('seek');
   const curTime = document.getElementById('curTime');
   const durTime = document.getElementById('durTime');
+  const audioHelp = document.getElementById('audioHelp');
 
   let currentBtn = null;
 
-  function fmtTime(sec){
+  function fmtTime(sec) {
     if (!isFinite(sec)) return '0:00';
-    const m = Math.floor(sec/60);
-    const s = Math.floor(sec%60);
-    return `${m}:${String(s).padStart(2,'0')}`;
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m}:${String(s).padStart(2, '0')}`;
   }
 
-  function setIcon(playing){
-    document.querySelectorAll('.playBtn').forEach(b => b.textContent = '▶');
+  function normalizeUrl(url) {
+    return new URL(url, window.location.href).href;
+  }
+
+  function setIcon(playing) {
+    document.querySelectorAll('.playBtn').forEach((b) => b.textContent = '▶');
     if (currentBtn) currentBtn.textContent = playing ? '❚❚' : '▶';
     playerToggle.textContent = playing ? '❚❚' : '▶';
   }
 
-  document.querySelectorAll('.beatRow').forEach(row => {
+  async function playOrToggle(row, btn) {
+    const url = row.dataset.audio;
+    if (!url) {
+      alert('Missing MP3 path in data-audio.');
+      return;
+    }
+
+    const normalized = normalizeUrl(url);
+    const isSameTrack = audio.src === normalized;
+
+    if (isSameTrack && !audio.paused) {
+      audio.pause();
+      setIcon(false);
+      return;
+    }
+
+    if (!isSameTrack) {
+      audio.src = normalized;
+      seek.value = '0';
+      curTime.textContent = '0:00';
+      durTime.textContent = '0:00';
+    }
+
+    currentBtn = btn;
+    playerTitle.textContent = row.dataset.title || 'Beat';
+    playerSub.textContent = `${row.dataset.bpm || '-'} BPM • ${row.dataset.key || '-'}`;
+
+    try {
+      await audio.play();
+      setIcon(true);
+    } catch {
+      alert('Playback blocked. Click play again.');
+    }
+  }
+
+  document.querySelectorAll('.beatRow').forEach((row) => {
     const btn = row.querySelector('.playBtn');
-    btn.addEventListener('click', async () => {
-      const url = row.dataset.audio;
-      if (!url) return alert('Missing MP3 path');
-      if (audio.src !== url) audio.src = url;
-      currentBtn = btn;
-      playerTitle.textContent = row.dataset.title || 'Beat';
-      playerSub.textContent = `${row.dataset.bpm || '-'} BPM • ${row.dataset.key || '-'}`;
-      try {
-        if (audio.paused) { await audio.play(); setIcon(true); }
-        else { audio.pause(); setIcon(false); }
-      } catch {
-        alert('Click play again (browser blocked autoplay).');
-      }
-    });
+    btn.addEventListener('click', () => playOrToggle(row, btn));
   });
 
-  playerToggle.addEventListener('click', () => {
+  playerToggle.addEventListener('click', async () => {
     if (!audio.src) return;
-    if (audio.paused) audio.play().then(() => setIcon(true));
-    else { audio.pause(); setIcon(false); }
+    if (audio.paused) {
+      await audio.play();
+      setIcon(true);
+    } else {
+      audio.pause();
+      setIcon(false);
+    }
   });
 
-  audio.addEventListener('loadedmetadata', () => durTime.textContent = fmtTime(audio.duration));
+  audio.addEventListener('loadedmetadata', () => {
+    durTime.textContent = fmtTime(audio.duration);
+  });
+
   audio.addEventListener('timeupdate', () => {
     curTime.textContent = fmtTime(audio.currentTime);
     if (isFinite(audio.duration) && audio.duration > 0) {
       seek.value = String((audio.currentTime / audio.duration) * 100);
     }
   });
+
   seek.addEventListener('input', () => {
     if (!isFinite(audio.duration) || audio.duration <= 0) return;
     audio.currentTime = (Number(seek.value) / 100) * audio.duration;
   });
-  audio.addEventListener('ended', () => setIcon(false));
 
-  // Stripe buttons
-  document.querySelectorAll('.buyBtn').forEach(btn => {
+  audio.addEventListener('ended', () => setIcon(false));
+  audio.addEventListener('error', () => {
+    setIcon(false);
+    audioHelp.hidden = false;
+  });
+
+  document.querySelectorAll('.buyBtn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const url = btn.dataset.stripeUrl;
-      if (!url) return alert('Paste your Stripe link into data-stripe-url');
+      if (!url || url.startsWith('PASTE_')) return alert('Paste your Stripe link into data-stripe-url');
       window.open(url, '_blank', 'noopener');
     });
   });
 
-  // Search
   const searchInput = document.getElementById('searchInput');
   const rows = Array.from(document.querySelectorAll('.beatRow'));
   searchInput.addEventListener('input', () => {
     const q = (searchInput.value || '').toLowerCase().trim();
-    rows.forEach(r => {
+    rows.forEach((r) => {
       const hay = (r.dataset.title || '').toLowerCase();
       r.style.display = hay.includes(q) ? '' : 'none';
     });

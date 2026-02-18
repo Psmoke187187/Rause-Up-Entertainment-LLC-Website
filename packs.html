@@ -11,7 +11,7 @@
 <header class="topbar">
   <div class="container topbar__inner">
     <a class="brand" href="index.html">
-      <img class="brand__logo" src="assets/img/logo.png" alt="Raise Up Entertainment LLC logo">
+      <img class="brand__logo" src="assets/img/logo.svg" alt="Raise Up Entertainment LLC logo">
       <span class="brand__text">
         <strong>Raise Up</strong><span>Entertainment LLC</span>
       </span>
@@ -164,14 +164,16 @@
         <p class="tiny muted">© <span id="year"></span> Raise Up Entertainment LLC. All rights reserved.</p>
       </div>
       <div class="footer__right">
-        <a href="#beats">Beats</a>
-        <a href="#packs">Sound Packs</a>
-        <a href="#licenses">Licenses</a>
-        <a href="#contact">Contact</a>
+        <a href="beats.html">Beats</a>
+        <a href="packs.html">Sound Packs</a>
+        <a href="index.html#licenses">Licenses</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </div>
   </footer>
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
   // Dropdown filter
   const packSelect = document.getElementById('packSelect');
   const groups = Array.from(document.querySelectorAll('.packGroup'));
