@@ -63,8 +63,10 @@
           <div class="card__bottom">
             <div class="price">$4.99</div>
 
-            <!-- OPTION A: Direct download -->
-            <a class="btn btn--primary" href="assets/packs/drums/ru-drum-kits-vol-1.zip" download>Download</a>
+            <!-- OPTION A: Direct download (fallback) -->
+            <a class="btn btn--primary downloadBtn" href="assets/packs/drums/ru-drum-kits-vol-1.zip" download>Download</a>
+            <!-- OPTION B: Stripe Payment Link (paste your Payment Link URL below) -->
+            <button class="btn btn--primary buyBtn" data-stripe-url="https://buy.stripe.com/example_payment_link_drums">Buy & Download</button>
 
             <!-- OPTION B: Stripe
             <button class="btn btn--primary buyBtn" data-stripe-url="PASTE_STRIPE_LINK">Buy & Download</button>
@@ -87,7 +89,8 @@
           </div>
           <div class="card__bottom">
             <div class="price">$4.99</div>
-            <a class="btn btn--primary" href="assets/packs/melodies/example-melody-pack.zip" download>Download</a>
+            <a class="btn btn--primary downloadBtn" href="assets/packs/melodies/example-melody-pack.zip" download>Download</a>
+            <button class="btn btn--primary buyBtn" data-stripe-url="https://buy.stripe.com/example_payment_link_melodies">Buy & Download</button>
           </div>
         </article>
 
@@ -106,7 +109,8 @@
           </div>
           <div class="card__bottom">
             <div class="price">$4.99</div>
-            <a class="btn btn--primary" href="assets/packs/oneshots/rare-skips.zip" download>Download</a>
+            <a class="btn btn--primary downloadBtn" href="assets/packs/oneshots/rare-skips.zip" download>Download</a>
+            <button class="btn btn--primary buyBtn" data-stripe-url="https://buy.stripe.com/example_payment_link_oneshots">Buy & Download</button>
           </div>
         </article>
 
