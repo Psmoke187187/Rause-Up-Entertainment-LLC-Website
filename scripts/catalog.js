@@ -1,170 +1,162 @@
 window.RAISEUP_BEATS = [
   {
     "slug": "project-k",
-    "old_slug": "project-k",
     "title": "Project K",
     "genre": "Trap / Hip Hop",
-    "mood": "Dark, energetic",
+    "mood": "Dark, street, energetic",
     "bpm": "Unknown",
     "key": "Unknown",
-    "preview": "assets/audio/previews/project-k-preview.mp3",
-    "cover": "assets/img/covers/project-k.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/project-k.mp3",
+    "cover": "assets/img/covers/project-k.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/5kQfZjfEEfelfFp1ag8ww03",
-      "premium": "https://buy.stripe.com/6oU3cxeAA4zHgJtcSY8ww05",
-      "exclusive": "https://buy.stripe.com/6oU3cxgII0jr8cXcSY8ww06"
+      "basic": "https://buy.stripe.com/bJe28tboo3vDql57yE8ww0U",
+      "premium": "https://buy.stripe.com/7sY28tfEE1nvctdbOU8ww0T",
+      "exclusive": "https://buy.stripe.com/14A28tgII4zHfFp2ek8ww0S"
     }
   },
   {
-    "slug": "country-trap",
-    "old_slug": "country-trap",
-    "title": "Country Trap",
-    "genre": "Country Trap",
-    "mood": "Uplifting, catchy",
+    "slug": "don-corleone",
+    "title": "Don Corleone",
+    "genre": "Cinematic Trap / Hip Hop",
+    "mood": "Mafia, dark, luxury",
     "bpm": "Unknown",
     "key": "Unknown",
-    "preview": "assets/audio/previews/country-trap-preview.mp3",
-    "cover": "assets/img/covers/country-trap.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/don-corleone.mp3",
+    "cover": "assets/img/covers/don-corleone.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/6oU7sN9gg4zH8cXg5a8ww04",
-      "premium": "https://buy.stripe.com/eVqaEZ788c2978TdX28ww07",
-      "exclusive": "https://buy.stripe.com/4gM9AVfEE7LT1OzaKQ8ww09"
+      "basic": "https://buy.stripe.com/eVq7sNakk1nv0Kv1ag8ww0s",
+      "premium": "https://buy.stripe.com/3cI28tboo4zH9h14ms8ww0r",
+      "exclusive": "https://buy.stripe.com/9B600l0JKeahdxhaKQ8ww0u"
     }
   },
   {
-    "slug": "bad-baddie",
-    "old_slug": "bad-bitch",
-    "title": "Bad Baddie",
-    "genre": "Hip Hop / Club",
-    "mood": "Confident, bouncy",
-    "bpm": "105",
-    "key": "C minor",
-    "preview": "assets/audio/previews/bad-baddie-preview.mp3",
-    "cover": "assets/img/covers/bad-baddie.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
-    "links": {
-      "basic": "https://buy.stripe.com/7sYbJ3gII5DLbp93io8ww0a",
-      "premium": "https://buy.stripe.com/7sYeVf2RS6HP2SD9GM8ww08",
-      "exclusive": "https://buy.stripe.com/00w6oJ3VW4zHeBl2ek8ww0b"
-    }
-  },
-  {
-    "slug": "the-next-hit",
-    "old_slug": "the-next-hit",
-    "title": "The Next Hit",
-    "genre": "Hip Hop",
-    "mood": "Anthem, melodic",
+    "slug": "dosin",
+    "title": "Dosin",
+    "genre": "Trap / Hip Hop",
+    "mood": "Smooth, street, catchy",
     "bpm": "Unknown",
     "key": "Unknown",
-    "preview": "assets/audio/previews/the-next-hit-preview.mp3",
-    "cover": "assets/img/covers/the-next-hit.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/dosin.mp3",
+    "cover": "assets/img/covers/dosin.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/5kQbJ3css1nv0Kv8CI8ww0c",
-      "premium": "https://buy.stripe.com/6oU00l2RS6HP2SD4ms8ww0d",
-      "exclusive": "https://buy.stripe.com/00wbJ3gIIfel0Kv06c8ww0e"
+      "basic": "https://buy.stripe.com/6oU6oJfEEfel3WHbOU8ww0t",
+      "premium": "https://buy.stripe.com/28E3cxgII2rz64PcSY8ww0v",
+      "exclusive": "https://buy.stripe.com/cNidQb6449U150L3io8ww0x"
     }
   },
   {
-    "slug": "trapper",
-    "old_slug": "trapper",
-    "title": "Trapper",
-    "genre": "Memphis / Trap",
-    "mood": "Hard, gritty",
-    "bpm": "136",
+    "slug": "d-flow-135",
+    "title": "D Flow 135",
+    "genre": "Trap / Rap",
+    "mood": "Hard, modern, bounce",
+    "bpm": "135",
     "key": "Unknown",
-    "preview": "assets/audio/previews/trapper-preview.mp3",
-    "cover": "assets/img/covers/trapper.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/d-flow-135.mp3",
+    "cover": "assets/img/covers/d-flow-135.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/7sY7sNgII5DLbp96uA8ww0f",
-      "premium": "https://buy.stripe.com/8x28wR644gip0Kv9GM8ww0g",
-      "exclusive": "https://buy.stripe.com/6oUcN7dwwaY5al5aKQ8ww0i"
+      "basic": "https://buy.stripe.com/4gM5kF2RS2rz2SD4ms8ww0w",
+      "premium": "https://buy.stripe.com/7sYdRb8cc4zH1Oz1ag8ww0y",
+      "exclusive": "https://buy.stripe.com/4gM5kFeAA0jr50L8CI8ww0B"
     }
   },
   {
-    "slug": "coli-new-hit",
-    "old_slug": "coli-new-hit",
-    "title": "Coli New Hit",
-    "genre": "Hip Hop",
-    "mood": "Street, catchy",
+    "slug": "chain-drill",
+    "title": "Chain Drill",
+    "genre": "Drill / Hip Hop",
+    "mood": "Dark, cold, energetic",
     "bpm": "Unknown",
     "key": "Unknown",
-    "preview": "assets/audio/previews/coli-new-hit-preview.mp3",
-    "cover": "assets/img/covers/coli-new-hit.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/chain-drill.mp3",
+    "cover": "assets/img/covers/chain-drill.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/28E28tboo4zHfFp8CI8ww0j",
-      "premium": "https://buy.stripe.com/6oUbJ30JK4zH0Kv5qw8ww0h",
-      "exclusive": "https://buy.stripe.com/9B614p3VW9U164Pg5a8ww0k"
+      "basic": "https://buy.stripe.com/14A28t9gg0jrgJt06c8ww0z",
+      "premium": "https://buy.stripe.com/bJeBJ3fEE2rz2SD5qw8ww0A",
+      "exclusive": "https://buy.stripe.com/dRm28t8cceahBxL3io8ww0C"
     }
   },
   {
-    "slug": "violin-project",
-    "old_slug": "violin-project",
-    "title": "Violin Project",
-    "genre": "Trap / Orchestral",
-    "mood": "Dramatic, cinematic",
+    "slug": "big-rim-riding-slow",
+    "title": "Big Rim Riding Slow",
+    "genre": "Southern Trap / Car Music",
+    "mood": "Slow ride, heavy, street",
+    "bpm": "194",
+    "key": "E minor",
+    "preview": "assets/audio/previews/big-rim-riding-slow.mp3",
+    "cover": "assets/img/covers/big-rim-riding-slow.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
+    "links": {
+      "basic": "https://buy.stripe.com/28E4gB1NO0jr9h12ek8ww0F",
+      "premium": "https://buy.stripe.com/5kQ28tgII5DL8cX5qw8ww0D",
+      "exclusive": "https://buy.stripe.com/9B64gBboo8PX2SdbOU8ww0E"
+    }
+  },
+  {
+    "slug": "country-heat",
+    "title": "Country Heat",
+    "genre": "Country Trap / Hip Hop",
+    "mood": "Uplifting, country, bounce",
     "bpm": "Unknown",
     "key": "Unknown",
-    "preview": "assets/audio/previews/violin-project-preview.mp3",
-    "cover": "assets/img/covers/violin-project.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/country-heat.mp3",
+    "cover": "assets/img/covers/country-heat.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/6oU8wR788c299h106c8ww0n",
-      "premium": "https://buy.stripe.com/3cIeVf7882rzfFp9GM8ww0l",
-      "exclusive": "https://buy.stripe.com/aFa6oJ9gg3vDgJt7yE8ww0m"
+      "basic": "https://buy.stripe.com/bJe9AVfEE0jrbp9bOU8ww0G",
+      "premium": "https://buy.stripe.com/5kQ6oJ9gggip50LcSY8ww0K",
+      "exclusive": "https://buy.stripe.com/eVq6oJfEEeahdxhbOU8ww0H"
     }
   },
   {
-    "slug": "maybach",
-    "old_slug": "maybach",
-    "title": "Maybach",
-    "genre": "Trap",
-    "mood": "Luxury, hard",
-    "bpm": "157",
+    "slug": "dark-drill",
+    "title": "Dark Drill",
+    "genre": "Drill / Dark Rap",
+    "mood": "Dark, gritty, heavy",
+    "bpm": "Unknown",
     "key": "Unknown",
-    "preview": "assets/audio/previews/maybach-preview.mp3",
-    "cover": "assets/img/covers/maybach.png",
-    "prices": {
-      "basic": "$29.99",
-      "premium": "$79.99",
-      "exclusive": "$299.99"
-    },
+    "preview": "assets/audio/previews/dark-drill.mp3",
+    "cover": "assets/img/covers/dark-drill.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
     "links": {
-      "basic": "https://buy.stripe.com/3cI00l1NOaY5gJtg5a8ww0q",
-      "premium": "https://buy.stripe.com/00wfZj2RS0jr9h19GM8ww0p",
-      "exclusive": "https://buy.stripe.com/cNi6oJ0JK9U12SD8CI8ww0o"
+      "basic": "https://buy.stripe.com/5kQeVf7880jr2SDcSY8ww0J",
+      "premium": "https://buy.stripe.com/eVq5kF0JK0jrdxh2ek8ww0I",
+      "exclusive": "https://buy.stripe.com/dRm4gBdwwc29eBl5qw8ww0O"
+    }
+  },
+  {
+    "slug": "deuce-preview",
+    "title": "Deuce Preview",
+    "genre": "Hip Hop / Trap",
+    "mood": "Street, catchy, bounce",
+    "bpm": "Unknown",
+    "key": "Unknown",
+    "preview": "assets/audio/previews/deuce-preview.mp3",
+    "cover": "assets/img/covers/deuce-preview.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
+    "links": {
+      "basic": "https://buy.stripe.com/8x200ldww5DLgJt4ms8ww0M",
+      "premium": "https://buy.stripe.com/9B6eVf7880jr0KvcSY8ww0N",
+      "exclusive": "https://buy.stripe.com/cNi4gB7884zHdxh06c8ww0L"
+    }
+  },
+  {
+    "slug": "doa-144",
+    "title": "D.O.A. 144",
+    "genre": "Drill / Rap",
+    "mood": "Dark, fast, aggressive",
+    "bpm": "144",
+    "key": "E minor",
+    "preview": "assets/audio/previews/doa-144.mp3",
+    "cover": "assets/img/covers/doa-144.svg",
+    "prices": { "basic": "$29.99", "premium": "$79.99", "exclusive": "$299.99" },
+    "links": {
+      "basic": "https://buy.stripe.com/7sY28t0JK7LTctd5qw8ww0P",
+      "premium": "https://buy.stripe.com/28E14p9gg9U1fFpf168ww0R",
+      "exclusive": "https://buy.stripe.com/fZu3cx644aY52SD5qw8ww0Q"
     }
   }
 ];
