@@ -1,22 +1,18 @@
-# Rause Up Entertainment — Static Site
+# Raise Up Entertainment LLC Beat Store
 
-This repository is a static website (HTML + CSS). No build tool required.
+Professional BeatStars-style front end for Raise Up Entertainment LLC.
 
-Quick local preview
+## Features
+- Playable beat preview
+- Sticky audio player
+- Stripe checkout buttons
+- Basic, Premium, and Exclusive license tiers
+- Mobile-friendly music-brand design
+- Sound packs and licensing pages
+- Success page for purchase flow
 
-```bash
-# from the repository root
-python3 -m http.server 8000
-# then open http://localhost:8000/
-```
+## Stripe
+Project K payment links are wired into `scripts/store.js`.
 
-Publish to GitHub Pages
-
-This repo contains a GitHub Actions workflow that deploys the repository root to GitHub Pages on pushes to `main`.
-
-Files added by the workflow:
-- [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
-
-Notes
-- The `CNAME` file is present for a custom domain; verify DNS when using a custom domain.
-- Optionally optimize images in `assets/img/` before publishing.
+## Fulfillment
+Stripe Payment Links can send receipts/invoices. Full automated download emails require a server/backend. See `api/stripe-webhook.example.js` for the Node/Vercel webhook template.
