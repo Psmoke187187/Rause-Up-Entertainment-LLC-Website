@@ -25,7 +25,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Focused, victorious, motivational sound",
     cover: "assets/img/covers/doubted-me.svg",
-    preview: "assets/audio/previews/doubted-me-preview.mp3",
+    preview: "assets/audio/previews/doubted-me-preview.mp3?v=ee213e5",
     price: "$100",
     checkout: "mailto:raiseupent.ru@gmail.com?subject=Doubted%20Me%20Beat%20License%20-%20%24100&body=Hi%20Raise%20Up%20Entertainment%2C%0A%0AI%20want%20to%20purchase%20the%20Doubted%20Me%20beat%20license%20for%20%24100.%0A%0AMy%20name%3A%20%0AMy%20artist%20name%3A%20"
   },
