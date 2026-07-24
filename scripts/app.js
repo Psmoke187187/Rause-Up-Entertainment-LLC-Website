@@ -1,1 +1,95 @@
-const audio=document.getElementById('audio');const playerTitle=document.getElementById('playerTitle');const playerBtn=document.getElementById('playerBtn');let current=null;function playBeat(src,title){if(!audio)return;if(current===src&&!audio.paused){audio.pause();playerBtn.textContent='▶';return}current=src;audio.src=src;playerTitle.textContent=title;audio.play();playerBtn.textContent='❚❚'}if(playerBtn){playerBtn.onclick=()=>{if(!audio.src)return;if(audio.paused){audio.play();playerBtn.textContent='❚❚'}else{audio.pause();playerBtn.textContent='▶'}};audio.onended=()=>playerBtn.textContent='▶'}document.querySelectorAll('[data-src]').forEach(b=>b.addEventListener('click',()=>playBeat(b.dataset.src,b.dataset.title)));const grid=document.getElementById('beatGrid');const search=document.getElementById('search');const genre=document.getElementById('genre');function card(b){return `<article class="beat-card"><img src="${b.cover}" alt="${b.title} cover"><div class="beat-body"><p class="tag">${b.genre}</p><h2>${b.title}</h2><p>${b.mood}</p><p class="meta">BPM: ${b.bpm} • Key: ${b.key}</p><button class="preview" data-src="${b.preview}" data-title="${b.title}">▶ Play Preview</button><div class="buy-row"><a href="${b.links.basic}" target="_blank">Basic ${b.prices.basic}</a><a href="${b.links.premium}" target="_blank">Premium ${b.prices.premium}</a><a href="${b.links.exclusive}" target="_blank">Exclusive ${b.prices.exclusive}</a></div></div></article>`}function render(){if(!grid)return;let term=(search?.value||'').toLowerCase();let g=genre?.value||'';let list=window.RAISEUP_BEATS.filter(b=>(!g||b.genre===g)&&(`${b.title} ${b.genre} ${b.mood}`.toLowerCase().includes(term)));grid.innerHTML=list.map(card).join('');grid.querySelectorAll('[data-src]').forEach(b=>b.addEventListener('click',()=>playBeat(b.dataset.src,b.dataset.title)))}if(genre){[...new Set(window.RAISEUP_BEATS.map(b=>b.genre))].forEach(g=>{let o=document.createElement('option');o.value=g;o.textContent=g;genre.appendChild(o)});genre.onchange=render}if(search)search.oninput=render;render();
+const audio = document.getElementById("audio");
+const playerTitle = document.getElementById("playerTitle");
+const playerBtn = document.getElementById("playerBtn");
+const grid = document.getElementById("beatGrid");
+const search = document.getElementById("search");
+const genre = document.getElementById("genre");
+const beats = Array.isArray(window.RAISEUP_BEATS) ? window.RAISEUP_BEATS : [];
+let current = null;
+
+function playBeat(src, title) {
+  if (!audio) return;
+  if (current === src && !audio.paused) {
+    audio.pause();
+    if (playerBtn) playerBtn.textContent = "▶";
+    return;
+  }
+  current = src;
+  audio.src = src;
+  if (playerTitle) playerTitle.textContent = title;
+  audio.play().then(() => {
+    if (playerBtn) playerBtn.textContent = "❚❚";
+  }).catch(() => {
+    if (playerBtn) playerBtn.textContent = "▶";
+  });
+}
+
+if (playerBtn) {
+  playerBtn.addEventListener("click", () => {
+    if (!audio || !audio.src) return;
+    if (audio.paused) {
+      audio.play();
+      playerBtn.textContent = "❚❚";
+    } else {
+      audio.pause();
+      playerBtn.textContent = "▶";
+    }
+  });
+}
+
+if (audio) {
+  audio.addEventListener("ended", () => {
+    if (playerBtn) playerBtn.textContent = "▶";
+  });
+}
+
+function card(beat) {
+  return `<article class="beat-card">
+    <img src="${beat.cover}" alt="${beat.title} beat cover" loading="lazy">
+    <div class="beat-body">
+      <div class="beat-heading">
+        <p class="tag">${beat.genre}</p>
+        <p class="beat-price">${beat.price}</p>
+      </div>
+      <h2>${beat.title}</h2>
+      <p>${beat.mood}</p>
+      <p class="meta">Protected 45-second preview</p>
+      <button class="preview" data-src="${beat.preview}" data-title="${beat.title}">▶ Play Preview</button>
+      <div class="buy-row">
+        <a href="${beat.checkout}">Buy Beat License — ${beat.price}</a>
+      </div>
+      <p class="license-note">License terms and final file delivery are confirmed by email.</p>
+    </div>
+  </article>`;
+}
+
+function render() {
+  if (!grid) return;
+  const term = (search?.value || "").toLowerCase().trim();
+  const selectedGenre = genre?.value || "";
+  const list = beats.filter((beat) => {
+    const matchesGenre = !selectedGenre || beat.genre === selectedGenre;
+    const haystack = `${beat.title} ${beat.genre} ${beat.mood}`.toLowerCase();
+    return matchesGenre && haystack.includes(term);
+  });
+
+  grid.innerHTML = list.length
+    ? list.map(card).join("")
+    : `<div class="empty-state"><h3>No beats found</h3><p>Try another search or style.</p></div>`;
+
+  grid.querySelectorAll("[data-src]").forEach((button) => {
+    button.addEventListener("click", () => playBeat(button.dataset.src, button.dataset.title));
+  });
+}
+
+if (genre) {
+  [...new Set(beats.map((beat) => beat.genre))].sort().forEach((name) => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    genre.appendChild(option);
+  });
+  genre.addEventListener("change", render);
+}
+if (search) search.addEventListener("input", render);
+render();
