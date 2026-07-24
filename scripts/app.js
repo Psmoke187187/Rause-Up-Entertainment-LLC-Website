@@ -53,7 +53,7 @@ function card(beat) {
       </div>
       <h2>${beat.title}</h2>
       <p>${beat.mood}</p>
-      <p class="meta">Protected 45-second preview</p>
+      <p class="meta">Protected preview</p>
       <button class="preview" data-src="${beat.preview}" data-title="${beat.title}">▶ Play Preview</button>
       <div class="buy-row">
         <a href="${beat.checkout}">Buy Beat License — ${beat.price}</a>
