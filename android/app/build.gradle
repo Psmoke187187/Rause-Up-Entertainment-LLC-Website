@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.raiseupentertainment.app'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    defaultConfig {
+        applicationId 'com.raiseupentertainment.app'
+        minSdk 23
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+        buildConfigField 'boolean', 'BILLING_RELEASE_ENABLED', 'false'
+        buildConfigField 'boolean', 'SERVER_VERIFICATION_READY', 'false'
+        buildConfigField 'String', 'DELIVERY_API_ORIGIN', '""'
+    }
+    buildFeatures { buildConfig true }
+    androidResources { noCompress += ['mp3'] }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.22')
+    implementation 'com.android.billingclient:billing:9.1.0'
+    testImplementation 'junit:junit:4.13.2'
+}
