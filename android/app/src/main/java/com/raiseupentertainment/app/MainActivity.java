@@ -171,12 +171,12 @@ public final class MainActivity extends Activity implements BillingController.Li
         new AlertDialog.Builder(this).setTitle(title).setView(scroll).setPositiveButton("Close", null).show();
     }
     private void contact() {
-        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:raiseupent.ru@gmail.com"));
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:raiseupentllc@gmail.com"));
         intent.putExtra(Intent.EXTRA_SUBJECT, "Raise Up app support");
-        try { startActivity(intent); } catch (Exception error) { status("Email raiseupent.ru@gmail.com for support."); }
+        try { startActivity(intent); } catch (Exception error) { status("Email raiseupentllc@gmail.com for support."); }
     }
     private void deleteDeliveryAccount() {
-        if (account == null || !account.valid() || !serverReady || !delivery.configured()) { status("Account deletion is unavailable right now. Contact raiseupent.ru@gmail.com for help."); return; }
+        if (account == null || !account.valid() || !serverReady || !delivery.configured()) { status("Account deletion is unavailable right now. Contact raiseupentllc@gmail.com for help."); return; }
         VerifiedDeliveryClient.Account buyer = account;
         new AlertDialog.Builder(this).setTitle("Delete delivery account?")
             .setMessage("This deletes your delivery profile and signs you out. Private download links and this account's library access will be disabled. Keep any purchased files and licenses you have saved. Required transaction and license records may be retained for accounting, rights and disputes.")
