@@ -56,9 +56,9 @@ function card(beat) {
       <p class="meta">Protected preview</p>
       <button class="preview" data-src="${beat.preview}" data-title="${beat.title}">▶ Play Preview</button>
       <div class="buy-row">
-        <a href="${beat.checkout}">Buy Beat License — ${beat.price}</a>
+        <a href="${beat.checkout}" target="_blank" rel="noopener">Buy Beat License — ${beat.price}</a>
       </div>
-      <p class="license-note">License terms and final file delivery are confirmed by email.</p>
+      <p class="license-note">Secure checkout is handled by Stripe. License terms and final file delivery are confirmed after purchase.</p>
     </div>
   </article>`;
 }
