@@ -48,5 +48,25 @@ window.RAISEUP_BEATS = [
     preview: "assets/audio/previews/country-hore-beat-preview.mp3",
     price: "$100",
     checkout: "https://buy.stripe.com/7sY5kCan1dra1Zf9N7cs804"
+  },
+  {
+    id: "the-next-hit",
+    title: "The Next Hit",
+    genre: "Hip-Hop",
+    mood: "Bright, energetic production built for a standout record",
+    cover: "assets/img/covers/the-next-hit.png",
+    preview: "assets/audio/previews/the-next-hit-preview.mp3",
+    price: "$100",
+    checkout: "https://buy.stripe.com/00waEWgLp0Eo6fv8J3cs805"
+  },
+  {
+    id: "violin-project",
+    title: "Violin Project",
+    genre: "Trap",
+    mood: "Dark, dramatic strings with heavy cinematic energy",
+    cover: "assets/img/covers/violin-project.png",
+    preview: "assets/audio/previews/violin-project-preview.mp3",
+    price: "$100",
+    checkout: "https://buy.stripe.com/14A3cu1Qv1Is7jze3ncs806"
   }
 ];
