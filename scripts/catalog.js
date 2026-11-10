@@ -7,7 +7,7 @@ window.RAISEUP_BEATS = [
     cover: "assets/img/covers/club-cover-v2.webp",
     preview: "assets/audio/previews/club-preview.mp3",
     price: "$100",
-    checkout: "mailto:raiseupent.ru@gmail.com?subject=Club%20Beat%20License%20-%20%24100&body=Hi%20Raise%20Up%20Entertainment%2C%0A%0AI%20want%20to%20purchase%20the%20Club%20beat%20license%20for%20%24100.%0A%0AMy%20name%3A%20%0AMy%20artist%20name%3A%20"
+    checkout: "https://buy.stripe.com/cNi7sKdzd2MwdHXcZjcs800"
   },
   {
     id: "dark-detroit",
@@ -17,7 +17,7 @@ window.RAISEUP_BEATS = [
     cover: "assets/img/covers/dark-detroit-cover-v2.webp",
     preview: "assets/audio/previews/dark-detroit-preview.mp3",
     price: "$100",
-    checkout: "mailto:raiseupent.ru@gmail.com?subject=Dark%20Detroit%20Beat%20License%20-%20%24100&body=Hi%20Raise%20Up%20Entertainment%2C%0A%0AI%20want%20to%20purchase%20the%20Dark%20Detroit%20beat%20license%20for%20%24100.%0A%0AMy%20name%3A%20%0AMy%20artist%20name%3A%20"
+    checkout: "https://buy.stripe.com/8x26oGcv95YIavLaRbcs801"
   },
   {
     id: "motovation",
@@ -27,7 +27,7 @@ window.RAISEUP_BEATS = [
     cover: "assets/img/covers/motovation-cover-v2.webp",
     preview: "assets/audio/previews/motovation-preview.mp3",
     price: "$100",
-    checkout: "mailto:raiseupent.ru@gmail.com?subject=Motovation%20Beat%20License%20-%20%24100&body=Hi%20Raise%20Up%20Entertainment%2C%0A%0AI%20want%20to%20purchase%20the%20Motovation%20beat%20license%20for%20%24100.%0A%0AMy%20name%3A%20%0AMy%20artist%20name%3A%20"
+    checkout: "https://buy.stripe.com/cNi9AScv9cn633jcZjcs802"
   },
   {
     id: "bad-bitch",
@@ -37,7 +37,7 @@ window.RAISEUP_BEATS = [
     cover: "assets/img/covers/bad-bitch-cover.webp",
     preview: "assets/audio/previews/bad-bitch-preview.mp3",
     price: "$100",
-    checkout: "mailto:raiseupent.ru@gmail.com?subject=Bad%20B*tch%20Beat%20License%20-%20%24100&body=Hi%20Raise%20Up%20Entertainment%2C%0A%0AI%20want%20to%20purchase%20the%20Bad%20B*tch%20beat%20license%20for%20%24100.%0A%0AMy%20name%3A%20%0AMy%20artist%20name%3A%20"
+    checkout: "https://buy.stripe.com/6oU4gygLpfzi9rHbVfcs803"
   },
   {
     id: "country-hore-beat",
@@ -47,6 +47,6 @@ window.RAISEUP_BEATS = [
     cover: "assets/img/covers/country-hore-beat-cover.webp",
     preview: "assets/audio/previews/country-hore-beat-preview.mp3",
     price: "$100",
-    checkout: "mailto:raiseupent.ru@gmail.com?subject=Country%20Hore%20Beat%20License%20-%20%24100&body=Hi%20Raise%20Up%20Entertainment%2C%0A%0AI%20want%20to%20purchase%20the%20Country%20Hore%20Beat%20beat%20license%20for%20%24100.%0A%0AMy%20name%3A%20%0AMy%20artist%20name%3A%20"
+    checkout: "https://buy.stripe.com/7sY5kCan1dra1Zf9N7cs804"
   }
 ];
