@@ -6,7 +6,7 @@
   <title>Buy Original Beats | Raise Up Entertainment LLC</title>
   <meta name="description" content="Listen to 30-second previews of 20 original Raise Up Entertainment beats and purchase a beat license for $100.">
   <link rel="stylesheet" href="styles.css?v=beats-20261110">
-</head>
+<script defer src="scripts/analytics.js?v=20261110-owner"></script></head>
 <body>
   <nav class="nav">
     <a class="brand" href="index.html"><span>Raise Up</span> Entertainment</a>
@@ -23,7 +23,7 @@
     <div class="page-head">
       <p class="eyebrow">Original Beat Store</p>
       <h1>Find your sound. Every beat is $100.</h1>
-      <p>Explore 20 original beats with 30-second previews, choose your track, and purchase your $100 license securely through Stripe.</p>
+      <p>Explore 20 original beats with 30-second previews from the middle of each track, choose your track, and purchase your $100 license securely through Stripe.</p>
       <div class="store-promise">
         <span>✓ Original production</span>
         <span>✓ $100 flat price</span>
@@ -42,16 +42,17 @@
   <footer class="footer">
     <strong>Raise Up Entertainment LLC</strong>
     <p>Questions about a beat or license? <a href="mailto:raiseupentllc@gmail.com">Email us directly.</a></p>
-  </footer>
+  <p class="privacy-links"><a href="privacy.html">Privacy</a> · <button type="button" data-analytics-preferences>Analytics preferences</button></p></footer>
 
   <div id="player" class="player">
     <button id="playerBtn" aria-label="Play or pause preview">▶</button>
     <div>
       <strong id="playerTitle">Choose a beat to preview</strong>
-      <audio id="audio" preload="none"></audio>
+      <audio id="audio" controls preload="none" aria-label="Beat preview player"></audio>
     </div>
   </div>
-  <script src="scripts/catalog.js?v=20-beats-20261110"></script>
-  <script src="scripts/app.js?v=beats-20261110"></script>
+  <script defer src="scripts/catalog.js?v=midpoint-20261110"></script>
+<script defer src="scripts/preview-metrics.js?v=20261110"></script>
+  <script defer src="scripts/app.js?v=owner-20261110"></script>
 </body>
 </html>

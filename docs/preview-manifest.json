@@ -1,0 +1,182 @@
+[
+  {
+    "id": "club",
+    "title": "Club",
+    "master_seconds": 192.432,
+    "start_seconds": 81.216,
+    "end_seconds": 111.216,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/club-preview-30s.mp3"
+  },
+  {
+    "id": "dark-detroit",
+    "title": "Dark Detroit",
+    "master_seconds": 192.072,
+    "start_seconds": 81.036,
+    "end_seconds": 111.036,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/dark-detroit-preview-30s.mp3"
+  },
+  {
+    "id": "motovation",
+    "title": "Motovation",
+    "master_seconds": 329.544,
+    "start_seconds": 149.772,
+    "end_seconds": 179.772,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/motovation-preview-30s.mp3"
+  },
+  {
+    "id": "bad-bitch",
+    "title": "Bad B*tch",
+    "master_seconds": 164.616,
+    "start_seconds": 67.308,
+    "end_seconds": 97.308,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/bad-bitch-preview-30s.mp3"
+  },
+  {
+    "id": "country-hore-beat",
+    "title": "Country Hore Beat",
+    "master_seconds": 187.056,
+    "start_seconds": 78.528,
+    "end_seconds": 108.528,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/country-hore-beat-preview-30s.mp3"
+  },
+  {
+    "id": "the-next-hit",
+    "title": "The Next Hit",
+    "master_seconds": 164.328,
+    "start_seconds": 67.164,
+    "end_seconds": 97.164,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/the-next-hit-preview-30s.mp3"
+  },
+  {
+    "id": "violin-project",
+    "title": "Violin Project",
+    "master_seconds": 192.048,
+    "start_seconds": 81.024,
+    "end_seconds": 111.024,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/violin-project-preview-30s.mp3"
+  },
+  {
+    "id": "swervin",
+    "title": "Swervin",
+    "master_seconds": 147.775,
+    "start_seconds": 58.887,
+    "end_seconds": 88.887,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/swervin-preview-30s.mp3"
+  },
+  {
+    "id": "mafia-drill",
+    "title": "Mafia Drill",
+    "master_seconds": 146.808,
+    "start_seconds": 58.404,
+    "end_seconds": 88.404,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/mafia-drill-preview-30s.mp3"
+  },
+  {
+    "id": "western-drill",
+    "title": "Western Drill",
+    "master_seconds": 148.606,
+    "start_seconds": 59.303,
+    "end_seconds": 89.303,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/western-drill-preview-30s.mp3"
+  },
+  {
+    "id": "hard-hopes",
+    "title": "Hard Hopes",
+    "master_seconds": 300.0,
+    "start_seconds": 135.0,
+    "end_seconds": 165.0,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/hard-hopes-preview-30s.mp3"
+  },
+  {
+    "id": "taliban",
+    "title": "Taliban",
+    "master_seconds": 179.749,
+    "start_seconds": 74.874,
+    "end_seconds": 104.874,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/taliban-preview-30s.mp3"
+  },
+  {
+    "id": "streets-of-new-york",
+    "title": "Streets of New York",
+    "master_seconds": 148.767,
+    "start_seconds": 59.384,
+    "end_seconds": 89.384,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/streets-of-new-york-preview-30s.mp3"
+  },
+  {
+    "id": "night-b4-halloween",
+    "title": "Night B4 Halloween",
+    "master_seconds": 59.141,
+    "start_seconds": 14.571,
+    "end_seconds": 44.571,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/night-b4-halloween-preview-30s.mp3"
+  },
+  {
+    "id": "get-back",
+    "title": "Get Back",
+    "master_seconds": 141.505,
+    "start_seconds": 55.753,
+    "end_seconds": 85.753,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/get-back-preview-30s.mp3"
+  },
+  {
+    "id": "twisted-minds",
+    "title": "Twisted Minds",
+    "master_seconds": 53.002,
+    "start_seconds": 11.501,
+    "end_seconds": 41.501,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/twisted-minds-preview-30s.mp3"
+  },
+  {
+    "id": "hero",
+    "title": "Hero",
+    "master_seconds": 157.382,
+    "start_seconds": 63.691,
+    "end_seconds": 93.691,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/hero-preview-30s.mp3"
+  },
+  {
+    "id": "music-box",
+    "title": "Music Box",
+    "master_seconds": 230.713,
+    "start_seconds": 100.357,
+    "end_seconds": 130.357,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/music-box-preview-30s.mp3"
+  },
+  {
+    "id": "dark-drill",
+    "title": "Dark Drill",
+    "master_seconds": 139.314,
+    "start_seconds": 54.657,
+    "end_seconds": 84.657,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/dark-drill-preview-30s.mp3"
+  },
+  {
+    "id": "viking",
+    "title": "Viking",
+    "master_seconds": 298.0,
+    "start_seconds": 134.0,
+    "end_seconds": 164.0,
+    "decoded_preview_seconds": 30.0,
+    "preview": "assets/audio/previews/viking-preview-30s.mp3"
+  }
+]

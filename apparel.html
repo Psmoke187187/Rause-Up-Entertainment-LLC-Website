@@ -10,7 +10,7 @@
     .product-art{min-height:0;background:#151520;padding:12px}
     .product-art img{width:100%;height:240px;object-fit:contain;display:block}
   </style>
-</head>
+<script defer src="scripts/analytics.js?v=20261110-owner"></script></head>
 <body>
   <nav class="nav">
     <a class="brand" href="index.html"><span>Raise Up</span> Entertainment</a>
@@ -43,7 +43,7 @@
   <footer class="footer">
     <strong>Raise Up Entertainment LLC</strong>
     <p>Questions about an apparel order? <a href="mailto:raiseupentllc@gmail.com">Email us directly.</a></p>
-  </footer>
+  <p class="privacy-links"><a href="privacy.html">Privacy</a> · <button type="button" data-analytics-preferences>Analytics preferences</button></p></footer>
   <script src="scripts/apparel-catalog.js?v=20261002"></script>
   <script>
     (function () {
@@ -54,7 +54,7 @@
         return;
       }
       grid.innerHTML = items.map(function (p) {
-        return '<article class="product-card">' +
+        return '<article class="product-card" data-product-id="' + p.id + '">' +
           '<div class="product-art"><img src="' + p.image + '" alt="' + p.title.replace(/"/g, '&quot;') + '" loading="lazy"></div>' +
           '<div class="product-body">' +
           '<p class="tag">' + p.price + '</p>' +
