@@ -29,5 +29,23 @@ window.RAISEUP_PACK_PREVIEWS = {
   ],
   "pack-david-vol1": [
     {folder:"Loops / Fills",name:"Why Im Hot Fill",bpm:145,src:"assets/audio/pack-previews/pack-david-vol1/why-im-hot-fill-145.wav"}
-  ]
+  ],
+  "pack-mpc60": [{folder:"Drums",name:"MPC60 Snare 1",src:"assets/audio/pack-previews/pack-mpc60/snare-01.wav"}],
+  "pack-mpc3000-synth": [{folder:"Synth Drums",name:"MPC3000 Synth BD1",src:"assets/audio/pack-previews/pack-mpc3000-synth/synth-bd1.wav"}],
+  "pack-mpc3000-percussion": [{folder:"Percussion",name:"MPC3000 Blox",src:"assets/audio/pack-previews/pack-mpc3000-percussion/blox.wav"}],
+  "pack-mpc3000-natural": [{folder:"Natural Drums",name:"MPC3000 Hi Hat",src:"assets/audio/pack-previews/pack-mpc3000-natural/hi-hat.wav"}],
+  "pack-mpc2000xl-dry": [{folder:"Dry Drums",name:"MPC2000XL Tight Kick",src:"assets/audio/pack-previews/pack-mpc2000xl-dry/tight-kick.wav"}],
+  "pack-mini-moog": [{folder:"Synth Notes",name:"Mini Moog G Note",src:"assets/audio/pack-previews/pack-mini-moog/moog-g.wav"}],
+  "pack-arp-odyssey": [{folder:"Synth Notes",name:"ARP Odyssey C4",src:"assets/audio/pack-previews/pack-arp-odyssey/arp-c4.wav"}],
+  "pack-wurlitzer": [{folder:"Electric Piano",name:"Wurlitzer 200A",src:"assets/audio/pack-previews/pack-wurlitzer/wurlitzer-200a.wav"}],
+  "pack-electric-piano": [{folder:"Electric Piano",name:"Rhodes Classic",src:"assets/audio/pack-previews/pack-electric-piano/rhodes-classic.wav"}],
+  "pack-delicate-guitar": [{folder:"Guitar Notes",name:"Electric Guitar A4",src:"assets/audio/pack-previews/pack-delicate-guitar/guitar-a4.wav"}],
+  "pack-grand-piano": [{folder:"Piano Notes",name:"Grand Piano C7",src:"assets/audio/pack-previews/pack-grand-piano/piano-c7.wav"}],
+  "pack-metro-boomin": [{folder:"Kicks",name:"Metro Kick",src:"assets/audio/pack-previews/pack-metro-boomin/metro-kick.wav"}],
+  "pack-f1lthy": [{folder:"Kicks",name:"WOD Kick",src:"assets/audio/pack-previews/pack-f1lthy/wod-kick.wav"}],
+  "pack-ny-drill": [{folder:"Snares",name:"White T Snare",src:"assets/audio/pack-previews/pack-ny-drill/white-t-snare.wav"}],
+  "pack-mira-touch-vol1": [{folder:"Kicks",name:"Reloaded Kick",src:"assets/audio/pack-previews/pack-mira-touch-vol1/reloaded-kick.wav"}],
+  "pack-kenny-beats": [{folder:"Snares",name:"Kenny Snare",src:"assets/audio/pack-previews/pack-kenny-beats/kenny-snare.wav"}],
+  "pack-big-bad": [{folder:"Melody Loops",name:"Joykill",bpm:141,src:"assets/audio/pack-previews/pack-big-bad/joykill-141.wav"}],
+  "pack-keyboard-synth": [{folder:"Plucked Keyboards",name:"Clavichord Jangle",src:"assets/audio/pack-previews/pack-keyboard-synth/clavichord-jangle.wav"}]
 };
