@@ -103,10 +103,10 @@
     const product = anchor.closest('[data-product-id]')?.dataset.productId;
     if (product) track('product_click', { product });
     const href = anchor.getAttribute('href');
-    if (/^(mailto:|tel:)/.test(href)) { track('contact', { detail: product ? 'apparel-order' : href.startsWith('mailto:') ? 'email' : 'phone' }); return; }
+    if (/^(mailto:|tel:)/.test(href)) { track('contact', { detail: product ? product.startsWith('pack-') ? 'pack-order' : 'apparel-order' : href.startsWith('mailto:') ? 'email' : 'phone' }); return; }
     let destination; try { destination = new URL(href, location.href); } catch { return; }
-    if (destination.hostname === 'buy.stripe.com' && anchor.dataset.beatId) {
-      track('checkout_click', { beat: anchor.dataset.beatId });
+    if (destination.hostname === 'buy.stripe.com' && (anchor.dataset.beatId || product)) {
+      track('checkout_click', anchor.dataset.beatId ? { beat: anchor.dataset.beatId } : { product });
       if (allowed()) { destination.searchParams.set('client_reference_id', getSession().id); anchor.href = destination.href; }
       else if (destination.searchParams.has('client_reference_id')) { destination.searchParams.delete('client_reference_id'); anchor.href = destination.href; }
       flush(true);
