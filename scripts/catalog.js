@@ -54,7 +54,7 @@ window.RAISEUP_BEATS = [
     title: "The Next Hit",
     genre: "Hip-Hop",
     mood: "Bright, energetic production built for a standout record",
-    cover: "assets/img/covers/the-next-hit.png",
+    cover: "assets/img/covers/the-next-hit.webp",
     preview: "assets/audio/previews/the-next-hit-preview.mp3",
     price: "$100",
     checkout: "https://buy.stripe.com/00waEWgLp0Eo6fv8J3cs805"
@@ -64,7 +64,7 @@ window.RAISEUP_BEATS = [
     title: "Violin Project",
     genre: "Trap",
     mood: "Dark, dramatic strings with heavy cinematic energy",
-    cover: "assets/img/covers/violin-project.png",
+    cover: "assets/img/covers/violin-project.webp",
     preview: "assets/audio/previews/violin-project-preview.mp3",
     price: "$100",
     checkout: "https://buy.stripe.com/14A3cu1Qv1Is7jze3ncs806"
