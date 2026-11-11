@@ -47,5 +47,10 @@ window.RAISEUP_PACK_PREVIEWS = {
   "pack-mira-touch-vol1": [{folder:"Kicks",name:"Reloaded Kick",src:"assets/audio/pack-previews/pack-mira-touch-vol1/reloaded-kick.wav"}],
   "pack-kenny-beats": [{folder:"Snares",name:"Kenny Snare",src:"assets/audio/pack-previews/pack-kenny-beats/kenny-snare.wav"}],
   "pack-big-bad": [{folder:"Melody Loops",name:"Joykill",bpm:141,src:"assets/audio/pack-previews/pack-big-bad/joykill-141.wav"}],
-  "pack-keyboard-synth": [{folder:"Plucked Keyboards",name:"Clavichord Jangle",src:"assets/audio/pack-previews/pack-keyboard-synth/clavichord-jangle.wav"}]
+  "pack-keyboard-synth": [{folder:"Plucked Keyboards",name:"Clavichord Jangle",src:"assets/audio/pack-previews/pack-keyboard-synth/clavichord-jangle.wav"}],
+  "pack-techno": [{folder:"Hi Hats",name:"Techno Hat 12",src:"assets/audio/pack-previews/pack-techno/hat-12.wav"}],
+  "pack-drum-bass": [{folder:"Kicks",name:"Drum & Bass Kick 03",src:"assets/audio/pack-previews/pack-drum-bass/kick-03.wav"}],
+  "pack-nick-mira-drums": [{folder:"Kicks",name:"Trapsylvania Kick",src:"assets/audio/pack-previews/pack-nick-mira-drums/trapsylvania-kick.wav"}],
+  "pack-electric-bass": [{folder:"Bass Notes",name:"Bass C3",src:"assets/audio/pack-previews/pack-electric-bass/bass-c3.wav"}],
+  "pack-shiloh": [{folder:"Vocal Samples",name:"Imagination (short preview)",src:"assets/audio/pack-previews/pack-shiloh/imagination-preview.mp3"}]
 };
