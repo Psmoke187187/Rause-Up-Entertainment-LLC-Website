@@ -34,9 +34,16 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Snares",name:"Trackman Snare",src:"assets/audio/pack-previews/pack-tm88/trackman-snare.wav"}
   ],
   "pack-neutron": [
-    {folder:"Keys",name:"Key 1",src:"assets/audio/pack-previews/pack-neutron/key-01.wav"},
-    {folder:"Keys",name:"Key 9",src:"assets/audio/pack-previews/pack-neutron/key-09.wav"},
-    {folder:"Bells",name:"Bell 1",src:"assets/audio/pack-previews/pack-neutron/bell-01.wav"}
+    {folder:"Bass",name:"Bass (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-01.wav"},
+    {folder:"Bells",name:"Bell (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-02.wav"},
+    {folder:"Brass",name:"Brass (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-03.wav"},
+    {folder:"Guitar",name:"Guitar (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-04.wav"},
+    {folder:"Keys",name:"Key (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-05.wav"},
+    {folder:"Mallet",name:"Mallet (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-06.wav"},
+    {folder:"Pads",name:"Pad (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-07.wav"},
+    {folder:"Strings",name:"String (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-08.wav"},
+    {folder:"Synths",name:"Synth (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-09.wav"},
+    {folder:"Ambience",name:"Ambience (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-10.wav"}
   ],
   "pack-bueno-demo": [
     {folder:"Melody Loops",name:"Evening",key:"G Major",bpm:96,src:"assets/audio/pack-previews/pack-bueno-demo/evening-g-major.wav"},
