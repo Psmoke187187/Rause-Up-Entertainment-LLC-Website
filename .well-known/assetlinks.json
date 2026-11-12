@@ -7,7 +7,8 @@
       "namespace": "android_app",
       "package_name": "com.raiseupentertainment.app",
       "sha256_cert_fingerprints": [
-        "3C:B2:25:09:51:B1:45:10:33:63:EE:BC:FF:30:98:AA:5C:8C:42:29:14:76:C0:B0:B4:BA:A9:0F:60:E5:CC:85"
+        "3C:B2:25:09:51:B1:45:10:33:63:EE:BC:FF:30:98:AA:5C:8C:42:29:14:76:C0:B0:B4:BA:A9:0F:60:E5:CC:85",
+        "BE:0E:E2:B1:AD:AC:51:02:80:69:CA:42:43:4A:49:1F:8F:47:63:6F:1B:20:51:90:1B:92:52:7B:DF:52:F6:B6"
       ]
     }
   }
