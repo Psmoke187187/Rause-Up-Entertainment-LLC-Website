@@ -18,7 +18,7 @@ const packs=(Array.isArray(window.RAISEUP_PACKS)?window.RAISEUP_PACKS:[]).filter
   seed:Array.from(p.id).reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,7),
   samples:(Array.isArray(manifest[p.id])?manifest[p.id]:[]).filter(s=>
     s&&typeof s.name==='string'&&typeof s.folder==='string'&&typeof s.src==='string'&&
-    /^assets\/audio\/pack-previews\/[a-z0-9-]+\/[a-z0-9-]+\.(?:wav|mp3)$/.test(s.src))
+    /^assets\/audio\/(?:pack-previews|hifi-previews)\/[a-z0-9-]+\/[a-z0-9-]+\.(?:wav|mp3)$/.test(s.src))
 }));
 for(const name of [...new Set(packs.map(p=>p.category))].sort()){
   const option=document.createElement('option');option.value=option.textContent=name;category.appendChild(option);

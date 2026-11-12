@@ -6,9 +6,20 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Snares",name:"Snares 48",src:"assets/audio/pack-previews/pack-snares-kit-1/snare-48.wav"}
   ],
   "pack-uk-drill": [
-    {folder:"Claps",name:"UK Drill Clap 7",src:"assets/audio/pack-previews/pack-uk-drill/clap-07.wav"},
-    {folder:"Claps",name:"UK Drill Clap 6",src:"assets/audio/pack-previews/pack-uk-drill/clap-06.wav"},
-    {folder:"808",name:"UK Drill 808 2",src:"assets/audio/pack-previews/pack-uk-drill/808-02.wav"}
+    {folder:"808",name:"UK Drill - 808 (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-01.wav"},
+    {folder:"Claps",name:"UK Drill - Clap (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-02.wav"},
+    {folder:"808",name:"UK Drill - 808 (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-03.wav"},
+    {folder:"Claps",name:"UK Drill - Clap (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-04.wav"},
+    {folder:"Hi-Hats",name:"UK Drill - Hat (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-05.wav"},
+    {folder:"Kicks",name:"UK Drill - Kick (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-06.wav"},
+    {folder:"Hi-Hats",name:"UK Drill - Hat (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-07.wav"},
+    {folder:"Kicks",name:"UK Drill - Kick (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-08.wav"},
+    {folder:"Percussion",name:"UK Drill - Perc (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-09.wav"},
+    {folder:"Snares",name:"UK Drill - Snare (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-10.wav"},
+    {folder:"Percussion",name:"UK Drill - Perc (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-11.wav"},
+    {folder:"Snares",name:"UK Drill - Snare (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-12.wav"},
+    {folder:"Vox",name:"UK Drill - Vox (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-13.wav"},
+    {folder:"Vox",name:"UK Drill - Vox (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-14.wav"}
   ],
   "pack-tm88": [
     {folder:"Kicks",name:"TM88 Kick",src:"assets/audio/pack-previews/pack-tm88/tm88-kick.wav"},
