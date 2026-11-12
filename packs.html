@@ -26,23 +26,18 @@
 .pack-player>div{flex:1 1 210px}.pack-player strong{display:block;line-height:1.4;overflow-wrap:anywhere}.pack-player p{font-size:12px!important;margin:5px 0 0}.pack-player audio{width:min(450px,100%);flex:1 1 230px;height:44px}.packs-page{padding-bottom:160px}
 @media(max-width:1000px){.pack-toolbar{grid-template-columns:1fr 1fr}.pack-toolbar .pack-field:first-child{grid-column:1/-1}}
 @media(max-width:680px){.pack-toolbar{grid-template-columns:1fr}.pack-toolbar .pack-field:first-child{grid-column:auto}.pack-samples{max-height:270px}.pack-player{bottom:8px}}
-.pack-tour-button{display:flex;align-items:center;justify-content:space-between;gap:9px;width:100%;border:1px solid #eeb94e;border-radius:11px;background:linear-gradient(115deg,#eed295,#f4b850);color:#18120c;font:800 13px Inter,Arial,sans-serif;text-align:left;padding:12px 13px;margin:0 0 12px;cursor:pointer}
-.pack-tour-button span{font-size:11px;border-left:1px solid #2820164a;padding-left:8px;white-space:nowrap}
-.pack-tour-button:hover{filter:brightness(1.08)}
-.pack-tour-button:focus-visible{outline:2px solid white;outline-offset:3px}
 </style>
 <script defer src="scripts/analytics.js?v=packs-20261111"></script>
 <script defer src="scripts/packs-catalog.js?v=20261111"></script>
 <script defer src="scripts/pack-previews.js?v=20261111"></script>
-<script defer src="scripts/pack-montages.js?v=20261111-2"></script>
-<script defer src="scripts/packs.js?v=pack-tours-20261111-1"></script>
+<script defer src="scripts/packs.js?v=individual-sounds-20261111-2"></script>
 </head><body>
 <nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><span>Raise Up</span> Entertainment</a><div><a href="beats.html">Beats</a><a href="apparel.html">Apparel</a><a href="packs.html" aria-current="page">Sound Packs</a><a href="licensing.html">Licensing</a><a href="mailto:raiseupentllc@gmail.com">Contact</a></div></nav>
 <main class="page packs-page">
 <header class="pack-hero"><p class="eyebrow">The Raise Up Sound Library</p><h1>Build your next sound.</h1><p class="pack-intro">Explore drums, melodies, vocals and instrument samples for your next session. Choose your collection and check out through Stripe. Every pack is <strong>$6.99</strong>.</p><div class="pack-promise" aria-label="Store information"><span>30 sound packs</span><span>$6.99 per pack</span><span>Digital audio downloads</span><span>Stripe checkout</span></div></header>
 <div class="pack-toolbar" role="search" aria-label="Find sound packs"><label class="pack-field"><span>Search the library</span><input id="packSearch" type="search" placeholder="Search packs, sounds, folders, keys or BPM" autocomplete="off"></label><label class="pack-field"><span>Category</span><select id="packCategory"><option value="">All categories</option></select></label><label class="pack-field"><span>Musical key</span><select id="packKey"><option value="">All labeled keys</option></select></label></div>
 <output id="packCount" class="pack-count" role="status" aria-live="polite" aria-atomic="true">Loading the sound library…</output>
-<p class="pack-preview-note">Press Play pack demo to hear a 15–30-second tour with several representative sounds. Open a pack to hear more individual audio samples. Browse folders such as Kicks, Snares, 808s, Keys, and Melody Loops. Musical keys and BPM are shown only when labeled in the source filename; chord progressions have not been verified.</p>
+<p class="pack-preview-note">Open each pack and click Play on the individual sounds you want to hear. Browse folders such as Kicks, Snares, 808s, Keys, and Melody Loops. Musical keys and BPM are shown only when labeled in the source filename; chord progressions have not been verified.</p>
 <section id="packGrid" class="shop-grid pack-grid" aria-label="Sound pack catalog"></section>
 <section id="packPlayer" class="pack-player" aria-label="Audio sample player" hidden><div><strong id="packNowPlaying">Choose a sound to preview</strong><p>Short preview only — full sample collections are included with a pack purchase.</p></div><audio id="packAudio" controls preload="none" aria-label="Sound pack sample preview"></audio></section>
 <noscript><p>Please enable JavaScript to view the sound pack catalog, or contact <a href="mailto:raiseupentllc@gmail.com">raiseupentllc@gmail.com</a> for help.</p></noscript>

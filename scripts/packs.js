@@ -7,7 +7,7 @@ const grid=document.getElementById('packGrid'), search=document.getElementById('
 if(!grid||!search||!category||!count)return;
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const price='$6.99', colors=['#f5bd49','#c59cec','#89c9cc','#e6a88c'];
-const seen=new Set(), expanded=new Set(), manifest=window.RAISEUP_PACK_PREVIEWS||{}, montages=window.RAISEUP_PACK_MONTAGES||{};
+const seen=new Set(), expanded=new Set(), manifest=window.RAISEUP_PACK_PREVIEWS||{};
 function stripeUrl(value){try{const u=new URL(value);return u.protocol==='https:'&&u.hostname==='buy.stripe.com'&&!u.port&&!u.username&&!u.password?u.href:'';}catch{return '';}}
 const packs=(Array.isArray(window.RAISEUP_PACKS)?window.RAISEUP_PACKS:[]).filter(p=>{
   if(!p||typeof p.id!=='string'||!/^[a-z0-9][a-z0-9-]{0,79}$/.test(p.id)||seen.has(p.id)||typeof p.title!=='string'||!p.title.trim())return false;
@@ -44,7 +44,6 @@ function sampleGroups(p,term,matchedPack){
 function card(p,term){
   const hay=[p.title,p.category,p.description].join(' ').toLowerCase(),matchedPack=!term||hay.includes(term);
   const matchedSamples=p.samples.filter(s=>!keyFilter?.value||s.key===keyFilter.value);
-  const tour=montages[p.id],tourButton=tour&&typeof tour.src==='string'&&tour.src.startsWith('assets/audio/pack-montages/')&&tour.src.endsWith('.wav')?'<button type="button" class="pack-tour-button" data-montage="'+esc(p.id)+'" aria-label="Listen to a '+esc(Math.round(tour.seconds))+' second demo of '+esc(p.title)+'">▶ Play '+esc(Math.round(tour.seconds))+'-second pack demo <span>'+esc(tour.count)+' sounds</span></button>':'';
   const availability=p.samples.length?'<span class="sample-available">'+p.samples.length+' samples to hear</span>':'<span class="sample-unavailable">Audio previews coming soon</span>';
   const preview=p.samples.length?
     '<button type="button" class="pack-expand" data-expand="'+esc(p.id)+'" aria-expanded="'+expanded.has(p.id)+'" aria-controls="preview-'+esc(p.id)+'">'+(expanded.has(p.id)?'Hide sounds':'Explore folders & listen')+' <span aria-hidden="true">'+(expanded.has(p.id)?'−':'+')+'</span></button>'+
@@ -52,7 +51,7 @@ function card(p,term){
       (sampleGroups(p,term,matchedPack)||'<p>No sound previews match this filter.</p>')+
     '</div>':'';
   const buy=p.paymentUrl?'<a class="btn primary pack-buy" href="'+esc(p.paymentUrl)+'" target="_blank" rel="noopener" data-product-id="'+esc(p.id)+'" aria-label="Buy '+esc(p.title)+' for '+price+'">Buy full pack <span>'+price+' <span aria-hidden="true">↗</span></span></a>':'<button class="btn pack-buy" type="button" disabled>Checkout unavailable</button>';
-  return '<article class="product-card pack-card" id="'+esc(p.id)+'" data-product-id="'+esc(p.id)+'">'+artwork(p)+'<div class="pack-body"><p class="pack-category">'+esc(p.category)+'</p><h2><a href="#'+esc(p.id)+'">'+esc(p.title)+'</a></h2>'+(p.description?'<p class="pack-description">'+esc(p.description)+'</p>':'')+'<div class="sample-status">'+availability+'</div>'+tourButton+preview+buy+'</div></article>';
+  return '<article class="product-card pack-card" id="'+esc(p.id)+'" data-product-id="'+esc(p.id)+'">'+artwork(p)+'<div class="pack-body"><p class="pack-category">'+esc(p.category)+'</p><h2><a href="#'+esc(p.id)+'">'+esc(p.title)+'</a></h2>'+(p.description?'<p class="pack-description">'+esc(p.description)+'</p>':'')+'<div class="sample-status">'+availability+'</div>'+preview+buy+'</div></article>';
 }
 function render(){
   const term=search.value.trim().toLowerCase(),selected=category.value,key=keyFilter?.value||'';
@@ -73,7 +72,6 @@ keyFilter?.addEventListener('change',()=>render());
 grid.addEventListener('click',event=>{
   if(event.target.closest('[data-clear-packs]')){search.value=category.value='';if(keyFilter)keyFilter.value='';render();search.focus();return;}
   const toggle=event.target.closest('[data-expand]');if(toggle){const id=toggle.dataset.expand;if(expanded.has(id))expanded.delete(id);else expanded.add(id);render();return;}
-  const tourBtn=event.target.closest('[data-montage]');if(tourBtn&&audio&&nowPlaying&&player){const p=packs.find(x=>x.id===tourBtn.dataset.montage),m=montages[p?.id];if(!m)return;if(audio.getAttribute('src')===m.src&&!audio.paused){audio.pause();return;}audio.src=m.src;nowPlaying.textContent=p.title+' · '+m.count+'-sound demo ('+Math.round(m.seconds)+' seconds)';player.hidden=false;audio.play().catch(()=>{nowPlaying.textContent+=' — Tap play to listen';});window.RUEAnalytics?.track('preview_play',{detail:('Sound pack montage: '+p.id).slice(0,100)});return;}
   const play=event.target.closest('[data-sample]');if(!play||!audio||!nowPlaying||!player)return;
   const pack=packs.find(p=>p.id===play.dataset.pack),s=pack?.samples[Number(play.dataset.sample)];if(!s)return;
   if(audio.getAttribute('src')===s.src&&!audio.paused){audio.pause();return;}
