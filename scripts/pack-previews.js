@@ -1,9 +1,16 @@
 // Public, shortened listening samples only. Full paid source files remain private.
 window.RAISEUP_PACK_PREVIEWS = {
   "pack-snares-kit-1": [
-    {folder:"Snares",name:"Snares 01",src:"assets/audio/pack-previews/pack-snares-kit-1/snare-01.wav"},
-    {folder:"Snares",name:"Snares 02",src:"assets/audio/pack-previews/pack-snares-kit-1/snare-02.wav"},
-    {folder:"Snares",name:"Snares 48",src:"assets/audio/pack-previews/pack-snares-kit-1/snare-48.wav"}
+    {folder:"Snares",name:"SNARES 01",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-01.wav"},
+    {folder:"Snares",name:"SNARES 02",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-02.wav"},
+    {folder:"Snares",name:"SNARES 03",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-03.wav"},
+    {folder:"Snares",name:"SNARES 04",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-04.wav"},
+    {folder:"Snares",name:"SNARES 05",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-05.wav"},
+    {folder:"Snares",name:"SNARES 06",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-06.wav"},
+    {folder:"Snares",name:"SNARES 07",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-07.wav"},
+    {folder:"Snares",name:"SNARES 08",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-08.wav"},
+    {folder:"Snares",name:"SNARES 09",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-09.wav"},
+    {folder:"Snares",name:"SNARES 10",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-10.wav"}
   ],
   "pack-uk-drill": [
     {folder:"808",name:"UK Drill - 808 (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-01.wav"},
