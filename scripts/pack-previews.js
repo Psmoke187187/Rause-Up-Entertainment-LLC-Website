@@ -195,17 +195,17 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Instrument One-Shots",name:"Deluxe Guitar Muted Strum",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-20.wav"}
   ],
   "pack-legacy-drums-60": [
-    {folder:"Kicks",name:"Beefy Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-01.wav"},
-    {folder:"Kicks",name:"Bump Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-02.wav"},
-    {folder:"Kicks",name:"Hi Layer Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-03.wav"},
-    {folder:"Kicks",name:"LoFi Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-04.wav"},
-    {folder:"Kicks",name:"Low End Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-05.wav"},
-    {folder:"Kicks",name:"Old School Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-06.wav"},
+    {folder:"Kicks",name:"Beefy Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-01.wav",volume:0.412},
+    {folder:"Kicks",name:"Bump Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-02.wav",volume:0.707},
+    {folder:"Kicks",name:"Hi Layer Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-03.wav",volume:0.353},
+    {folder:"Kicks",name:"LoFi Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-04.wav",volume:0.765},
+    {folder:"Kicks",name:"Low End Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-05.wav",volume:0.212},
+    {folder:"Kicks",name:"Old School Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-06.wav",volume:0.579},
     {folder:"Kicks",name:"Punchy Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-07.wav"},
     {folder:"Snares",name:"Snare 1",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-08.wav"},
     {folder:"Snares",name:"Snare 2",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-09.wav"},
     {folder:"Snares",name:"Snare 3",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-10.wav"},
-    {folder:"Snares",name:"Snare 4",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-11.wav"},
+    {folder:"Snares",name:"Snare 4",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-11.wav",volume:0.758},
     {folder:"Snares",name:"Snare 5",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-12.wav"},
     {folder:"Snares",name:"Snare 6",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-13.wav"},
     {folder:"Snares",name:"Snare 7",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-14.wav"},
@@ -213,7 +213,7 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Hi-Hats",name:"Clean Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-16.wav"},
     {folder:"Hi-Hats",name:"Click Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-17.wav"},
     {folder:"Hi-Hats",name:"Deep Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-18.wav"},
-    {folder:"Hi-Hats",name:"Detune Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-19.wav"},
+    {folder:"Hi-Hats",name:"Detune Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-19.wav",volume:0.835},
     {folder:"Hi-Hats",name:"Fairy Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-20.wav"}
   ]
 };
