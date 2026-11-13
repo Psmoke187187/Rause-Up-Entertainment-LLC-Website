@@ -1,0 +1,37 @@
+/* Source-folder audio-file audit, 2026-11-12. Counts are AUDIO FILES FOUND IN GOOGLE DRIVE (including nested subfolders), not paid ZIP/download guarantees. Extensions: WAV, MP3, AIF/AIFF, FLAC, OGG. Counts do not prove sonic uniqueness, playback validity or redistribution rights. No pack is authorized for new tier checkout until delivery + licensing are verified. */
+window.RAISEUP_PACK_INVENTORY = Object.freeze({
+  "pack-snares-kit-1": {sourceAudioCount:93, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-techno": {sourceAudioCount:110, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-drum-bass": {sourceAudioCount:85, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mpc60": {sourceAudioCount:533, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mpc3000-synth": {sourceAudioCount:776, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mpc3000-percussion": {sourceAudioCount:250, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mpc3000-natural": {sourceAudioCount:472, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mpc2000xl-dry": {sourceAudioCount:67, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mini-moog": {sourceAudioCount:115, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-arp-odyssey": {sourceAudioCount:90, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-wurlitzer": {sourceAudioCount:51, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-electric-piano": {sourceAudioCount:71, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-delicate-guitar": {sourceAudioCount:92, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-grand-piano": {sourceAudioCount:146, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-electric-bass": {sourceAudioCount:103, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-tm88": {sourceAudioCount:522, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-uk-drill": {sourceAudioCount:104, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-metro-boomin": {sourceAudioCount:2184, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-f1lthy": {sourceAudioCount:338, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-nick-mira-drums": {sourceAudioCount:1003, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-ny-drill": {sourceAudioCount:261, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-mira-touch-vol1": {sourceAudioCount:181, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-kenny-beats": {sourceAudioCount:609, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-bakesale": {sourceAudioCount:51, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-big-bad": {sourceAudioCount:77, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-neutron": {sourceAudioCount:100, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-keyboard-synth": {sourceAudioCount:418, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-shiloh": {sourceAudioCount:20, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-bueno-demo": {sourceAudioCount:20, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-david-vol1": {sourceAudioCount:116, customerDownloadCount:null, resaleRightsVerified:false}
+});
+window.RAISEUP_NEW_LIBRARY_AUDIT = Object.freeze([
+  {name:"LOOPS DRUMS SAMPLES",status:"Under review",note:"Nested libraries, third-party packs and ZIP files require redistribution and download checks."},
+  {name:"The Lunch77 Boominati Drumkit-011",status:"Incomplete source",note:"Most category folders are empty; not eligible to sell."}
+]);
