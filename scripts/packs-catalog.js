@@ -1,24 +1,24 @@
 window.RAISEUP_PACKS = [
-{
-  "id": "pack-growth-essentials-60",
-  "title": "Growth Essentials — 60 WAV Sounds",
-  "category": "Drums",
-  "description": "Exactly 60 WAVs in three organized folders: 20 claps, 20 tuned 808s, and 20 instrument one-shots. Includes 20 playable previews. Checkout opening soon.",
-  "soundCount": 60,
-  "plannedPrice": 6.99,
-  "releaseStatus": "preview",
-  "driveFolderId": "12FI5Ydc0Z_JIZC0f-_cOZ_EvJ9i-yfiA"
-},
-{
-  "id": "pack-legacy-drums-60",
-  "title": "Legacy Drum Essentials — 60 WAV Sounds",
-  "category": "Drums",
-  "description": "Exactly 60 WAVs in three organized folders: 20 kicks, 20 snares, and 20 hi-hats. Includes 20 playable previews. Checkout opening soon.",
-  "soundCount": 60,
-  "plannedPrice": 6.99,
-  "releaseStatus": "preview",
-  "driveFolderId": "1iW9bDB_sEkJ6wmnJdzvnQgQN8oChTn-k"
-},
+  {
+    "id": "pack-growth-essentials-60",
+    "title": "Growth Essentials — 60 WAV Sounds",
+    "category": "Drums",
+    "description": "Exactly 60 WAVs in three organized folders: 20 claps, 20 tuned 808s, and 20 instrument one-shots. Includes 20 playable previews. Checkout opening soon.",
+    "soundCount": 60,
+    "plannedPrice": 6.99,
+    "releaseStatus": "preview",
+    "driveFolderId": "12FI5Ydc0Z_JIZC0f-_cOZ_EvJ9i-yfiA"
+  },
+  {
+    "id": "pack-legacy-drums-60",
+    "title": "Legacy Drum Essentials — 60 WAV Sounds",
+    "category": "Drums",
+    "description": "Exactly 60 WAVs in three organized folders: 20 kicks, 20 snares, and 20 hi-hats. Includes 20 playable previews. Checkout opening soon.",
+    "soundCount": 60,
+    "plannedPrice": 6.99,
+    "releaseStatus": "preview",
+    "driveFolderId": "1iW9bDB_sEkJ6wmnJdzvnQgQN8oChTn-k"
+  },
   {
     "id": "pack-snares-kit-1",
     "title": "Snares Kit 1",
@@ -98,14 +98,6 @@ window.RAISEUP_PACKS = [
     "description": "A collection of synthesizer instrument WAV samples.",
     "paymentUrl": "https://buy.stripe.com/bJe28qfHl3QAavL4sNcs80t",
     "stripeProductId": "rue_pack_arp_odyssey"
-  },
-  {
-    "id": "pack-wurlitzer",
-    "title": "Wurlitzer Electric Piano Samples",
-    "category": "Instruments",
-    "description": "Electric piano instrument samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/aFacN42Uz1Is1ZfaRbcs80u",
-    "stripeProductId": "rue_pack_wurlitzer"
   },
   {
     "id": "pack-electric-piano",
@@ -204,14 +196,6 @@ window.RAISEUP_PACKS = [
     "stripeProductId": "rue_pack_kenny_beats"
   },
   {
-    "id": "pack-bakesale",
-    "title": "Nick Mira Bakesale Melody Pack",
-    "category": "Melodies",
-    "description": "Melody samples in WAV and MP3 formats. Tempo information appears in many filenames.",
-    "paymentUrl": "https://buy.stripe.com/3cIaEWfHlbj2gU9f7rcs80H",
-    "stripeProductId": "rue_pack_bakesale"
-  },
-  {
     "id": "pack-big-bad",
     "title": "MIRATOUCH Big Bad Bundle",
     "category": "Melodies",
@@ -234,22 +218,6 @@ window.RAISEUP_PACKS = [
     "description": "Keyboard and synthesizer WAV samples, including plucks, bells and piano sounds. Audio samples; no plug-in software included.",
     "paymentUrl": "https://buy.stripe.com/6oUfZggLp0EobzP1gBcs80K",
     "stripeProductId": "rue_pack_keyboard_synth"
-  },
-  {
-    "id": "pack-shiloh",
-    "title": "All Shiloh Samples",
-    "category": "Vocals",
-    "description": "A collection of 15 vocal sample files in MP3 format.",
-    "paymentUrl": "https://buy.stripe.com/28E5kCdzd0Eo9rHe3ncs80L",
-    "stripeProductId": "rue_pack_shiloh"
-  },
-  {
-    "id": "pack-bueno-demo",
-    "title": "BUENO Sample Pack (Demo)",
-    "category": "Melodies",
-    "description": "A 10-file WAV sample selection with tempo, key and source information in filenames. Demo collection.",
-    "paymentUrl": "https://buy.stripe.com/00weVc2Uzcn6avL0cxcs80M",
-    "stripeProductId": "rue_pack_bueno_demo"
   },
   {
     "id": "pack-david-vol1",
