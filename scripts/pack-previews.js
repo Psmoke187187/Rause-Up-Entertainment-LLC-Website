@@ -215,5 +215,27 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Hi-Hats",name:"Deep Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-18.wav"},
     {folder:"Hi-Hats",name:"Detune Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-19.wav",volume:0.835},
     {folder:"Hi-Hats",name:"Fairy Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-20.wav"}
+  ],
+  "pack-trap-toolkit-60": [
+    {folder:"808s",name:"808 Jumpman",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-01.wav"},
+    {folder:"808s",name:"808 Gezin",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-02.wav"},
+    {folder:"808s",name:"Boomin 808 22",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-03.wav"},
+    {folder:"808s",name:"Feel It 808",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-04.wav"},
+    {folder:"808s",name:"Metro 808",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-05.wav"},
+    {folder:"808s",name:"Metro Sub",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-06.wav"},
+    {folder:"808s",name:"X 808",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-07.wav"},
+    {folder:"Percussion",name:"Teck Perc",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-08.wav"},
+    {folder:"Percussion",name:"Gucci Triangle",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-09.wav"},
+    {folder:"Percussion",name:"Knock Knock",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-10.wav"},
+    {folder:"Percussion",name:"Metro Perc 4",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-11.wav"},
+    {folder:"Percussion",name:"Space Cadet Rim",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-12.wav"},
+    {folder:"Percussion",name:"Metro Perc 9",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-13.wav"},
+    {folder:"Percussion",name:"Offset Rim",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-14.wav"},
+    {folder:"FX",name:"AK-47 FX",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-15.wav"},
+    {folder:"FX",name:"Default FX",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-16.wav"},
+    {folder:"FX",name:"Lex Luger FX",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-17.wav"},
+    {folder:"FX",name:"MB FX 9",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-18.wav"},
+    {folder:"FX",name:"Tubular Bell",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-19.wav"},
+    {folder:"FX",name:"Southside FX",src:"assets/audio/hifi-previews/pack-trap-toolkit-60/sample-20.wav"}
   ]
 };

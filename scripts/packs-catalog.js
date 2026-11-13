@@ -6,8 +6,11 @@ window.RAISEUP_PACKS = [
     "description": "Exactly 60 WAVs in three organized folders: 20 claps, 20 tuned 808s, and 20 instrument one-shots. Includes 20 playable previews. Checkout opening soon.",
     "soundCount": 60,
     "plannedPrice": 6.99,
-    "releaseStatus": "preview",
-    "driveFolderId": "12FI5Ydc0Z_JIZC0f-_cOZ_EvJ9i-yfiA"
+    "releaseStatus": "live",
+    "driveFolderId": "12FI5Ydc0Z_JIZC0f-_cOZ_EvJ9i-yfiA",
+    "price": 6.99,
+    "paymentUrl": "https://buy.stripe.com/bJe14mfHlgDm7jze3ncs80O",
+    "stripeLinkId": "plink_1UbLDQBIrTNvx0E32UJem20i"
   },
   {
     "id": "pack-legacy-drums-60",
@@ -16,8 +19,11 @@ window.RAISEUP_PACKS = [
     "description": "Exactly 60 WAVs in three organized folders: 20 kicks, 20 snares, and 20 hi-hats. Includes 20 playable previews. Checkout opening soon.",
     "soundCount": 60,
     "plannedPrice": 6.99,
-    "releaseStatus": "preview",
-    "driveFolderId": "1iW9bDB_sEkJ6wmnJdzvnQgQN8oChTn-k"
+    "releaseStatus": "live",
+    "driveFolderId": "1iW9bDB_sEkJ6wmnJdzvnQgQN8oChTn-k",
+    "price": 6.99,
+    "paymentUrl": "https://buy.stripe.com/6oUaEWeDh4UE9rHe3ncs80P",
+    "stripeLinkId": "plink_1UbLDiBIrTNvx0E3OZEyOvBR"
   },
   {
     "id": "pack-snares-kit-1",
@@ -25,15 +31,20 @@ window.RAISEUP_PACKS = [
     "category": "Drums",
     "description": "A focused collection of WAV snare samples.",
     "paymentUrl": "https://buy.stripe.com/8x2bJ0cv95YI1Zfgbvcs80k",
-    "stripeProductId": "rue_pack_snares_kit_1"
+    "stripeProductId": "rue_pack_snares_kit_1",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-techno",
     "title": "Techno Sound Pack",
     "category": "Electronic",
     "description": "Techno-oriented WAV drum and production sounds.",
-    "paymentUrl": "https://buy.stripe.com/28E7sKgLpbj2bzPf7rcs80l",
-    "stripeProductId": "rue_pack_techno"
+    "paymentUrl": "https://buy.stripe.com/cNi5kC9iXfzibzP0cxcs80R",
+    "stripeProductId": "rue_pack_techno",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLF2BIrTNvx0E3HvlZESx9"
   },
   {
     "id": "pack-drum-bass",
@@ -41,39 +52,53 @@ window.RAISEUP_PACKS = [
     "category": "Electronic",
     "description": "Drum and bass production sounds in WAV format.",
     "paymentUrl": "https://buy.stripe.com/4gM4gy7aP5YI5brf7rcs80m",
-    "stripeProductId": "rue_pack_drum_bass"
+    "stripeProductId": "rue_pack_drum_bass",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-mpc60",
     "title": "MPC60 Drum Collection",
     "category": "Drums",
     "description": "A collection of drum samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/5kQ9AScv9cn6eM1gbvcs80n",
-    "stripeProductId": "rue_pack_mpc60"
+    "paymentUrl": "https://buy.stripe.com/bJe00ibr5aeYfQ51gBcs80Z",
+    "stripeProductId": "rue_pack_mpc60",
+    "price": 19.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLGmBIrTNvx0E34fltHhjM"
   },
   {
     "id": "pack-mpc3000-synth",
     "title": "MPC3000 Synth Drums",
     "category": "Drums",
     "description": "Electronic and synthesized drum samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/cNibJ0br51IsavL5wRcs80o",
-    "stripeProductId": "rue_pack_mpc3000_synth"
+    "paymentUrl": "https://buy.stripe.com/9B6eVc0MraeYavL7EZcs812",
+    "stripeProductId": "rue_pack_mpc3000_synth",
+    "price": 19.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLHEBIrTNvx0E3c58FnBqL"
   },
   {
     "id": "pack-mpc3000-percussion",
     "title": "MPC3000 Percussion",
     "category": "Percussion",
     "description": "A collection of percussion samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/14A8wO52Hcn66fvf7rcs80p",
-    "stripeProductId": "rue_pack_mpc3000_percussion"
+    "paymentUrl": "https://buy.stripe.com/5kQ14mbr54UEcDTe3ncs811",
+    "stripeProductId": "rue_pack_mpc3000_percussion",
+    "price": 14.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLH4BIrTNvx0E3zmhv3QEQ"
   },
   {
     "id": "pack-mpc3000-natural",
     "title": "MPC3000 Natural Drums",
     "category": "Drums",
     "description": "Natural drum sounds for your production toolkit.",
-    "paymentUrl": "https://buy.stripe.com/fZuaEWcv9fzidHX0cxcs80q",
-    "stripeProductId": "rue_pack_mpc3000_natural"
+    "paymentUrl": "https://buy.stripe.com/aFacN452Hbj2dHX8J3cs814",
+    "stripeProductId": "rue_pack_mpc3000_natural",
+    "price": 14.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLHVBIrTNvx0E3rgHHDvpm"
   },
   {
     "id": "pack-mpc2000xl-dry",
@@ -81,15 +106,20 @@ window.RAISEUP_PACKS = [
     "category": "Drums",
     "description": "Dry drum samples in WAV format.",
     "paymentUrl": "https://buy.stripe.com/4gM3cu2Uz9aU1ZfbVfcs80r",
-    "stripeProductId": "rue_pack_mpc2000xl_dry"
+    "stripeProductId": "rue_pack_mpc2000xl_dry",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-mini-moog",
     "title": "Mini Moog Instrument Samples",
     "category": "Instruments",
     "description": "Synthesizer instrument samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/eVq7sKan12Mw47ngbvcs80s",
-    "stripeProductId": "rue_pack_mini_moog"
+    "paymentUrl": "https://buy.stripe.com/aFaeVcbr54UE7jzbVfcs80S",
+    "stripeProductId": "rue_pack_mini_moog",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLFDBIrTNvx0E3aXDwBntO"
   },
   {
     "id": "pack-arp-odyssey",
@@ -97,7 +127,9 @@ window.RAISEUP_PACKS = [
     "category": "Instruments",
     "description": "A collection of synthesizer instrument WAV samples.",
     "paymentUrl": "https://buy.stripe.com/bJe28qfHl3QAavL4sNcs80t",
-    "stripeProductId": "rue_pack_arp_odyssey"
+    "stripeProductId": "rue_pack_arp_odyssey",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-electric-piano",
@@ -105,7 +137,9 @@ window.RAISEUP_PACKS = [
     "category": "Instruments",
     "description": "A collection of electric piano WAV samples.",
     "paymentUrl": "https://buy.stripe.com/14A6oG66LgDmeM1e3ncs80v",
-    "stripeProductId": "rue_pack_electric_piano"
+    "stripeProductId": "rue_pack_electric_piano",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-delicate-guitar",
@@ -113,87 +147,119 @@ window.RAISEUP_PACKS = [
     "category": "Instruments",
     "description": "Guitar instrument samples in WAV format.",
     "paymentUrl": "https://buy.stripe.com/28E6oG2Uz3QA8nDaRbcs80w",
-    "stripeProductId": "rue_pack_delicate_guitar"
+    "stripeProductId": "rue_pack_delicate_guitar",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-grand-piano",
     "title": "Grand Piano Off Mic Samples",
     "category": "Instruments",
     "description": "Grand piano instrument samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/eVq28qeDh3QAcDT3oJcs80x",
-    "stripeProductId": "rue_pack_grand_piano"
+    "paymentUrl": "https://buy.stripe.com/9B600ian11Is8nDgbvcs80T",
+    "stripeProductId": "rue_pack_grand_piano",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLFTBIrTNvx0E37YpFGrqR"
   },
   {
     "id": "pack-electric-bass",
     "title": "Electric Bass Samples",
     "category": "Instruments",
     "description": "Electric bass instrument samples in WAV format.",
-    "paymentUrl": "https://buy.stripe.com/00w5kC66Lbj2cDTbVfcs80y",
-    "stripeProductId": "rue_pack_electric_bass"
+    "paymentUrl": "https://buy.stripe.com/bJeeVcbr572M9rH4sNcs80U",
+    "stripeProductId": "rue_pack_electric_bass",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLFqBIrTNvx0E3Scr7FUSW"
   },
   {
     "id": "pack-tm88",
     "title": "TM88 (Shows the Screen) Drumkit",
     "category": "Drums",
     "description": "Drum samples organized into kicks, snares, claps, hats, percussion, 808s and more.",
-    "paymentUrl": "https://buy.stripe.com/dRmaEW9iX1IsavL5wRcs80z",
-    "stripeProductId": "rue_pack_tm88"
+    "paymentUrl": "https://buy.stripe.com/cNi00i0Mrbj233j9N7cs810",
+    "stripeProductId": "rue_pack_tm88",
+    "price": 19.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLGtBIrTNvx0E3bgH189R5"
   },
   {
     "id": "pack-uk-drill",
     "title": "UK Drill Drum Kit",
     "category": "Drums",
     "description": "UK drill kicks, 808s, claps, hi-hats, snares and percussion.",
-    "paymentUrl": "https://buy.stripe.com/fZu8wO1Qvbj247n7EZcs80A",
-    "stripeProductId": "rue_pack_uk_drill"
+    "paymentUrl": "https://buy.stripe.com/8x28wO7aPbj2dHX3oJcs80W",
+    "stripeProductId": "rue_pack_uk_drill",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLFxBIrTNvx0E3OJgjo6Wz"
   },
   {
     "id": "pack-metro-boomin",
     "title": "The Lunch77 Metro Boomin Drumkit",
     "category": "Drums",
     "description": "A drum sample collection arranged into kicks, 808s, claps, hats, snares and more.",
-    "paymentUrl": "https://buy.stripe.com/dRm3cuan12Mw7jz8J3cs80B",
-    "stripeProductId": "rue_pack_metro_boomin"
+    "paymentUrl": "https://buy.stripe.com/fZu8wO8eT5YI1Zf2kFcs813",
+    "stripeProductId": "rue_pack_metro_boomin",
+    "price": 24.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLHOBIrTNvx0E34bpIhf2e"
   },
   {
     "id": "pack-f1lthy",
     "title": "The Lunch77 F1lthy Drumkit",
     "category": "Drums",
     "description": "Drum samples grouped into kicks, 808s, snares, claps, hats, percussion and effects.",
-    "paymentUrl": "https://buy.stripe.com/7sY6oGbr51Is8nD4sNcs80C",
-    "stripeProductId": "rue_pack_f1lthy"
+    "paymentUrl": "https://buy.stripe.com/6oU7sKeDh1Is1Zff7rcs818",
+    "stripeProductId": "rue_pack_f1lthy",
+    "price": 14.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLIiBIrTNvx0E3aoOsvn9k"
   },
   {
     "id": "pack-nick-mira-drums",
     "title": "Nick Mira (Shows the Screen) Drumkit",
     "category": "Drums",
     "description": "A collection of kicks, 808s, claps, snares, hats, percussion and effects.",
-    "paymentUrl": "https://buy.stripe.com/7sY4gy0Mreve0Vbgbvcs80D",
-    "stripeProductId": "rue_pack_nick_mira_drums"
+    "paymentUrl": "https://buy.stripe.com/14AaEW8eT9aUgU9cZjcs815",
+    "stripeProductId": "rue_pack_nick_mira_drums",
+    "price": 24.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLIBBIrTNvx0E3tJvLFFX7"
   },
   {
     "id": "pack-ny-drill",
     "title": "Ultimate NY Drill Kit",
     "category": "Drums",
     "description": "NY drill 808s, kicks, hi-hats, snares, percussion, fills and effects.",
-    "paymentUrl": "https://buy.stripe.com/28E7sKfHl5YI7jz9N7cs80E",
-    "stripeProductId": "rue_pack_ny_drill"
+    "paymentUrl": "https://buy.stripe.com/eVq00ibr5cn66fv8J3cs819",
+    "stripeProductId": "rue_pack_ny_drill",
+    "price": 14.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLIyBIrTNvx0E3HtqDI633"
   },
   {
     "id": "pack-mira-touch-vol1",
     "title": "The Mira Touch Kit Vol. 1",
     "category": "Drums",
     "description": "A production kit with drum samples, percussion, loops, one-shots and effects.",
-    "paymentUrl": "https://buy.stripe.com/28EeVcbr586QeM17EZcs80F",
-    "stripeProductId": "rue_pack_mira_touch_vol1"
+    "paymentUrl": "https://buy.stripe.com/00w4gy8eT2MwcDT9N7cs80V",
+    "stripeProductId": "rue_pack_mira_touch_vol1",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLFtBIrTNvx0E3J4Ppu56U"
   },
   {
     "id": "pack-kenny-beats",
     "title": "Kenny Beats (Shows the Screen) Drumkit",
     "category": "Drums",
     "description": "A collection of 808s, kicks, claps, hats, snares, percussion, hits and effects.",
-    "paymentUrl": "https://buy.stripe.com/5kQ28q8eT3QAeM1gbvcs80G",
-    "stripeProductId": "rue_pack_kenny_beats"
+    "paymentUrl": "https://buy.stripe.com/14A6oG1Qv86Q8nDf7rcs816",
+    "stripeProductId": "rue_pack_kenny_beats",
+    "price": 19.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLIIBIrTNvx0E3tgR0VVeZ"
   },
   {
     "id": "pack-big-bad",
@@ -201,30 +267,53 @@ window.RAISEUP_PACKS = [
     "category": "Melodies",
     "description": "A melody-focused production collection containing WAV samples.",
     "paymentUrl": "https://buy.stripe.com/eVq5kC52H1Is1Zf0cxcs80I",
-    "stripeProductId": "rue_pack_big_bad"
+    "stripeProductId": "rue_pack_big_bad",
+    "price": 6.99,
+    "releaseStatus": "live"
   },
   {
     "id": "pack-neutron",
     "title": "Kidnxtdoor Neutron",
     "category": "Instruments",
     "description": "Instrument one-shots including bass, bells, brass, guitar, keys, pads, strings and synths.",
-    "paymentUrl": "https://buy.stripe.com/cNifZg3YDbj2gU9e3ncs80J",
-    "stripeProductId": "rue_pack_neutron"
+    "paymentUrl": "https://buy.stripe.com/4gM8wO9iX9aUeM1aRbcs80X",
+    "stripeProductId": "rue_pack_neutron",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLG3BIrTNvx0E33Etv5WrU"
   },
   {
     "id": "pack-keyboard-synth",
     "title": "Keyscape and Omnisphere Sample Collection",
     "category": "Instruments",
     "description": "Keyboard and synthesizer WAV samples, including plucks, bells and piano sounds. Audio samples; no plug-in software included.",
-    "paymentUrl": "https://buy.stripe.com/6oUfZggLp0EobzP1gBcs80K",
-    "stripeProductId": "rue_pack_keyboard_synth"
+    "paymentUrl": "https://buy.stripe.com/00wfZg1Qv0Eo5br6AVcs817",
+    "stripeProductId": "rue_pack_keyboard_synth",
+    "price": 14.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLITBIrTNvx0E3SfzIo0qK"
   },
   {
     "id": "pack-david-vol1",
     "title": "David Samples Vol. 1",
     "category": "Loops",
     "description": "Loops and one-shots, including drum fills and percussion-loop WAV files.",
-    "paymentUrl": "https://buy.stripe.com/00w9AS3YDeve8nD6AVcs80N",
-    "stripeProductId": "rue_pack_david_vol1"
+    "paymentUrl": "https://buy.stripe.com/fZu14mcv9aeYavLgbvcs80Y",
+    "stripeProductId": "rue_pack_david_vol1",
+    "price": 9.99,
+    "releaseStatus": "live",
+    "stripeLinkId": "plink_1UbLGDBIrTNvx0E34iJStWaK"
+  },
+  {
+    "id": "pack-trap-toolkit-60",
+    "title": "Trap Toolkit — 60 WAV Sounds",
+    "category": "Drums",
+    "description": "60 curated WAV files: 20 808s, 20 percussion hits and 20 FX sounds. 20 listening samples. Access delivered by email after checkout.",
+    "soundCount": 60,
+    "price": 6.99,
+    "releaseStatus": "live",
+    "driveFolderId": "1r2HoOo6xCIKsrCGMmHhrT0-KgpJ0TETx",
+    "paymentUrl": "https://buy.stripe.com/14A28qcv91Is47n9N7cs80Q",
+    "stripeLinkId": "plink_1UbLDlBIrTNvx0E388rF0gR5"
   }
 ];

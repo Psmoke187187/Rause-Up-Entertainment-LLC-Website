@@ -31,9 +31,10 @@ window.RAISEUP_PACK_INVENTORY = Object.freeze({
   "pack-bueno-demo": {sourceAudioCount:20, customerDownloadCount:null, resaleRightsVerified:false},
   "pack-david-vol1": {sourceAudioCount:116, customerDownloadCount:null, resaleRightsVerified:false},
   "pack-growth-essentials-60": {sourceAudioCount:60, curatedAudioCount:60, customerDownloadCount:null, rightsAssertedByOwner:true},
-  "pack-legacy-drums-60": {sourceAudioCount:60, curatedAudioCount:60, customerDownloadCount:null, rightsAssertedByOwner:true}
+  "pack-legacy-drums-60": {sourceAudioCount:60, curatedAudioCount:60, customerDownloadCount:null, rightsAssertedByOwner:true},
+  "pack-trap-toolkit-60": {sourceAudioCount:60, curatedAudioCount:60, customerDownloadCount:null, rightsAssertedByOwner:true}
 });
 window.RAISEUP_NEW_LIBRARY_AUDIT = Object.freeze([
   {name:"LOOPS DRUMS SAMPLES",status:"Under review",note:"Nested libraries, third-party packs and ZIP files require redistribution and download checks."},
-  {name:"The Lunch77 Boominati Drumkit-011",status:"Incomplete source",note:"Most category folders are empty; not eligible to sell."}
+  {name:"The Lunch77 Boominati Drumkit-011",status:"Curated",note:"20 808s, 20 percussion sounds and 20 FX organized into the Trap Toolkit 60."}
 ]);

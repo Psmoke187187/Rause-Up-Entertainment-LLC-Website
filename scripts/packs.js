@@ -6,7 +6,7 @@ const grid=document.getElementById('packGrid'), search=document.getElementById('
   audio=document.getElementById('packAudio'), nowPlaying=document.getElementById('packNowPlaying');
 if(!grid||!search||!category||!count)return;
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const price='$6.99', colors=['#f5bd49','#c59cec','#89c9cc','#e6a88c'];
+const colors=['#f5bd49','#c59cec','#89c9cc','#e6a88c'];
 const seen=new Set(), expanded=new Set(), manifest=window.RAISEUP_PACK_PREVIEWS||{};
 function stripeUrl(value){try{const u=new URL(value);return u.protocol==='https:'&&u.hostname==='buy.stripe.com'&&!u.port&&!u.username&&!u.password?u.href:'';}catch{return '';}}
 const packs=(Array.isArray(window.RAISEUP_PACKS)?window.RAISEUP_PACKS:[]).filter(p=>{
@@ -17,6 +17,8 @@ const packs=(Array.isArray(window.RAISEUP_PACKS)?window.RAISEUP_PACKS:[]).filter
   description:typeof p.description==='string'?p.description:'',paymentUrl:stripeUrl(p.paymentUrl),
   soundCount:Number.isInteger(p.soundCount)&&p.soundCount>0?p.soundCount:null,
   plannedPrice:Number.isFinite(p.plannedPrice)&&p.plannedPrice>0?p.plannedPrice:null,
+  price:Number.isFinite(p.price)&&p.price>0?p.price:6.99,
+  sourceCount:window.RAISEUP_PACK_INVENTORY?.[p.id]?.sourceAudioCount||null,
   releaseStatus:p.releaseStatus==='preview'?'preview':'live',
   seed:Array.from(p.id).reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,7),
   samples:(Array.isArray(manifest[p.id])?manifest[p.id]:[]).filter(s=>
@@ -45,6 +47,7 @@ function sampleGroups(p,term,matchedPack){
   ).join('');
 }
 function card(p,term){
+  const price='$'+p.price.toFixed(2);
   const hay=[p.title,p.category,p.description].join(' ').toLowerCase(),matchedPack=!term||hay.includes(term);
   const matchedSamples=p.samples.filter(s=>!keyFilter?.value||s.key===keyFilter.value);
   const availability=p.samples.length?'<span class="sample-available">'+p.samples.length+' samples to hear</span>':'<span class="sample-unavailable">Audio previews coming soon</span>';
@@ -53,7 +56,7 @@ function card(p,term){
     '<div id="preview-'+esc(p.id)+'" class="pack-samples"'+(expanded.has(p.id)?'':' hidden')+'>'+
       (sampleGroups(p,term,matchedPack)||'<p>No sound previews match this filter.</p>')+
     '</div>':'';
-  const detail=p.soundCount?'<p class="pack-confirmed-count">'+p.soundCount+' WAV files curated · '+p.samples.length+' previews</p>':'';
+  const detail=p.soundCount?'<p class="pack-confirmed-count">'+p.soundCount+' WAV files curated · '+p.samples.length+' previews</p>' :p.sourceCount?'<p class="pack-confirmed-count">'+p.sourceCount+' source audio files inventoried · '+p.samples.length+' previews</p>':'';
   const buy=p.paymentUrl?'<a class="btn primary pack-buy" href="'+esc(p.paymentUrl)+'" target="_blank" rel="noopener" data-product-id="'+esc(p.id)+'" aria-label="Buy '+esc(p.title)+' for '+price+'">Buy full pack <span>'+price+' <span aria-hidden="true">↗</span></span></a>' :p.releaseStatus==='preview'?'<a class="btn pack-buy pack-soon-buy" href="mailto:raiseupentllc@gmail.com?subject='+encodeURIComponent('Sound pack launch: '+p.title)+'" aria-label="Ask when '+esc(p.title)+' will be available">Ask about launch <span>Coming soon</span></a>':'<button class="btn pack-buy" type="button" disabled>Checkout unavailable</button>';
   return '<article class="product-card pack-card" id="'+esc(p.id)+'" data-product-id="'+esc(p.id)+'">'+artwork(p)+'<div class="pack-body"><p class="pack-category">'+esc(p.category)+'</p><h2><a href="#'+esc(p.id)+'">'+esc(p.title)+'</a></h2>'+(p.description?'<p class="pack-description">'+esc(p.description)+'</p>':'')+detail+'<div class="sample-status">'+availability+'</div>'+preview+buy+'</div></article>';
 }

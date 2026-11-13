@@ -33,7 +33,7 @@
 .shop-zone-heading{max-width:850px;margin:0 0 18px}
 .shop-zone-heading h2{font-size:clamp(24px,3.3vw,38px);line-height:1.15;margin:0 0 10px}
 .shop-zone-heading p{color:#c8c4ce;line-height:1.6;font-size:15px;margin:0 0 10px}
-.shop-tier-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.shop-tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .shop-tier{border:1px solid #ffffff28;border-radius:18px;background:linear-gradient(155deg,#1d1c29,#11111a);padding:23px;min-width:0}
 .shop-tier.featured{border-color:#f5bd4980;background:linear-gradient(155deg,#352915,#15131b)}
 .shop-tier-eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#e9be6c;font-weight:800}
@@ -68,42 +68,43 @@
 
 </style>
 <script defer src="scripts/analytics.js?v=packs-20261111"></script>
-<script defer src="scripts/packs-catalog.js?v=20261113-curated60"></script>
-<script defer src="scripts/pack-previews.js?v=20261113-gain-qc"></script>
-<script defer src="scripts/pack-inventory.js?v=20261113-curated60"></script>
-<script defer src="scripts/packs.js?v=20261113-gain-qc"></script>
+<script defer src="scripts/packs-catalog.js?v=20261113-size-price-live"></script>
+<script defer src="scripts/pack-previews.js?v=20261113-trap60-live"></script>
+<script defer src="scripts/pack-inventory.js?v=20261113-trap60-live"></script>
+<script defer src="scripts/packs.js?v=20261113-dynamic-prices"></script>
 <script defer src="scripts/pack-bundles.js?v=20261113-curated60"></script>
 </head><body>
 <nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><span>Raise Up</span> Entertainment</a><div><a href="beats.html">Beats</a><a href="apparel.html">Apparel</a><a href="packs.html" aria-current="page">Sound Packs</a><a href="licensing.html">Licensing</a><a href="mailto:raiseupentllc@gmail.com">Contact</a></div></nav>
 <main class="page packs-page">
-<header class="pack-hero"><p class="eyebrow">The Raise Up Sound Library</p><h1>Build your next sound.</h1><p class="pack-intro">Explore drums, melodies, vocals and instrument samples for your next session. Choose your collection and check out through Stripe. Individual packs currently check out at <strong>$6.99</strong>; our new size-based tiers and bundles are in preparation.</p><div class="pack-promise" aria-label="Store information"><span>28 sound pack listings</span><span>Individual sound previews</span><span>Size-based tiers coming soon</span><span>Secure Stripe checkout</span></div></header>
+<header class="pack-hero"><p class="eyebrow">The Raise Up Sound Library</p><h1>Build your next sound.</h1><p class="pack-intro">Explore drums, melodies, vocals and instrument samples for your next session. Choose your collection and check out through Stripe. Shop verified-price collections from <strong>$6.99</strong> to <strong>$24.99</strong>, plus ready-made bundles. Browse the sounds, choose your pack, and check out through Stripe.</p><div class="pack-promise" aria-label="Store information"><span>29 sound pack listings</span><span>Individual sound previews</span><span>Size-based prices live</span><span>Secure Stripe checkout</span></div></header>
 
 <section class="shop-tier-zone" aria-labelledby="shopTierHeading">
-  <div class="shop-zone-heading"><p class="eyebrow">COMING NEXT / PRICING BY COLLECTION SIZE</p><h2 id="shopTierHeading">More sounds. More options.</h2><p>We're organizing the full download libraries into fair-size collections. You can already audition individual previews below.</p></div>
+  <div class="shop-zone-heading"><p class="eyebrow">PRICING BY COLLECTION SIZE</p><h2 id="shopTierHeading">More sounds. Better value.</h2><p>Every listed source library contains at least 60 audio files. The three new curated packs have 60 WAV files each. Browse audio previews and check out with Stripe.</p></div>
   <div class="shop-tier-grid">
-    <article class="shop-tier"><span class="shop-tier-eyebrow">Starter</span><h3>Quick inspiration</h3><p class="shop-tier-price">$3.99</p><p class="shop-tier-size">20–49 sounds</p><p class="shop-tier-note">Planned $2.99 promotional offers. Great for trying a new sound.</p></article>
-    <article class="shop-tier featured"><span class="shop-tier-eyebrow">Most accessible</span><h3>Standard</h3><p class="shop-tier-price">$6.99</p><p class="shop-tier-size">60–99 sounds</p><p class="shop-tier-note">The proposed everyday value tier, with 20 playable previews.</p></article>
-    <article class="shop-tier"><span class="shop-tier-eyebrow">For regular creators</span><h3>Pro</h3><p class="shop-tier-price">$9.99</p><p class="shop-tier-size">100–199 sounds</p><p class="shop-tier-note">More production choices in a single download.</p></article>
-    <article class="shop-tier"><span class="shop-tier-eyebrow">Deep collection</span><h3>Ultimate</h3><p class="shop-tier-price">$14.99+</p><p class="shop-tier-size">200+ sounds</p><p class="shop-tier-note">Larger libraries after curation and rights checks.</p></article>
-  </div>
-  <p class="shop-coming-note"><strong>Launch-pricing preview:</strong> These are proposed tiers, not active checkout prices. Existing individual-pack links currently charge $6.99. New prices activate only once the packaged download count, licensing, delivery, and matching Stripe checkout are verified.</p>
+<article class="shop-tier featured"><span class="shop-tier-eyebrow">Standard</span><h3>Essential Collection</h3><p class="shop-tier-price">$6.99</p><p class="shop-tier-size">60–99 source sounds</p><p class="shop-tier-note">The starting point for producers. All 60-WAV curated packs land here.</p></article>
+<article class="shop-tier"><span class="shop-tier-eyebrow">Pro</span><h3>Extended Library</h3><p class="shop-tier-price">$9.99</p><p class="shop-tier-size">100–199 source sounds</p><p class="shop-tier-note">Broader palettes for beat-making and arranging.</p></article>
+<article class="shop-tier"><span class="shop-tier-eyebrow">Ultimate</span><h3>Large Sound Vault</h3><p class="shop-tier-price">$14.99</p><p class="shop-tier-size">200–499 source sounds</p><p class="shop-tier-note">Larger inventory organized into one convenient collection.</p></article>
+<article class="shop-tier"><span class="shop-tier-eyebrow">Studio Pro</span><h3>Studio Vault</h3><p class="shop-tier-price">$19.99</p><p class="shop-tier-size">500–999 source sounds</p><p class="shop-tier-note">Expanded libraries at a single purchase price.</p></article>
+<article class="shop-tier"><span class="shop-tier-eyebrow">Mega</span><h3>Producer Archive</h3><p class="shop-tier-price">$24.99</p><p class="shop-tier-size">1,000+ source sounds</p><p class="shop-tier-note">Our biggest organized sound libraries.</p></article>
+</div>
+  <p class="shop-coming-note"><strong>Secure checkout is live.</strong> Prices displayed on product cards match the linked Stripe checkout. Older pack counts are based on audio files in their source folders, not verified ZIP counts. Digital download access is emailed after payment verification.</p>
 </section>
 <section class="shop-bundle-zone" id="bundleDeals" aria-labelledby="shopBundleHeading">
-  <div class="shop-zone-heading"><p class="eyebrow">BUILD YOUR COLLECTION</p><h2 id="shopBundleHeading">Bundle up and save.</h2><p>Bundle pricing is in preparation. Choose collections to request a custom checkout after the final sound counts and download rights are confirmed.</p></div>
+  <div class="shop-zone-heading"><p class="eyebrow">BUILD YOUR COLLECTION</p><h2 id="shopBundleHeading">Bundle up and save.</h2><p>Buy one of our preselected bundles through Stripe, or request a different combination below.</p></div>
   <div class="shop-bundle-deals">
-    <article class="shop-bundle-deal"><h3>Producer Starter Bundle</h3><strong>$17.99</strong><p>Proposed price for 3 Standard packs · Usually $20.97 separately.</p></article>
-    <article class="shop-bundle-deal"><h3>Producer Collection</h3><strong>$27.99</strong><p>Proposed price for 5 Standard packs · Usually $34.95 separately.</p></article>
+    <article class="shop-bundle-deal"><h3>Producer Starter Bundle</h3><strong>$17.99</strong><p>Growth Essentials, Legacy Drum Essentials and Trap Toolkit: 180 curated WAVs.</p><p><a class="btn primary" href="https://buy.stripe.com/dRm00i0MrgDm0Vbe3ncs81a" target="_blank" rel="noopener" data-product-id="bundle-producer-starter-3">Buy this 3-pack — $17.99</a></p></article>
+    <article class="shop-bundle-deal"><h3>Producer Collection</h3><strong>$27.99</strong><p>Growth Essentials, Legacy Drum Essentials, Trap Toolkit, Snares Kit 1, and Drum and Bass.</p><p><a class="btn primary" href="https://buy.stripe.com/14AdR8eDh2MwfQ51gBcs81b" target="_blank" rel="noopener" data-product-id="bundle-producer-collection-5">Buy this 5-pack — $27.99</a></p></article>
   </div>
   <div id="bundleBuilder" class="bundle-builder">
-    <label for="bundleSize">Build your bundle request</label>
+    <label for="bundleSize">Request a custom bundle</label>
     <select id="bundleSize"><option value="3">3 Standard packs — proposed $17.99</option><option value="5">5 Standard packs — proposed $27.99</option></select>
-    <p class="shop-coming-note">Selection is based on audited Drive source-file counts, not verified purchasable ZIP contents. This form emails an inquiry; it does not charge you or reserve a bundle.</p>
+    <p class="shop-coming-note">These fixed Stripe bundles contain the packs named above. For a different combination, use the selector below to email a request (no payment taken). Available choices are based on the source-folder audit.</p>
     <div id="bundleChoiceGrid" class="bundle-choice-grid" aria-label="Select sound packs for your bundle"></div>
     <p id="bundleStatus" class="bundle-status" aria-live="polite">Loading bundle options…</p>
     <button type="button" id="bundleRequest" class="bundle-request" disabled>Choose your packs to request</button>
   </div>
 </section>
-<section class="shop-inventory-zone" aria-labelledby="newSourcesTitle"><h2 id="newSourcesTitle">New collections & source libraries</h2><p><strong>Growth Essentials</strong> and <strong>Legacy Drum Essentials</strong> now have 60 carefully selected WAV files each and 20 listening samples. Their secure checkout and delivery are being prepared. Four undersized collections have been removed from the active catalog until they reach 60 sounds.</p><p><strong>LOOPS DRUMS SAMPLES</strong> and <strong>The Lunch77 Boominati Drumkit-011</strong> have been located in the Raise Up Drive. They are being checked for actual audio content, duplicate material, and permission to redistribute. They are not new paid listings yet.</p></section>
+<section class="shop-inventory-zone" aria-labelledby="newSourcesTitle"><h2 id="newSourcesTitle">New collections & source libraries</h2><p><strong>Growth Essentials, Legacy Drum Essentials, and Trap Toolkit</strong> have 60 curated WAVs each, 20 listening previews, and individual $6.99 Stripe checkouts. Four undersized collections were removed and their payment links deactivated.</p><p>The Boominati upload was curated into Trap Toolkit; <strong>LOOPS DRUMS SAMPLES</strong> remains source material for future packs.</p></section>
 
 <div class="pack-toolbar" role="search" aria-label="Find sound packs"><label class="pack-field"><span>Search the library</span><input id="packSearch" type="search" placeholder="Search packs, sounds, folders, keys or BPM" autocomplete="off"></label><label class="pack-field"><span>Category</span><select id="packCategory"><option value="">All categories</option></select></label><label class="pack-field"><span>Musical key</span><select id="packKey"><option value="">All labeled keys</option></select></label></div>
 <output id="packCount" class="pack-count" role="status" aria-live="polite" aria-atomic="true">Loading the sound library…</output>
@@ -111,6 +112,6 @@
 <section id="packGrid" class="shop-grid pack-grid" aria-label="Sound pack catalog"></section>
 <section id="packPlayer" class="pack-player" aria-label="Audio sample player" hidden><div><strong id="packNowPlaying">Choose a sound to preview</strong><p>Listen to available samples. Paid download counts are being audited separately from the preview list.</p></div><audio id="packAudio" controls preload="none" aria-label="Sound pack sample preview"></audio></section>
 <noscript><p>Please enable JavaScript to view the sound pack catalog, or contact <a href="mailto:raiseupentllc@gmail.com">raiseupentllc@gmail.com</a> for help.</p></noscript>
-<section class="pack-help" aria-labelledby="packHelpTitle"><h2 id="packHelpTitle">From the library to your next session.</h2><p>Your purchase includes the audio files in the selected collection. Software, installers, legacy program files and project files are excluded. Preview counts are not the number of sounds delivered in the full collection. New tier sizes and bundle offers shown above are not yet active checkouts.</p><p>Download instructions are sent to your checkout email after successful payment verification. Delivery is processed periodically, rather than instantly at checkout. Private Google Drive links may require a Google account or email verification. Keep your Stripe receipt for your records.</p><p>Questions about a pack or an order? <a href="mailto:raiseupentllc@gmail.com?subject=Sound%20Pack%20Question">Email Raise Up Entertainment.</a></p></section>
+<section class="pack-help" aria-labelledby="packHelpTitle"><h2 id="packHelpTitle">From the library to your next session.</h2><p>Your purchase includes the audio files in the selected collection. Software, installers, legacy program files and project files are excluded. Preview counts are not the number of sounds delivered in the full collection. Displayed individual and bundle checkout prices are active. Download access is delivered by email after verification, not instantly at checkout.</p><p>Download instructions are sent to your checkout email after successful payment verification. Delivery is processed periodically, rather than instantly at checkout. Private Google Drive links may require a Google account or email verification. Keep your Stripe receipt for your records.</p><p>Questions about a pack or an order? <a href="mailto:raiseupentllc@gmail.com?subject=Sound%20Pack%20Question">Email Raise Up Entertainment.</a></p></section>
 </main><footer class="footer"><strong>Raise Up Entertainment LLC</strong><p>Beats • Sound Packs • Apparel • Mixing • Mastering</p><p><a href="mailto:raiseupentllc@gmail.com">raiseupentllc@gmail.com</a></p><p class="privacy-links"><a href="privacy.html">Privacy</a> · <button type="button" data-analytics-preferences>Analytics preferences</button></p></footer>
 </body></html>
