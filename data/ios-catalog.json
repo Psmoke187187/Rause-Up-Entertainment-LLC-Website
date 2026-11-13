@@ -1,0 +1,836 @@
+{
+  "version": 1,
+  "origin": "https://raiseupentertainmentllc.com",
+  "updatedAt": "2026-11-12",
+  "beats": [
+    {
+      "id": "club",
+      "title": "Club",
+      "genre": "Hip-Hop",
+      "mood": "High-energy club-ready production",
+      "cover": "assets/img/covers/club-cover-v2.webp",
+      "preview": "assets/audio/previews/club-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/cNi7sKdzd2MwdHXcZjcs800"
+    },
+    {
+      "id": "dark-detroit",
+      "title": "Dark Detroit",
+      "genre": "Detroit Rap",
+      "mood": "Dark, aggressive street energy",
+      "cover": "assets/img/covers/dark-detroit-cover-v2.webp",
+      "preview": "assets/audio/previews/dark-detroit-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/8x26oGcv95YIavLaRbcs801"
+    },
+    {
+      "id": "motovation",
+      "title": "Motovation",
+      "genre": "Trap",
+      "mood": "Driven, cinematic motivational energy",
+      "cover": "assets/img/covers/motovation-cover-v2.webp",
+      "preview": "assets/audio/previews/motovation-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/cNi9AScv9cn633jcZjcs802"
+    },
+    {
+      "id": "bad-bitch",
+      "title": "Bad B*tch",
+      "genre": "Trap",
+      "mood": "Bold, glamorous, high-status energy",
+      "cover": "assets/img/covers/bad-bitch-cover.webp",
+      "preview": "assets/audio/previews/bad-bitch-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/6oU4gygLpfzi9rHbVfcs803"
+    },
+    {
+      "id": "country-hore-beat",
+      "title": "Country Hore Beat",
+      "genre": "Country Trap",
+      "mood": "Rebellious western crossover energy",
+      "cover": "assets/img/covers/country-hore-beat-cover.webp",
+      "preview": "assets/audio/previews/country-hore-beat-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/7sY5kCan1dra1Zf9N7cs804"
+    },
+    {
+      "id": "the-next-hit",
+      "title": "The Next Hit",
+      "genre": "Hip-Hop",
+      "mood": "Bright, energetic production built for a standout record",
+      "cover": "assets/img/covers/the-next-hit.webp",
+      "preview": "assets/audio/previews/the-next-hit-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/00waEWgLp0Eo6fv8J3cs805"
+    },
+    {
+      "id": "violin-project",
+      "title": "Violin Project",
+      "genre": "Trap",
+      "mood": "Dark, dramatic strings with heavy cinematic energy",
+      "cover": "assets/img/covers/violin-project.webp",
+      "preview": "assets/audio/previews/violin-project-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/14A3cu1Qv1Is7jze3ncs806"
+    },
+    {
+      "id": "swervin",
+      "title": "Swervin",
+      "genre": "Hip-Hop",
+      "mood": "Heavy low end with a steady cruising pulse",
+      "cover": "assets/img/covers/swervin.webp",
+      "preview": "assets/audio/previews/swervin-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/9B69AS1Qv72M8nDaRbcs807"
+    },
+    {
+      "id": "mafia-drill",
+      "title": "Mafia Drill",
+      "genre": "Drill",
+      "mood": "144 BPM drill production with commanding low-end energy",
+      "cover": "assets/img/covers/mafia-drill.webp",
+      "preview": "assets/audio/previews/mafia-drill-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/dRmdR852HeveeM1e3ncs808"
+    },
+    {
+      "id": "western-drill",
+      "title": "Western Drill",
+      "genre": "Country Drill",
+      "mood": "A rugged western-drill crossover with heavy low end",
+      "cover": "assets/img/covers/western-drill.webp",
+      "preview": "assets/audio/previews/western-drill-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/aFa6oG66L86Q7jzaRbcs809"
+    },
+    {
+      "id": "hard-hopes",
+      "title": "Hard Hopes",
+      "genre": "Hip-Hop",
+      "mood": "Weighty hip-hop production with a determined mood",
+      "cover": "assets/img/covers/hard-hopes.webp",
+      "preview": "assets/audio/previews/hard-hopes-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/fZu9AS3YD86Q8nDe3ncs80a"
+    },
+    {
+      "id": "taliban",
+      "title": "Taliban",
+      "genre": "Hip-Hop",
+      "mood": "Heavy low end and a driving rhythmic pulse",
+      "cover": "assets/img/covers/taliban.webp",
+      "preview": "assets/audio/previews/taliban-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/cNi9ASdzddraeM1aRbcs80b"
+    },
+    {
+      "id": "streets-of-new-york",
+      "title": "Streets of New York",
+      "genre": "Hip-Hop",
+      "mood": "Urban hip-hop production with a firm low-end groove",
+      "cover": "assets/img/covers/streets-of-new-york.webp",
+      "preview": "assets/audio/previews/streets-of-new-york-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/14AbJ052Heve6fvgbvcs80c"
+    },
+    {
+      "id": "night-b4-halloween",
+      "title": "Night B4 Halloween",
+      "genre": "Hip-Hop",
+      "mood": "Shadowy production with a suspenseful late-night mood",
+      "cover": "assets/img/covers/night-b4-halloween.webp",
+      "preview": "assets/audio/previews/night-b4-halloween-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/8x27sKdzd4UE5br7EZcs80d"
+    },
+    {
+      "id": "get-back",
+      "title": "Get Back",
+      "genre": "Hip-Hop",
+      "mood": "Forceful low-end production built for a comeback record",
+      "cover": "assets/img/covers/get-back.webp",
+      "preview": "assets/audio/previews/get-back-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/9B6aEWbr54UE33je3ncs80e"
+    },
+    {
+      "id": "twisted-minds",
+      "title": "Twisted Minds",
+      "genre": "Hip-Hop",
+      "mood": "Hypnotic production with a twisted, off-center mood",
+      "cover": "assets/img/covers/twisted-minds.webp",
+      "preview": "assets/audio/previews/twisted-minds-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/28E8wO52HevebzP7EZcs80f"
+    },
+    {
+      "id": "hero",
+      "title": "Hero",
+      "genre": "Hip-Hop",
+      "mood": "Bold 122 BPM production in E minor",
+      "cover": "assets/img/covers/hero.webp",
+      "preview": "assets/audio/previews/hero-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/fZu14man19aU5brgbvcs80g"
+    },
+    {
+      "id": "music-box",
+      "title": "Music Box",
+      "genre": "Hip-Hop",
+      "mood": "Hypnotic hip-hop production with a weighty low-end pulse",
+      "cover": "assets/img/covers/music-box.webp",
+      "preview": "assets/audio/previews/music-box-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/14AcN466L9aUgU9cZjcs80h"
+    },
+    {
+      "id": "dark-drill",
+      "title": "Dark Drill",
+      "genre": "Drill",
+      "mood": "Dark drill production with a deep, insistent groove",
+      "cover": "assets/img/covers/dark-drill.webp",
+      "preview": "assets/audio/previews/dark-drill-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/aFabJ01QvevecDT1gBcs80i"
+    },
+    {
+      "id": "viking",
+      "title": "Viking",
+      "genre": "Hip-Hop",
+      "mood": "Heavy, cinematic hip-hop with a relentless pulse",
+      "cover": "assets/img/covers/viking.webp",
+      "preview": "assets/audio/previews/viking-preview-30s.mp3?v=midpoint-20261110",
+      "price": "$100",
+      "checkout": "https://buy.stripe.com/bJecN4eDh72McDT3oJcs80j"
+    }
+  ],
+  "packs": [
+    {
+      "id": "pack-snares-kit-1",
+      "title": "Snares Kit 1",
+      "category": "Drums",
+      "description": "A focused collection of WAV snare samples.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/8x2bJ0cv95YI1Zfgbvcs80k",
+      "previews": [
+        {
+          "folder": "Snares",
+          "name": "SNARES 01",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-01.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 02",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-02.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 03",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-03.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 04",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-04.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 05",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-05.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 06",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-06.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 07",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-07.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 08",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-08.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 09",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-09.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "SNARES 10",
+          "src": "assets/audio/hifi-previews/pack-snares-kit-1/sample-10.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-techno",
+      "title": "Techno Sound Pack",
+      "category": "Electronic",
+      "description": "Techno-oriented WAV drum and production sounds.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/28E7sKgLpbj2bzPf7rcs80l",
+      "previews": [
+        {
+          "folder": "Hi Hats",
+          "name": "Techno Hat 12",
+          "src": "assets/audio/pack-previews/pack-techno/hat-12.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-drum-bass",
+      "title": "Drum and Bass Sound Pack",
+      "category": "Electronic",
+      "description": "Drum and bass production sounds in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/4gM4gy7aP5YI5brf7rcs80m",
+      "previews": [
+        {
+          "folder": "Kicks",
+          "name": "Drum & Bass Kick 03",
+          "src": "assets/audio/pack-previews/pack-drum-bass/kick-03.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mpc60",
+      "title": "MPC60 Drum Collection",
+      "category": "Drums",
+      "description": "A collection of drum samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/5kQ9AScv9cn6eM1gbvcs80n",
+      "previews": [
+        {
+          "folder": "Drums",
+          "name": "MPC60 Snare 1",
+          "src": "assets/audio/pack-previews/pack-mpc60/snare-01.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mpc3000-synth",
+      "title": "MPC3000 Synth Drums",
+      "category": "Drums",
+      "description": "Electronic and synthesized drum samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/cNibJ0br51IsavL5wRcs80o",
+      "previews": [
+        {
+          "folder": "Synth Drums",
+          "name": "MPC3000 Synth BD1",
+          "src": "assets/audio/pack-previews/pack-mpc3000-synth/synth-bd1.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mpc3000-percussion",
+      "title": "MPC3000 Percussion",
+      "category": "Percussion",
+      "description": "A collection of percussion samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/14A8wO52Hcn66fvf7rcs80p",
+      "previews": [
+        {
+          "folder": "Percussion",
+          "name": "MPC3000 Blox",
+          "src": "assets/audio/pack-previews/pack-mpc3000-percussion/blox.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mpc3000-natural",
+      "title": "MPC3000 Natural Drums",
+      "category": "Drums",
+      "description": "Natural drum sounds for your production toolkit.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/fZuaEWcv9fzidHX0cxcs80q",
+      "previews": [
+        {
+          "folder": "Natural Drums",
+          "name": "MPC3000 Hi Hat",
+          "src": "assets/audio/pack-previews/pack-mpc3000-natural/hi-hat.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mpc2000xl-dry",
+      "title": "MPC2000XL Dry Drums",
+      "category": "Drums",
+      "description": "Dry drum samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/4gM3cu2Uz9aU1ZfbVfcs80r",
+      "previews": [
+        {
+          "folder": "Dry Drums",
+          "name": "MPC2000XL Tight Kick",
+          "src": "assets/audio/pack-previews/pack-mpc2000xl-dry/tight-kick.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mini-moog",
+      "title": "Mini Moog Instrument Samples",
+      "category": "Instruments",
+      "description": "Synthesizer instrument samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/eVq7sKan12Mw47ngbvcs80s",
+      "previews": [
+        {
+          "folder": "Synth Notes",
+          "name": "Mini Moog G Note",
+          "src": "assets/audio/pack-previews/pack-mini-moog/moog-g.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-arp-odyssey",
+      "title": "ARP Odyssey Instrument Samples",
+      "category": "Instruments",
+      "description": "A collection of synthesizer instrument WAV samples.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/bJe28qfHl3QAavL4sNcs80t",
+      "previews": [
+        {
+          "folder": "Synth Notes",
+          "name": "ARP Odyssey C4",
+          "src": "assets/audio/pack-previews/pack-arp-odyssey/arp-c4.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-wurlitzer",
+      "title": "Wurlitzer Electric Piano Samples",
+      "category": "Instruments",
+      "description": "Electric piano instrument samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/aFacN42Uz1Is1ZfaRbcs80u",
+      "previews": [
+        {
+          "folder": "Electric Piano",
+          "name": "Wurlitzer 200A",
+          "src": "assets/audio/pack-previews/pack-wurlitzer/wurlitzer-200a.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-electric-piano",
+      "title": "Electric Piano Samples",
+      "category": "Instruments",
+      "description": "A collection of electric piano WAV samples.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/14A6oG66LgDmeM1e3ncs80v",
+      "previews": [
+        {
+          "folder": "Electric Piano",
+          "name": "Rhodes Classic",
+          "src": "assets/audio/pack-previews/pack-electric-piano/rhodes-classic.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-delicate-guitar",
+      "title": "Delicate Guitar Samples",
+      "category": "Instruments",
+      "description": "Guitar instrument samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/28E6oG2Uz3QA8nDaRbcs80w",
+      "previews": [
+        {
+          "folder": "Guitar Notes",
+          "name": "Electric Guitar A4",
+          "src": "assets/audio/pack-previews/pack-delicate-guitar/guitar-a4.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-grand-piano",
+      "title": "Grand Piano Off Mic Samples",
+      "category": "Instruments",
+      "description": "Grand piano instrument samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/eVq28qeDh3QAcDT3oJcs80x",
+      "previews": [
+        {
+          "folder": "Piano Notes",
+          "name": "Grand Piano C7",
+          "src": "assets/audio/pack-previews/pack-grand-piano/piano-c7.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-electric-bass",
+      "title": "Electric Bass Samples",
+      "category": "Instruments",
+      "description": "Electric bass instrument samples in WAV format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/00w5kC66Lbj2cDTbVfcs80y",
+      "previews": [
+        {
+          "folder": "Bass Notes",
+          "name": "Bass C3",
+          "src": "assets/audio/pack-previews/pack-electric-bass/bass-c3.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-tm88",
+      "title": "TM88 (Shows the Screen) Drumkit",
+      "category": "Drums",
+      "description": "Drum samples organized into kicks, snares, claps, hats, percussion, 808s and more.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/dRmaEW9iX1IsavL5wRcs80z",
+      "previews": [
+        {
+          "folder": "Kicks",
+          "name": "TM88 Kick",
+          "src": "assets/audio/pack-previews/pack-tm88/tm88-kick.wav"
+        },
+        {
+          "folder": "Kicks",
+          "name": "Zay Drop Kick",
+          "src": "assets/audio/pack-previews/pack-tm88/zay-drop-kick.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "Trackman Snare",
+          "src": "assets/audio/pack-previews/pack-tm88/trackman-snare.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-uk-drill",
+      "title": "UK Drill Drum Kit",
+      "category": "Drums",
+      "description": "UK drill kicks, 808s, claps, hi-hats, snares and percussion.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/fZu8wO1Qvbj247n7EZcs80A",
+      "previews": [
+        {
+          "folder": "808",
+          "name": "UK Drill - 808 (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-01.wav"
+        },
+        {
+          "folder": "Claps",
+          "name": "UK Drill - Clap (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-02.wav"
+        },
+        {
+          "folder": "808",
+          "name": "UK Drill - 808 (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-03.wav"
+        },
+        {
+          "folder": "Claps",
+          "name": "UK Drill - Clap (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-04.wav"
+        },
+        {
+          "folder": "Hi-Hats",
+          "name": "UK Drill - Hat (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-05.wav"
+        },
+        {
+          "folder": "Kicks",
+          "name": "UK Drill - Kick (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-06.wav"
+        },
+        {
+          "folder": "Hi-Hats",
+          "name": "UK Drill - Hat (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-07.wav"
+        },
+        {
+          "folder": "Kicks",
+          "name": "UK Drill - Kick (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-08.wav"
+        },
+        {
+          "folder": "Percussion",
+          "name": "UK Drill - Perc (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-09.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "UK Drill - Snare (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-10.wav"
+        },
+        {
+          "folder": "Percussion",
+          "name": "UK Drill - Perc (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-11.wav"
+        },
+        {
+          "folder": "Snares",
+          "name": "UK Drill - Snare (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-12.wav"
+        },
+        {
+          "folder": "Vox",
+          "name": "UK Drill - Vox (1)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-13.wav"
+        },
+        {
+          "folder": "Vox",
+          "name": "UK Drill - Vox (2)",
+          "src": "assets/audio/hifi-previews/pack-uk-drill/sample-14.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-metro-boomin",
+      "title": "The Lunch77 Metro Boomin Drumkit",
+      "category": "Drums",
+      "description": "A drum sample collection arranged into kicks, 808s, claps, hats, snares and more.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/dRm3cuan12Mw7jz8J3cs80B",
+      "previews": [
+        {
+          "folder": "Kicks",
+          "name": "Metro Kick",
+          "src": "assets/audio/pack-previews/pack-metro-boomin/metro-kick.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-f1lthy",
+      "title": "The Lunch77 F1lthy Drumkit",
+      "category": "Drums",
+      "description": "Drum samples grouped into kicks, 808s, snares, claps, hats, percussion and effects.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/7sY6oGbr51Is8nD4sNcs80C",
+      "previews": [
+        {
+          "folder": "Kicks",
+          "name": "WOD Kick",
+          "src": "assets/audio/pack-previews/pack-f1lthy/wod-kick.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-nick-mira-drums",
+      "title": "Nick Mira (Shows the Screen) Drumkit",
+      "category": "Drums",
+      "description": "A collection of kicks, 808s, claps, snares, hats, percussion and effects.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/7sY4gy0Mreve0Vbgbvcs80D",
+      "previews": [
+        {
+          "folder": "Kicks",
+          "name": "Trapsylvania Kick",
+          "src": "assets/audio/pack-previews/pack-nick-mira-drums/trapsylvania-kick.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-ny-drill",
+      "title": "Ultimate NY Drill Kit",
+      "category": "Drums",
+      "description": "NY drill 808s, kicks, hi-hats, snares, percussion, fills and effects.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/28E7sKfHl5YI7jz9N7cs80E",
+      "previews": [
+        {
+          "folder": "Snares",
+          "name": "White T Snare",
+          "src": "assets/audio/pack-previews/pack-ny-drill/white-t-snare.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-mira-touch-vol1",
+      "title": "The Mira Touch Kit Vol. 1",
+      "category": "Drums",
+      "description": "A production kit with drum samples, percussion, loops, one-shots and effects.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/28EeVcbr586QeM17EZcs80F",
+      "previews": [
+        {
+          "folder": "Kicks",
+          "name": "Reloaded Kick",
+          "src": "assets/audio/pack-previews/pack-mira-touch-vol1/reloaded-kick.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-kenny-beats",
+      "title": "Kenny Beats (Shows the Screen) Drumkit",
+      "category": "Drums",
+      "description": "A collection of 808s, kicks, claps, hats, snares, percussion, hits and effects.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/5kQ28q8eT3QAeM1gbvcs80G",
+      "previews": [
+        {
+          "folder": "Snares",
+          "name": "Kenny Snare",
+          "src": "assets/audio/pack-previews/pack-kenny-beats/kenny-snare.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-bakesale",
+      "title": "Nick Mira Bakesale Melody Pack",
+      "category": "Melodies",
+      "description": "Melody samples in WAV and MP3 formats. Tempo information appears in many filenames.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/3cIaEWfHlbj2gU9f7rcs80H",
+      "previews": [
+        {
+          "folder": "Melody Loops",
+          "name": "Bake",
+          "bpm": 160,
+          "src": "assets/audio/pack-previews/pack-bakesale/bake-160.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-big-bad",
+      "title": "MIRATOUCH Big Bad Bundle",
+      "category": "Melodies",
+      "description": "A melody-focused production collection containing WAV samples.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/eVq5kC52H1Is1Zf0cxcs80I",
+      "previews": [
+        {
+          "folder": "Melody Loops",
+          "name": "Joykill",
+          "bpm": 141,
+          "src": "assets/audio/pack-previews/pack-big-bad/joykill-141.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-neutron",
+      "title": "Kidnxtdoor Neutron",
+      "category": "Instruments",
+      "description": "Instrument one-shots including bass, bells, brass, guitar, keys, pads, strings and synths.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/cNifZg3YDbj2gU9e3ncs80J",
+      "previews": [
+        {
+          "folder": "Bass",
+          "name": "Bass (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-01.wav"
+        },
+        {
+          "folder": "Bells",
+          "name": "Bell (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-02.wav"
+        },
+        {
+          "folder": "Brass",
+          "name": "Brass (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-03.wav"
+        },
+        {
+          "folder": "Guitar",
+          "name": "Guitar (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-04.wav"
+        },
+        {
+          "folder": "Keys",
+          "name": "Key (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-05.wav"
+        },
+        {
+          "folder": "Mallet",
+          "name": "Mallet (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-06.wav"
+        },
+        {
+          "folder": "Pads",
+          "name": "Pad (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-07.wav"
+        },
+        {
+          "folder": "Strings",
+          "name": "String (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-08.wav"
+        },
+        {
+          "folder": "Synths",
+          "name": "Synth (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-09.wav"
+        },
+        {
+          "folder": "Ambience",
+          "name": "Ambience (1)",
+          "src": "assets/audio/hifi-previews/pack-neutron/sample-10.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-keyboard-synth",
+      "title": "Keyscape and Omnisphere Sample Collection",
+      "category": "Instruments",
+      "description": "Keyboard and synthesizer WAV samples, including plucks, bells and piano sounds. Audio samples; no plug-in software included.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/6oUfZggLp0EobzP1gBcs80K",
+      "previews": [
+        {
+          "folder": "Plucked Keyboards",
+          "name": "Clavichord Jangle",
+          "src": "assets/audio/pack-previews/pack-keyboard-synth/clavichord-jangle.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-shiloh",
+      "title": "All Shiloh Samples",
+      "category": "Vocals",
+      "description": "A collection of 15 vocal sample files in MP3 format.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/28E5kCdzd0Eo9rHe3ncs80L",
+      "previews": [
+        {
+          "folder": "Vocal Samples",
+          "name": "Imagination (short preview)",
+          "src": "assets/audio/pack-previews/pack-shiloh/imagination-preview.mp3"
+        }
+      ]
+    },
+    {
+      "id": "pack-bueno-demo",
+      "title": "BUENO Sample Pack (Demo)",
+      "category": "Melodies",
+      "description": "A 10-file WAV sample selection with tempo, key and source information in filenames. Demo collection.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/00weVc2Uzcn6avL0cxcs80M",
+      "previews": [
+        {
+          "folder": "Melody Loops",
+          "name": "Evening",
+          "key": "G Major",
+          "bpm": 96,
+          "src": "assets/audio/pack-previews/pack-bueno-demo/evening-g-major.wav"
+        },
+        {
+          "folder": "Melody Loops",
+          "name": "Coca",
+          "key": "D Minor",
+          "bpm": 86,
+          "src": "assets/audio/pack-previews/pack-bueno-demo/coca-d-minor.wav"
+        }
+      ]
+    },
+    {
+      "id": "pack-david-vol1",
+      "title": "David Samples Vol. 1",
+      "category": "Loops",
+      "description": "Loops and one-shots, including drum fills and percussion-loop WAV files.",
+      "price": "$6.99",
+      "checkout": "https://buy.stripe.com/00w9AS3YDeve8nD6AVcs80N",
+      "previews": [
+        {
+          "folder": "Loops / Fills",
+          "name": "Why Im Hot Fill",
+          "bpm": 145,
+          "src": "assets/audio/pack-previews/pack-david-vol1/why-im-hot-fill-145.wav"
+        }
+      ]
+    }
+  ]
+}
