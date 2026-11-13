@@ -10,7 +10,17 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Snares",name:"SNARES 07",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-07.wav"},
     {folder:"Snares",name:"SNARES 08",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-08.wav"},
     {folder:"Snares",name:"SNARES 09",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-09.wav"},
-    {folder:"Snares",name:"SNARES 10",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-10.wav"}
+    {folder:"Snares",name:"SNARES 10",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-10.wav"},
+    {folder:"Snares",name:"SNARES 11",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-11.wav"},
+    {folder:"Snares",name:"SNARES 12",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-12.wav"},
+    {folder:"Snares",name:"SNARES 13",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-13.wav"},
+    {folder:"Snares",name:"SNARES 14",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-14.wav"},
+    {folder:"Snares",name:"SNARES 15",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-15.wav"},
+    {folder:"Snares",name:"SNARES 16",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-16.wav"},
+    {folder:"Snares",name:"SNARES 17",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-17.wav"},
+    {folder:"Snares",name:"SNARES 18",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-18.wav"},
+    {folder:"Snares",name:"SNARES 19",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-19.wav"},
+    {folder:"Snares",name:"SNARES 20",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-20.wav"}
   ],
   "pack-uk-drill": [
     {folder:"808",name:"UK Drill - 808 (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-01.wav"},
