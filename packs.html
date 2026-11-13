@@ -28,6 +28,7 @@
 @media(max-width:680px){.pack-toolbar{grid-template-columns:1fr}.pack-toolbar .pack-field:first-child{grid-column:auto}.pack-samples{max-height:270px}.pack-player{bottom:8px}}
 
 /* 2026-11-12: size-based storefront and bundle request preview */
+.pack-confirmed-count{font-size:13px;color:#f5d28d;font-weight:700;margin:0 0 12px}.pack-soon-buy{background:#282435;color:#f7d796;border:1px solid #bd9968}.pack-soon-buy:hover{background:#33293c}
 .shop-tier-zone,.shop-bundle-zone,.shop-inventory-zone{margin:32px 0 40px}
 .shop-zone-heading{max-width:850px;margin:0 0 18px}
 .shop-zone-heading h2{font-size:clamp(24px,3.3vw,38px);line-height:1.15;margin:0 0 10px}
@@ -67,15 +68,15 @@
 
 </style>
 <script defer src="scripts/analytics.js?v=packs-20261111"></script>
-<script defer src="scripts/packs-catalog.js?v=20261111"></script>
-<script defer src="scripts/pack-previews.js?v=20261112-five-complete"></script>
-<script defer src="scripts/pack-inventory.js?v=source-audit-20261112"></script>
-<script defer src="scripts/packs.js?v=individual-sounds-20261111-2"></script>
-<script defer src="scripts/pack-bundles.js?v=bundles-20261112"></script>
+<script defer src="scripts/packs-catalog.js?v=20261113-curated60"></script>
+<script defer src="scripts/pack-previews.js?v=20261113-curated60"></script>
+<script defer src="scripts/pack-inventory.js?v=20261113-curated60"></script>
+<script defer src="scripts/packs.js?v=20261113-curated60"></script>
+<script defer src="scripts/pack-bundles.js?v=20261113-curated60"></script>
 </head><body>
 <nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><span>Raise Up</span> Entertainment</a><div><a href="beats.html">Beats</a><a href="apparel.html">Apparel</a><a href="packs.html" aria-current="page">Sound Packs</a><a href="licensing.html">Licensing</a><a href="mailto:raiseupentllc@gmail.com">Contact</a></div></nav>
 <main class="page packs-page">
-<header class="pack-hero"><p class="eyebrow">The Raise Up Sound Library</p><h1>Build your next sound.</h1><p class="pack-intro">Explore drums, melodies, vocals and instrument samples for your next session. Choose your collection and check out through Stripe. Individual packs currently check out at <strong>$6.99</strong>; our new size-based tiers and bundles are in preparation.</p><div class="pack-promise" aria-label="Store information"><span>30 sound pack listings</span><span>Individual sound previews</span><span>Size-based tiers coming soon</span><span>Secure Stripe checkout</span></div></header>
+<header class="pack-hero"><p class="eyebrow">The Raise Up Sound Library</p><h1>Build your next sound.</h1><p class="pack-intro">Explore drums, melodies, vocals and instrument samples for your next session. Choose your collection and check out through Stripe. Individual packs currently check out at <strong>$6.99</strong>; our new size-based tiers and bundles are in preparation.</p><div class="pack-promise" aria-label="Store information"><span>32 sound pack listings</span><span>Individual sound previews</span><span>Size-based tiers coming soon</span><span>Secure Stripe checkout</span></div></header>
 
 <section class="shop-tier-zone" aria-labelledby="shopTierHeading">
   <div class="shop-zone-heading"><p class="eyebrow">COMING NEXT / PRICING BY COLLECTION SIZE</p><h2 id="shopTierHeading">More sounds. More options.</h2><p>We're organizing the full download libraries into fair-size collections. You can already audition individual previews below.</p></div>
@@ -102,7 +103,7 @@
     <button type="button" id="bundleRequest" class="bundle-request" disabled>Choose your packs to request</button>
   </div>
 </section>
-<section class="shop-inventory-zone" aria-labelledby="newSourcesTitle"><h2 id="newSourcesTitle">New libraries being organized</h2><p><strong>LOOPS DRUMS SAMPLES</strong> and <strong>The Lunch77 Boominati Drumkit-011</strong> have been located in the Raise Up Drive. They are being checked for actual audio content, duplicate material, and permission to redistribute. They are not new paid listings yet.</p></section>
+<section class="shop-inventory-zone" aria-labelledby="newSourcesTitle"><h2 id="newSourcesTitle">New collections & source libraries</h2><p><strong>Growth Essentials</strong> and <strong>Legacy Drum Essentials</strong> now have 60 carefully selected WAV files each and 20 listening samples. Their secure checkout and delivery are being prepared.</p><p><strong>LOOPS DRUMS SAMPLES</strong> and <strong>The Lunch77 Boominati Drumkit-011</strong> have been located in the Raise Up Drive. They are being checked for actual audio content, duplicate material, and permission to redistribute. They are not new paid listings yet.</p></section>
 
 <div class="pack-toolbar" role="search" aria-label="Find sound packs"><label class="pack-field"><span>Search the library</span><input id="packSearch" type="search" placeholder="Search packs, sounds, folders, keys or BPM" autocomplete="off"></label><label class="pack-field"><span>Category</span><select id="packCategory"><option value="">All categories</option></select></label><label class="pack-field"><span>Musical key</span><select id="packKey"><option value="">All labeled keys</option></select></label></div>
 <output id="packCount" class="pack-count" role="status" aria-live="polite" aria-atomic="true">Loading the sound library…</output>

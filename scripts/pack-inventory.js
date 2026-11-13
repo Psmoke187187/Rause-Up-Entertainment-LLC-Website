@@ -29,7 +29,9 @@ window.RAISEUP_PACK_INVENTORY = Object.freeze({
   "pack-keyboard-synth": {sourceAudioCount:418, customerDownloadCount:null, resaleRightsVerified:false},
   "pack-shiloh": {sourceAudioCount:20, customerDownloadCount:null, resaleRightsVerified:false},
   "pack-bueno-demo": {sourceAudioCount:20, customerDownloadCount:null, resaleRightsVerified:false},
-  "pack-david-vol1": {sourceAudioCount:116, customerDownloadCount:null, resaleRightsVerified:false}
+  "pack-david-vol1": {sourceAudioCount:116, customerDownloadCount:null, resaleRightsVerified:false},
+  "pack-growth-essentials-60": {sourceAudioCount:60, curatedAudioCount:60, customerDownloadCount:null, rightsAssertedByOwner:true},
+  "pack-legacy-drums-60": {sourceAudioCount:60, curatedAudioCount:60, customerDownloadCount:null, rightsAssertedByOwner:true}
 });
 window.RAISEUP_NEW_LIBRARY_AUDIT = Object.freeze([
   {name:"LOOPS DRUMS SAMPLES",status:"Under review",note:"Nested libraries, third-party packs and ZIP files require redistribution and download checks."},

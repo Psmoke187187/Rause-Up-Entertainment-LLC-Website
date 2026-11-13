@@ -1,4 +1,24 @@
 window.RAISEUP_PACKS = [
+{
+  "id": "pack-growth-essentials-60",
+  "title": "Growth Essentials — 60 WAV Sounds",
+  "category": "Drums",
+  "description": "Exactly 60 WAVs in three organized folders: 20 claps, 20 tuned 808s, and 20 instrument one-shots. Includes 20 playable previews. Checkout opening soon.",
+  "soundCount": 60,
+  "plannedPrice": 6.99,
+  "releaseStatus": "preview",
+  "driveFolderId": "12FI5Ydc0Z_JIZC0f-_cOZ_EvJ9i-yfiA"
+},
+{
+  "id": "pack-legacy-drums-60",
+  "title": "Legacy Drum Essentials — 60 WAV Sounds",
+  "category": "Drums",
+  "description": "Exactly 60 WAVs in three organized folders: 20 kicks, 20 snares, and 20 hi-hats. Includes 20 playable previews. Checkout opening soon.",
+  "soundCount": 60,
+  "plannedPrice": 6.99,
+  "releaseStatus": "preview",
+  "driveFolderId": "1iW9bDB_sEkJ6wmnJdzvnQgQN8oChTn-k"
+},
   {
     "id": "pack-snares-kit-1",
     "title": "Snares Kit 1",

@@ -1,4 +1,4 @@
-// Public, shortened listening samples only. Full paid source files remain private.
+// Public listening samples. The complete, curated 60-WAV collections are stored in private Drive folders.
 window.RAISEUP_PACK_PREVIEWS = {
   "pack-snares-kit-1": [
     {folder:"Snares",name:"SNARES 01",src:"assets/audio/hifi-previews/pack-snares-kit-1/sample-01.wav"},
@@ -171,5 +171,49 @@ window.RAISEUP_PACK_PREVIEWS = {
   "pack-drum-bass": [{folder:"Kicks",name:"Drum & Bass Kick 03",src:"assets/audio/pack-previews/pack-drum-bass/kick-03.wav"}],
   "pack-nick-mira-drums": [{folder:"Kicks",name:"Trapsylvania Kick",src:"assets/audio/pack-previews/pack-nick-mira-drums/trapsylvania-kick.wav"}],
   "pack-electric-bass": [{folder:"Bass Notes",name:"Bass C3",src:"assets/audio/pack-previews/pack-electric-bass/bass-c3.wav"}],
-  "pack-shiloh": [{folder:"Vocal Samples",name:"Imagination (short preview)",src:"assets/audio/pack-previews/pack-shiloh/imagination-preview.mp3"}]
+  "pack-shiloh": [{folder:"Vocal Samples",name:"Imagination (short preview)",src:"assets/audio/pack-previews/pack-shiloh/imagination-preview.mp3"}],
+  "pack-growth-essentials-60": [
+    {folder:"Claps",name:"PGK Clap 1",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-01.wav"},
+    {folder:"Claps",name:"PGK Clap 2",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-02.wav"},
+    {folder:"Claps",name:"PGK Clap 3",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-03.wav"},
+    {folder:"Claps",name:"PGK Clap 6",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-04.wav"},
+    {folder:"Claps",name:"PGK Clap 7",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-05.wav"},
+    {folder:"Claps",name:"PGK Clap 8",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-06.wav"},
+    {folder:"Claps",name:"PGK Clap 9",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-07.wav"},
+    {folder:"808s",name:"PGK 808 1 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-08.wav"},
+    {folder:"808s",name:"PGK 808 2 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-09.wav"},
+    {folder:"808s",name:"PGK 808 4 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-10.wav"},
+    {folder:"808s",name:"PGK 808 6 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-11.wav"},
+    {folder:"808s",name:"PGK 808 7 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-12.wav"},
+    {folder:"808s",name:"PGK 808 8 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-13.wav"},
+    {folder:"808s",name:"PGK 808 9 C",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-14.wav"},
+    {folder:"Instrument One-Shots",name:"Deluxe Bell 25th",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-15.wav"},
+    {folder:"Instrument One-Shots",name:"Deluxe Bell Bih",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-16.wav"},
+    {folder:"Instrument One-Shots",name:"Deluxe Keys Bell",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-17.wav"},
+    {folder:"Instrument One-Shots",name:"Deluxe Keys Low Wobble",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-18.wav"},
+    {folder:"Instrument One-Shots",name:"Deluxe Guitar Muted Delay",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-19.wav"},
+    {folder:"Instrument One-Shots",name:"Deluxe Guitar Muted Strum",src:"assets/audio/hifi-previews/pack-growth-essentials-60/sample-20.wav"}
+  ],
+  "pack-legacy-drums-60": [
+    {folder:"Kicks",name:"Beefy Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-01.wav"},
+    {folder:"Kicks",name:"Bump Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-02.wav"},
+    {folder:"Kicks",name:"Hi Layer Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-03.wav"},
+    {folder:"Kicks",name:"LoFi Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-04.wav"},
+    {folder:"Kicks",name:"Low End Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-05.wav"},
+    {folder:"Kicks",name:"Old School Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-06.wav"},
+    {folder:"Kicks",name:"Punchy Kick",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-07.wav"},
+    {folder:"Snares",name:"Snare 1",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-08.wav"},
+    {folder:"Snares",name:"Snare 2",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-09.wav"},
+    {folder:"Snares",name:"Snare 3",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-10.wav"},
+    {folder:"Snares",name:"Snare 4",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-11.wav"},
+    {folder:"Snares",name:"Snare 5",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-12.wav"},
+    {folder:"Snares",name:"Snare 6",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-13.wav"},
+    {folder:"Snares",name:"Snare 7",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-14.wav"},
+    {folder:"Hi-Hats",name:"Bounce Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-15.wav"},
+    {folder:"Hi-Hats",name:"Clean Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-16.wav"},
+    {folder:"Hi-Hats",name:"Click Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-17.wav"},
+    {folder:"Hi-Hats",name:"Deep Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-18.wav"},
+    {folder:"Hi-Hats",name:"Detune Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-19.wav"},
+    {folder:"Hi-Hats",name:"Fairy Hi-Hat",src:"assets/audio/hifi-previews/pack-legacy-drums-60/sample-20.wav"}
+  ]
 };
