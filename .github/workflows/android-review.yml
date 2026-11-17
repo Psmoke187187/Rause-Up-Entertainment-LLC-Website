@@ -1,0 +1,93 @@
+name: Android candidate review (isolated branch)
+
+on:
+  push:
+    branches:
+      - codex/android-billing-rebuild-20261006
+    paths:
+      - android/**
+      - .github/workflows/android-review.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-candidate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Check out isolated candidate
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install Java 17
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install fixed Gradle 8.13
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '8.13'
+          cache-provider: basic
+          dependency-graph: disabled
+
+      - name: Verify candidate gates and preview coverage
+        run: python3 android/tools/verify-candidate.py --root android
+
+      - name: Install declared Android SDK components
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Run tests, both lint variants and candidate builds
+        working-directory: android
+        run: gradle --no-daemon --stacktrace testDebugUnitTest lintDebug lintRelease assembleDebug bundleRelease
+
+      - name: Inspect disabled builds and unsigned release bundle
+        run: |
+          python3 android/tools/verify-candidate.py --root android --artifacts
+          "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging android/app/build/outputs/apk/debug/app-debug.apk > android/build/debug-package.txt
+          grep -F "package: name='com.raiseupentertainment.app'" android/build/debug-package.txt
+          grep -F "targetSdkVersion:'36'" android/build/debug-package.txt
+          grep -F "sdkVersion:'23'" android/build/debug-package.txt
+
+      - name: Label candidate artifacts
+        run: |
+          mkdir -p android/build/review-artifacts
+          cp android/app/build/outputs/apk/debug/app-debug.apk android/build/review-artifacts/raise-up-candidate-debug-not-for-play.apk
+          cp android/app/build/outputs/bundle/release/app-release.aab android/build/review-artifacts/raise-up-candidate-UNSIGNED-not-for-play-upload.aab
+          cp android/build/candidate-review.json android/build/review-artifacts/
+          cp android/build/debug-package.txt android/build/review-artifacts/
+          printf '%s\n' 'Candidate only. Purchases are disabled. Debug APK uses debug signing. Release AAB is UNSIGNED and requires the owner upload key before Play upload. See candidate-review.json for missing preview assets. This workflow does not publish or upload to Google Play.' > android/build/review-artifacts/READ-ME-NOT-A-PUBLISHED-RELEASE.txt
+          {
+            printf '%s\n' '### Raise Up Android candidate' '' 'Unit tests and both lint variants passed. Debug APK and unsigned release AAB built with all purchase gates disabled.' '' 'Review candidate-review.json for exact preview coverage. Missing previews were not downloaded or fabricated. No Play upload, signing setup, deployment or real purchase test occurred.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save candidate files
+        uses: actions/upload-artifact@v7
+        with:
+          name: raise-up-android-CANDIDATE-UNSIGNED-${{ github.run_id }}
+          path: android/build/review-artifacts/
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+
+      - name: Save test and lint reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: raise-up-android-check-reports-${{ github.run_id }}
+          path: |
+            android/app/build/reports/tests/
+            android/app/build/test-results/
+            android/app/build/reports/lint-results-*.html
+            android/app/build/reports/lint-results-*.xml
+            android/build/candidate-review.json
+          if-no-files-found: warn
+          retention-days: 14
