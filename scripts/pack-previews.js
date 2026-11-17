@@ -36,7 +36,13 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Percussion",name:"UK Drill - Perc (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-11.wav"},
     {folder:"Snares",name:"UK Drill - Snare (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-12.wav"},
     {folder:"Vox",name:"UK Drill - Vox (1)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-13.wav"},
-    {folder:"Vox",name:"UK Drill - Vox (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-14.wav"}
+    {folder:"Vox",name:"UK Drill - Vox (2)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-14.wav"},
+    {folder:"808",name:"UK Drill - 808 (3)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-15.wav"},
+    {folder:"Claps",name:"UK Drill - Clap (3)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-16.wav"},
+    {folder:"Hi-Hats",name:"UK Drill - Hat (3)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-17.wav"},
+    {folder:"Kicks",name:"UK Drill - Kick (4)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-18.wav"},
+    {folder:"Percussion",name:"UK Drill - Perc (3)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-19.wav"},
+    {folder:"Snares",name:"UK Drill - Snare (4)",src:"assets/audio/hifi-previews/pack-uk-drill/sample-20.wav"}
   ],
   "pack-tm88": [
     {folder:"Kicks",name:"TM88 Kick",src:"assets/audio/pack-previews/pack-tm88/tm88-kick.wav"},
