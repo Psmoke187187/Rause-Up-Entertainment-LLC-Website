@@ -68,8 +68,8 @@ function render(){
     const match=[p.title,p.category,p.description].join(' ').toLowerCase().includes(term);
     return !term||match||p.samples.some(s=>[s.name,s.folder,s.key||'',String(s.bpm||'')].join(' ').toLowerCase().includes(term));
   });
-  const ready=packs.filter(p=>p.samples.length).length;
-  count.textContent='Showing '+visible.length+' of '+packs.length+' packs · '+ready+' packs with playable previews';
+  const ready=packs.filter(p=>p.samples.length>=20).length;
+  count.textContent='Showing '+visible.length+' of '+packs.length+' packs · '+ready+' packs with at least 20 previews';
   grid.innerHTML=visible.length?visible.map(p=>card(p,term)).join(''):'<div class="empty-state"><h2>'+(packs.length?'No matching packs':'The pack catalog is unavailable')+'</h2><p>Try a different pack name, folder, instrument, tempo, or key.</p><button class="btn" type="button" data-clear-packs>Clear filters</button></div>';
   return visible.length;
 }

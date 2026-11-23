@@ -10,7 +10,7 @@
   const catalog = Array.isArray(window.RAISEUP_PACKS) ? window.RAISEUP_PACKS : [];
   const choices = catalog.filter(p => {
     const n = inventory[p.id]?.sourceAudioCount;
-    return Number.isInteger(n) && n >= 50 && n <= 99;
+    return Number.isInteger(n) && n >= 50 && n <= 99 && (window.RAISEUP_PACK_PREVIEWS?.[p.id]?.length||0)>=20;
   });
   const selected = new Set();
   const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
