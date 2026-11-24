@@ -95,7 +95,117 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Melody Loops",name:"Bake",bpm:160,src:"assets/audio/pack-previews/pack-bakesale/bake-160.wav"}
   ],
   "pack-david-vol1": [
-    {folder:"Loops / Fills",name:"Why Im Hot Fill",bpm:145,src:"assets/audio/pack-previews/pack-david-vol1/why-im-hot-fill-145.wav"}
+    {
+      "folder": "Loops / Fills",
+      "name": "Why Im Hot Fill",
+      "bpm": 145,
+      "src": "assets/audio/pack-previews/pack-david-vol1/why-im-hot-fill-145.wav"
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "ElPrado SnareRoll 130bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-02.wav",
+      "bpm": 130
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "Mumbai Fill 126bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-03.wav",
+      "bpm": 126
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "NoWindow Fill 120bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-04.wav",
+      "bpm": 120
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "RundownHotel Fill 124bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-05.wav",
+      "bpm": 124
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "SniperGirl SnareFill 145bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-06.wav",
+      "bpm": 145
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "Uriella Fill 128bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-07.wav",
+      "bpm": 128
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "Uriella Fill2 128bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-08.wav",
+      "bpm": 128
+    },
+    {
+      "folder": "Loops / Fills",
+      "name": "Refugee Fill 130bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-09.wav",
+      "bpm": 130
+    },
+    {
+      "folder": "Loops / Percussion",
+      "name": "WhyImHot SnareRoll 145bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-10.wav",
+      "bpm": 145
+    },
+    {
+      "folder": "Loops / Percussion",
+      "name": "WhyImHot VibraPerc 145bpm",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-11.wav",
+      "bpm": 145
+    },
+    {
+      "folder": "Loops / Percussion",
+      "name": "WhyImHot BellPerc",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-12.wav"
+    },
+    {
+      "folder": "One-Shots / Bass Slides",
+      "name": "Mumbai BassSlide",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-13.wav"
+    },
+    {
+      "folder": "One-Shots / Bass Slides",
+      "name": "ElPrado BassSlide",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-14.wav"
+    },
+    {
+      "folder": "One-Shots / Bass Slides",
+      "name": "Chosen BassSlide",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-15.wav"
+    },
+    {
+      "folder": "One-Shots / Bass Slides",
+      "name": "Uriella BassSlide",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-16.wav"
+    },
+    {
+      "folder": "One-Shots / Snares",
+      "name": "Aeroplane Snare",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-17.wav"
+    },
+    {
+      "folder": "One-Shots / Snares",
+      "name": "Mumbai Snare",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-18.wav"
+    },
+    {
+      "folder": "One-Shots / Snares",
+      "name": "Refugee Snare",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-19.wav"
+    },
+    {
+      "folder": "One-Shots / Snares",
+      "name": "RundownHotel Snare",
+      "src": "assets/audio/hifi-previews/pack-david-vol1/sample-20.wav"
+    }
   ],
   "pack-mpc60": [
     {folder:"Drums",name:"MPC60 Snare 1",src:"assets/audio/pack-previews/pack-mpc60/snare-01.wav"},
@@ -290,7 +400,7 @@ window.RAISEUP_PACK_PREVIEWS = {
   ],
   "pack-grand-piano": [{folder:"Piano Notes",name:"Grand Piano C7",src:"assets/audio/pack-previews/pack-grand-piano/piano-c7.wav"},
     {folder:"Grand Piano Notes",name:"FF A#4 off",src:"assets/audio/hifi-previews/pack-grand-piano/sample-02.wav"},
-    {folder:"Grand Piano Notes",name:"FF C 7 off",src:"assets/audio/hifi-previews/pack-grand-piano/sample-03.wav"},
+    {folder:"Grand Piano Notes",name:"FF D 6 off",src:"assets/audio/hifi-previews/pack-grand-piano/sample-03.wav"},
     {folder:"Grand Piano Notes",name:"FF E 5 off",src:"assets/audio/hifi-previews/pack-grand-piano/sample-04.wav"},
     {folder:"Grand Piano Notes",name:"FF F#6 off",src:"assets/audio/hifi-previews/pack-grand-piano/sample-05.wav"},
     {folder:"Grand Piano Notes",name:"Mf A 5 off",src:"assets/audio/hifi-previews/pack-grand-piano/sample-06.wav"},
@@ -312,10 +422,10 @@ window.RAISEUP_PACK_PREVIEWS = {
   "pack-metro-boomin": [{folder:"Kicks",name:"Metro Kick",src:"assets/audio/pack-previews/pack-metro-boomin/metro-kick.wav"},
     {folder:"Kicks",name:"10 Freaky Girls Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-02.wav"},
     {folder:"Kicks",name:"No Heart Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-03.wav"},
-    {folder:"Kicks",name:"Savage Mode Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-04.wav"},
-    {folder:"Kicks",name:"Enter The Room Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-05.wav"},
-    {folder:"Kicks",name:"Bad Guy Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-06.wav"},
-    {folder:"Snares",name:"MB Snare 31",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-07.wav"},
+    {folder:"Kicks",name:"PBS Lex Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-04.wav"},
+    {folder:"Kicks",name:"YM Kick 8",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-05.wav"},
+    {folder:"Kicks",name:"PBS Metro Honest Kick",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-06.wav"},
+    {folder:"Snares",name:"YM Snare 7",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-07.wav"},
     {folder:"Snares",name:"Metro Toothpick Snare",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-08.wav"},
     {folder:"Snares",name:"Killa Metro Snare",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-09.wav"},
     {folder:"Snares",name:"Wheezy Snare",src:"assets/audio/hifi-previews/pack-metro-boomin/sample-10.wav"},
@@ -411,8 +521,230 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Hi-Hats",name:"KENNY BEATS HI HAT 27",src:"assets/audio/hifi-previews/pack-kenny-beats/sample-19.wav"},
     {folder:"Hi-Hats",name:"KENNY BEATS HI HAT 49",src:"assets/audio/hifi-previews/pack-kenny-beats/sample-20.wav"}
   ],
-  "pack-big-bad": [{folder:"Melody Loops",name:"Joykill",bpm:141,src:"assets/audio/pack-previews/pack-big-bad/joykill-141.wav"}],
-  "pack-keyboard-synth": [{folder:"Plucked Keyboards",name:"Clavichord Jangle",src:"assets/audio/pack-previews/pack-keyboard-synth/clavichord-jangle.wav"}],
+  "pack-big-bad": [
+    {
+      "folder": "Melody Loops",
+      "name": "Joykill",
+      "bpm": 141,
+      "src": "assets/audio/pack-previews/pack-big-bad/joykill-141.wav"
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "accounting 170bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-02.wav",
+      "bpm": 170
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "austria 168bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-03.wav",
+      "bpm": 168
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "backyard 105bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-04.wav",
+      "bpm": 105
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "bags 160bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-05.wav",
+      "bpm": 160
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "bark 140bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-06.wav",
+      "bpm": 140
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "brokentime 157bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-07.wav",
+      "bpm": 157
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "butters 94bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-08.wav",
+      "bpm": 94
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "codeblue 157bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-09.wav",
+      "bpm": 157
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "drano 169bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-10.wav",
+      "bpm": 169
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "dyrdek 161bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-11.wav",
+      "bpm": 161
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "fairgame 165bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-12.wav",
+      "bpm": 165
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "frio 176bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-13.wav",
+      "bpm": 176
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "gtr fosterhome 163bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-14.wav",
+      "bpm": 163
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "icecreamtruck 162bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-15.wav",
+      "bpm": 162
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "jcole 112bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-16.wav",
+      "bpm": 112
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "kennedy 163bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-17.wav",
+      "bpm": 163
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "microbeat 171bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-18.wav",
+      "bpm": 171
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "ongod 99bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-19.wav",
+      "bpm": 99
+    },
+    {
+      "folder": "Melody Loops",
+      "name": "outside 106bpm",
+      "src": "assets/audio/hifi-previews/pack-big-bad/sample-20.wav",
+      "bpm": 106
+    }
+  ],
+  "pack-keyboard-synth": [
+    {
+      "folder": "Plucked Keyboards",
+      "name": "Clavichord Jangle",
+      "src": "assets/audio/pack-previews/pack-keyboard-synth/clavichord-jangle.wav"
+    },
+    {
+      "folder": "Keyscape / Clavinets",
+      "name": "Clavinet C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-02.wav"
+    },
+    {
+      "folder": "Keyscape / Electric Pianos",
+      "name": "Vintage Vibe Electric Piano",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-03.wav"
+    },
+    {
+      "folder": "Keyscape / Hybrid Pianos",
+      "name": "Duo - Angelic Plectrum Piano",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-04.wav"
+    },
+    {
+      "folder": "Keyscape / Key Bass",
+      "name": "Vintage Vibe Tine Bass",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-05.wav"
+    },
+    {
+      "folder": "Keyscape / Mini Pianos",
+      "name": "Mini Student Butterfly Piano",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-06.wav"
+    },
+    {
+      "folder": "Keyscape / Vintage Digital Keys",
+      "name": "MK-80 Rhodes",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-07.wav"
+    },
+    {
+      "folder": "Keyscape / Wind Keyboards",
+      "name": "Harmochord",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-08.wav"
+    },
+    {
+      "folder": "Keyscape / Acoustic Pianos",
+      "name": "Wing Upright",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-09.wav"
+    },
+    {
+      "folder": "Keyscape / Belltone Keyboards",
+      "name": "Celeste",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-10.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Arp C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-11.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Bell C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-12.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Dark Pluck G",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-13.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Dream Piano C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-14.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Flute C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-15.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Guitar E",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-16.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Kalimba C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-17.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Music Box C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-18.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Pad C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-19.wav"
+    },
+    {
+      "folder": "Omnisphere / One-Shots",
+      "name": "Synth C",
+      "src": "assets/audio/hifi-previews/pack-keyboard-synth/sample-20.wav"
+    }
+  ],
   "pack-techno": [{folder:"Hi Hats",name:"Techno Hat 12",src:"assets/audio/pack-previews/pack-techno/hat-12.wav"},
     {folder:"Techno One-Shots",name:"78maracs",src:"assets/audio/hifi-previews/pack-techno/sample-02.wav"},
     {folder:"Snares & Claps",name:"626clave",src:"assets/audio/hifi-previews/pack-techno/sample-03.wav"},

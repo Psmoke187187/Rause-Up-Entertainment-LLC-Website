@@ -1,0 +1,184 @@
+{
+  "verifiedDate": "2026-11-23",
+  "scope": "29 active checkout-mapped delivery folders, including all subfolders",
+  "folderCount": 180,
+  "audioFileCount": 9096,
+  "countMeaning": "Audio file entries by WAV, MP3, AIF/AIFF, FLAC and OGG extension; excludes MIDI, sampler programs, projects and archives. File counts do not certify unique waveforms or decoding of the complete paid libraries.",
+  "delivery": "Access by email after payment verification; no end-to-end purchase performed.",
+  "packs": [
+    {
+      "id": "pack-growth-essentials-60",
+      "title": "Growth Essentials \u2014 60 WAV Sounds",
+      "audioFiles": 60,
+      "folders": 4
+    },
+    {
+      "id": "pack-legacy-drums-60",
+      "title": "Legacy Drum Essentials \u2014 60 WAV Sounds",
+      "audioFiles": 60,
+      "folders": 4
+    },
+    {
+      "id": "pack-snares-kit-1",
+      "title": "Snares Kit 1",
+      "audioFiles": 93,
+      "folders": 1
+    },
+    {
+      "id": "pack-techno",
+      "title": "Techno Sound Pack",
+      "audioFiles": 110,
+      "folders": 1
+    },
+    {
+      "id": "pack-drum-bass",
+      "title": "Drum and Bass Sound Pack",
+      "audioFiles": 85,
+      "folders": 1
+    },
+    {
+      "id": "pack-mpc60",
+      "title": "MPC60 Drum Collection",
+      "audioFiles": 533,
+      "folders": 1
+    },
+    {
+      "id": "pack-mpc3000-synth",
+      "title": "MPC3000 Synth Drums",
+      "audioFiles": 776,
+      "folders": 1
+    },
+    {
+      "id": "pack-mpc3000-percussion",
+      "title": "MPC3000 Percussion",
+      "audioFiles": 250,
+      "folders": 1
+    },
+    {
+      "id": "pack-mpc3000-natural",
+      "title": "MPC3000 Natural Drums",
+      "audioFiles": 472,
+      "folders": 1
+    },
+    {
+      "id": "pack-mpc2000xl-dry",
+      "title": "MPC2000XL Dry Drums",
+      "audioFiles": 67,
+      "folders": 1
+    },
+    {
+      "id": "pack-mini-moog",
+      "title": "Mini Moog Instrument Samples",
+      "audioFiles": 115,
+      "folders": 1
+    },
+    {
+      "id": "pack-arp-odyssey",
+      "title": "ARP Odyssey Instrument Samples",
+      "audioFiles": 90,
+      "folders": 1
+    },
+    {
+      "id": "pack-electric-piano",
+      "title": "Electric Piano Samples",
+      "audioFiles": 71,
+      "folders": 1
+    },
+    {
+      "id": "pack-delicate-guitar",
+      "title": "Delicate Guitar Samples",
+      "audioFiles": 92,
+      "folders": 1
+    },
+    {
+      "id": "pack-grand-piano",
+      "title": "Grand Piano Off Mic Samples",
+      "audioFiles": 146,
+      "folders": 1
+    },
+    {
+      "id": "pack-electric-bass",
+      "title": "Electric Bass Samples",
+      "audioFiles": 103,
+      "folders": 1
+    },
+    {
+      "id": "pack-tm88",
+      "title": "TM88 (Shows the Screen) Drumkit",
+      "audioFiles": 522,
+      "folders": 14
+    },
+    {
+      "id": "pack-uk-drill",
+      "title": "UK Drill Drum Kit",
+      "audioFiles": 104,
+      "folders": 8
+    },
+    {
+      "id": "pack-metro-boomin",
+      "title": "The Lunch77 Metro Boomin Drumkit",
+      "audioFiles": 2184,
+      "folders": 13
+    },
+    {
+      "id": "pack-f1lthy",
+      "title": "The Lunch77 F1lthy Drumkit",
+      "audioFiles": 338,
+      "folders": 12
+    },
+    {
+      "id": "pack-nick-mira-drums",
+      "title": "Nick Mira (Shows the Screen) Drumkit",
+      "audioFiles": 1003,
+      "folders": 12
+    },
+    {
+      "id": "pack-ny-drill",
+      "title": "Ultimate NY Drill Kit",
+      "audioFiles": 261,
+      "folders": 17
+    },
+    {
+      "id": "pack-mira-touch-vol1",
+      "title": "The Mira Touch Kit Vol. 1",
+      "audioFiles": 181,
+      "folders": 17
+    },
+    {
+      "id": "pack-kenny-beats",
+      "title": "Kenny Beats (Shows the Screen) Drumkit",
+      "audioFiles": 609,
+      "folders": 13
+    },
+    {
+      "id": "pack-big-bad",
+      "title": "MIRATOUCH Big Bad Bundle",
+      "audioFiles": 77,
+      "folders": 1
+    },
+    {
+      "id": "pack-neutron",
+      "title": "Kidnxtdoor Neutron",
+      "audioFiles": 100,
+      "folders": 11
+    },
+    {
+      "id": "pack-keyboard-synth",
+      "title": "Keyscape and Omnisphere Sample Collection",
+      "audioFiles": 418,
+      "folders": 13
+    },
+    {
+      "id": "pack-david-vol1",
+      "title": "David Samples Vol. 1",
+      "audioFiles": 116,
+      "folders": 23
+    },
+    {
+      "id": "pack-trap-toolkit-60",
+      "title": "Trap Toolkit \u2014 60 WAV Sounds",
+      "audioFiles": 60,
+      "folders": 4
+    }
+  ]
+}

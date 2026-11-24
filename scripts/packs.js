@@ -19,6 +19,7 @@ const packs=(Array.isArray(window.RAISEUP_PACKS)?window.RAISEUP_PACKS:[]).filter
   plannedPrice:Number.isFinite(p.plannedPrice)&&p.plannedPrice>0?p.plannedPrice:null,
   price:Number.isFinite(p.price)&&p.price>0?p.price:6.99,
   sourceCount:window.RAISEUP_PACK_INVENTORY?.[p.id]?.sourceAudioCount||null,
+  deliveryCount:window.RAISEUP_PACK_INVENTORY?.[p.id]?.folderInventoryVerified?window.RAISEUP_PACK_INVENTORY[p.id].deliveryFolderAudioCount:null,
   releaseStatus:p.releaseStatus==='preview'?'preview':'live',
   seed:Array.from(p.id).reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,7),
   samples:(Array.isArray(manifest[p.id])?manifest[p.id]:[]).filter(s=>
@@ -56,7 +57,7 @@ function card(p,term){
     '<div id="preview-'+esc(p.id)+'" class="pack-samples"'+(expanded.has(p.id)?'':' hidden')+'>'+
       (sampleGroups(p,term,matchedPack)||'<p>No sound previews match this filter.</p>')+
     '</div>':'';
-  const detail=p.soundCount?'<p class="pack-confirmed-count">'+p.soundCount+' WAV files curated · '+p.samples.length+' previews</p>' :p.sourceCount?'<p class="pack-confirmed-count">'+p.sourceCount+' source audio files inventoried · '+p.samples.length+' previews</p>':'';
+  const detail=p.deliveryCount?'<p class="pack-confirmed-count">'+p.deliveryCount+' audio files in full pack · '+p.samples.length+' previews</p>':p.soundCount?'<p class="pack-confirmed-count">'+p.soundCount+' WAV files curated · '+p.samples.length+' previews</p>' :p.sourceCount?'<p class="pack-confirmed-count">'+p.sourceCount+' source audio files inventoried · '+p.samples.length+' previews</p>':'';
   const buy=p.samples.length<20?'<button class="btn pack-buy" type="button" disabled title="This pack needs 20 playable previews before checkout is enabled">Checkout paused · '+p.samples.length+'/20 previews</button>':p.paymentUrl?'<a class="btn primary pack-buy" href="'+esc(p.paymentUrl)+'" target="_blank" rel="noopener" data-product-id="'+esc(p.id)+'" aria-label="Buy '+esc(p.title)+' for '+price+'">Buy full pack <span>'+price+' <span aria-hidden="true">↗</span></span></a>' :p.releaseStatus==='preview'?'<a class="btn pack-buy pack-soon-buy" href="mailto:raiseupentllc@gmail.com?subject='+encodeURIComponent('Sound pack launch: '+p.title)+'" aria-label="Ask when '+esc(p.title)+' will be available">Ask about launch <span>Coming soon</span></a>':'<button class="btn pack-buy" type="button" disabled>Checkout unavailable</button>';
   return '<article class="product-card pack-card" id="'+esc(p.id)+'" data-product-id="'+esc(p.id)+'">'+artwork(p)+'<div class="pack-body"><p class="pack-category">'+esc(p.category)+'</p><h2><a href="#'+esc(p.id)+'">'+esc(p.title)+'</a></h2>'+(p.description?'<p class="pack-description">'+esc(p.description)+'</p>':'')+detail+'<div class="sample-status">'+availability+'</div>'+preview+buy+'</div></article>';
 }
