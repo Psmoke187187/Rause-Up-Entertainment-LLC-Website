@@ -82,8 +82,9 @@ grid.addEventListener('click',event=>{
   const toggle=event.target.closest('[data-expand]');if(toggle){const id=toggle.dataset.expand;if(expanded.has(id))expanded.delete(id);else expanded.add(id);render();return;}
   const play=event.target.closest('[data-sample]');if(!play||!audio||!nowPlaying||!player)return;
   const pack=packs.find(p=>p.id===play.dataset.pack),s=pack?.samples[Number(play.dataset.sample)];if(!s)return;
-  if(audio.getAttribute('src')===s.src&&!audio.paused){audio.pause();return;}
-  audio.src=s.src;audio.volume=Number.isFinite(s.volume)?Math.max(0.05,Math.min(1,s.volume)):1;nowPlaying.textContent=pack.title+' · '+s.folder+' / '+s.name;
+  const previewSrc=s.src+'?v=20261124-all29';
+  if(audio.getAttribute('src')===previewSrc&&!audio.paused){audio.pause();return;}
+  audio.src=previewSrc;audio.volume=Number.isFinite(s.volume)?Math.max(0.05,Math.min(1,s.volume)):1;nowPlaying.textContent=pack.title+' · '+s.folder+' / '+s.name;
   player.hidden=false;audio.play().catch(()=>{nowPlaying.textContent+=' — Tap play to listen';});
   window.RUEAnalytics?.track('preview_play',{detail:('Sound pack: '+pack.id).slice(0,100)});
 });
