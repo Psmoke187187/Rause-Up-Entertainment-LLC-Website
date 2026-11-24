@@ -9,6 +9,8 @@
   <style>
     .product-art{min-height:0;background:#151520;padding:12px}
     .product-art img{width:100%;height:240px;object-fit:contain;display:block}
+
+    .apparel-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}.apparel-field{display:grid;gap:6px;font-size:14px}.apparel-field:first-child{grid-column:1/-1}.apparel-options select,.apparel-options input,.apparel-checkout input,.apparel-checkout select{width:100%;font:inherit;font-size:16px;padding:10px;border:1px solid #555;border-radius:8px;background:#16161f;color:#fff;min-height:44px}.apparel-checkout{max-width:620px;width:calc(100% - 30px);max-height:90vh;overflow:auto;background:#11111b;color:#fff;border:1px solid #555;border-radius:16px;padding:24px}.apparel-checkout::backdrop{background:#000b}.apparel-checkout label{display:grid;gap:6px;margin:12px 0}.apparel-checkout p{line-height:1.5}.apparel-row{display:flex;gap:12px;flex-wrap:wrap}.apparel-row>*{flex:1;min-width:130px}.apparel-checkout button:disabled{opacity:.5}.apparel-checkout input:focus-visible,.apparel-checkout select:focus-visible,.apparel-options select:focus-visible,.apparel-options input:focus-visible{outline:2px solid #ffbd69;outline-offset:2px}#apparelCheckoutError{color:#ffb49c}
   </style>
 <script defer src="scripts/analytics.js?v=20261110-owner"></script></head>
 <body>
@@ -26,7 +28,7 @@
     <div class="page-head">
       <p class="eyebrow">Official Merch Store</p>
       <h1>Raise Up Apparel</h1>
-      <p>Official Raise Up Entertainment clothing. Browse the catalog, then email us to confirm your size, color, availability, shipping, and total before placing your order.</p>
+      <p>Explore the latest Raise Up designs. Choose your color, size, and quantity to see the current item price.</p>
       <div class="hero-actions">
         <a class="btn primary" href="mailto:raiseupentllc@gmail.com?subject=Raise%20Up%20Apparel%20Order">Contact for Apparel</a>
       </div>
@@ -36,7 +38,7 @@
       <div class="setup-card">
         <p class="eyebrow">Apparel Orders</p>
         <h2>Find your next favorite.</h2>
-        <p>Choose a product and request an order by email. We’ll confirm the available options, current price, and shipping details with you.</p>
+        <p>Find the available colors and sizes for each design below. Shipping and applicable tax are confirmed before payment. Have a question? Contact us for help with your order.</p>
       </div>
     </section>
   </main>
@@ -44,25 +46,7 @@
     <strong>Raise Up Entertainment LLC</strong>
     <p>Questions about an apparel order? <a href="mailto:raiseupentllc@gmail.com">Email us directly.</a></p>
   <p class="privacy-links"><a href="privacy.html">Privacy</a> · <button type="button" data-analytics-preferences>Analytics preferences</button></p></footer>
-  <script src="scripts/apparel-catalog.js?v=20261002"></script>
-  <script>
-    (function () {
-      var grid = document.getElementById('apparelGrid');
-      var items = window.RAISEUP_APPAREL || [];
-      if (!items.length) {
-        grid.innerHTML = '<p>Products are loading — check back in a moment.</p>';
-        return;
-      }
-      grid.innerHTML = items.map(function (p) {
-        return '<article class="product-card" data-product-id="' + p.id + '">' +
-          '<div class="product-art"><img src="' + p.image + '" alt="' + p.title.replace(/"/g, '&quot;') + '" loading="lazy"></div>' +
-          '<div class="product-body">' +
-          '<p class="tag">' + p.price + '</p>' +
-          '<h3>' + p.title + '</h3>' +
-          '<a class="btn primary" href="' + p.checkout + '">Request order</a>' +
-          '</div></article>';
-      }).join('');
-    })();
-  </script>
+  <script src="scripts/apparel-catalog.js?v=20261124-printful33"></script>
+  <script src="scripts/apparel.js?v=20261124-printful33" defer></script>
 </body>
 </html>
