@@ -59,7 +59,17 @@ window.RAISEUP_PACK_PREVIEWS = {
     {folder:"Pads",name:"Pad (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-07.wav"},
     {folder:"Strings",name:"String (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-08.wav"},
     {folder:"Synths",name:"Synth (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-09.wav"},
-    {folder:"Ambience",name:"Ambience (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-10.wav"}
+    {folder:"Ambience",name:"Ambience (1)",src:"assets/audio/hifi-previews/pack-neutron/sample-10.wav"},
+    {folder:"Bass",name:"Bass (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-11.wav"},
+    {folder:"Bells",name:"Bell (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-12.wav"},
+    {folder:"Brass",name:"Brass (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-13.wav"},
+    {folder:"Guitar",name:"Guitar (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-14.wav"},
+    {folder:"Keys",name:"Key (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-15.wav"},
+    {folder:"Mallet",name:"Mallet (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-16.wav"},
+    {folder:"Pads",name:"Pad (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-17.wav"},
+    {folder:"Strings",name:"String (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-18.wav"},
+    {folder:"Synths",name:"Synth (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-19.wav"},
+    {folder:"Ambience",name:"Ambience (6)",src:"assets/audio/hifi-previews/pack-neutron/sample-20.wav"}
   ],
   "pack-bueno-demo": [
     {folder:"Melody Loops",name:"Evening",key:"G Major",bpm:96,src:"assets/audio/pack-previews/pack-bueno-demo/evening-g-major.wav"},
