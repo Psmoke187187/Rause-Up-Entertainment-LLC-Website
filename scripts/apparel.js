@@ -4,6 +4,12 @@
   if(!grid)return;
   const endpoint='https://raise-up-events.gsantiago0829.chatgpt.site';
   const products=(window.RAISEUP_APPAREL||[]).filter(p=>p.available&&p.variants?.length);
+  const printfulProducts = new Map([
+    [498140720, 'the-flower'],
+    [498136743, 'scarecrow'],
+    [498132235, 'space-man'],
+    [498123545, 'zombie-lit'],
+  ]);
   let checkoutEnabled=false,selected=null;
   const buttons=[];
   const money=value=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(value/100);
@@ -25,10 +31,13 @@
     const card=el('article',undefined,'product-card');card.dataset.productId=p.id;
     const art=el('div',undefined,'product-art'),image=document.createElement('img');image.src=p.image;image.alt=p.title;image.loading='lazy';art.append(image);
     const body=el('div',undefined,'product-body'),price=el('p',p.price,'tag'),title=el('h3',p.title);
-    if (p.id === 498140720) {
+    const printfulSlug = printfulProducts.get(p.id);
+    if (printfulSlug) {
       const link = el('a', 'Buy on Printful', 'btn primary');
-      link.href = 'https://raiseupapparel.printful.me/product/the-flower';
-      body.append(price, title, link);
+      link.href = 'https://raiseupapparel.printful.me/product/' + printfulSlug;
+      const gallery = el('a', 'See more photos', 'btn');
+      gallery.href = link.href;
+      body.append(price, title, gallery, link);
       card.append(art, body);
       grid.append(card);
       continue;
