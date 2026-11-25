@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="styles.css?v=apparel-20261002">
   <style>
     .product-art{min-height:0;background:#151520;padding:12px}
-    .product-art img{width:100%;height:240px;object-fit:contain;display:block}
+    .shirt-photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth}
+    .shirt-photos img{flex:0 0 100%;width:100%;min-width:0;height:240px;object-fit:contain;scroll-snap-align:start}
+    .shirt-photo-controls:not([hidden]){display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+    .shirt-photo-controls .btn{min-width:44px;min-height:44px;padding:4px 12px;font:inherit;font-size:24px;cursor:pointer}
+    @media (prefers-reduced-motion:reduce){.shirt-photos{scroll-behavior:auto}}
   </style>
 <script defer src="scripts/analytics.js?v=20261110-owner"></script></head>
 <body>
@@ -31,7 +35,19 @@
     <section id="apparelGrid" class="shop-grid" aria-label="T-shirts">
       <article class="product-card" data-product-id="498140720">
         <div class="product-art">
-          <img src="https://files.cdn.printful.com/files/74d/74df063e37b8fee91d68a20a5dee31bc_preview.png" alt="The Flower" loading="lazy">
+          <div class="shirt-photos" tabindex="0" role="region" aria-label="The Flower photos">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202822906b071be7a8612" alt="The Flower, photo 1 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202822906b071be7c55f8" alt="The Flower, photo 2 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202822906b071be7e4171" alt="The Flower, photo 3 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202822906b071be80dd02" alt="The Flower, photo 4 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202822906b071be828740" alt="The Flower, photo 5 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202822906b071be84367a" alt="The Flower, photo 6 of 6" loading="lazy" decoding="async">
+          </div>
+          <div class="shirt-photo-controls" hidden>
+            <button class="btn" type="button" data-photo-step="-1" aria-label="Previous The Flower photo">‹</button>
+            <span>6 photos</span>
+            <button class="btn" type="button" data-photo-step="1" aria-label="Next The Flower photo">›</button>
+          </div>
         </div>
         <div class="product-body">
           <p class="tag">$19.99 – $27.99</p>
@@ -44,7 +60,19 @@
       </article>
       <article class="product-card" data-product-id="498136743">
         <div class="product-art">
-          <img src="https://files.cdn.printful.com/files/932/9321fe39a20140181684c7320b3545a1_preview.png" alt="Scarecrow" loading="lazy">
+          <div class="shirt-photos" tabindex="0" role="region" aria-label="Scarecrow photos">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840026b07278b5bb9e" alt="Scarecrow, photo 1 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840026b07278b75bd8" alt="Scarecrow, photo 2 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840026b07278b9532d" alt="Scarecrow, photo 3 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840026b07278ba8fb4" alt="Scarecrow, photo 4 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840026b07278bbcc58" alt="Scarecrow, photo 5 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840026b07278bd1606" alt="Scarecrow, photo 6 of 6" loading="lazy" decoding="async">
+          </div>
+          <div class="shirt-photo-controls" hidden>
+            <button class="btn" type="button" data-photo-step="-1" aria-label="Previous Scarecrow photo">‹</button>
+            <span>6 photos</span>
+            <button class="btn" type="button" data-photo-step="1" aria-label="Next Scarecrow photo">›</button>
+          </div>
         </div>
         <div class="product-body">
           <p class="tag">$19.99 – $27.99</p>
@@ -57,7 +85,19 @@
       </article>
       <article class="product-card" data-product-id="498132235">
         <div class="product-art">
-          <img src="https://files.cdn.printful.com/files/88b/88b1d8a643c94e2b50c4e028f9612030_preview.png" alt="Space Man" loading="lazy">
+          <div class="shirt-photos" tabindex="0" role="region" aria-label="Space Man photos">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840956b0727c5a169e" alt="Space Man, photo 1 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840956b0727c5cb3e9" alt="Space Man, photo 2 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840956b0727c5e3b02" alt="Space Man, photo 3 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840956b0727c60a695" alt="Space Man, photo 4 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840956b0727c6255fc" alt="Space Man, photo 5 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202840956b0727c64035a" alt="Space Man, photo 6 of 6" loading="lazy" decoding="async">
+          </div>
+          <div class="shirt-photo-controls" hidden>
+            <button class="btn" type="button" data-photo-step="-1" aria-label="Previous Space Man photo">‹</button>
+            <span>6 photos</span>
+            <button class="btn" type="button" data-photo-step="1" aria-label="Next Space Man photo">›</button>
+          </div>
         </div>
         <div class="product-body">
           <p class="tag">$19.99 – $27.99</p>
@@ -70,7 +110,19 @@
       </article>
       <article class="product-card" data-product-id="498123545">
         <div class="product-art">
-          <img src="https://files.cdn.printful.com/files/c6f/c6f08ccb752b52cc5ea72cf4b6bbacea_preview.png" alt="Zombie Lit" loading="lazy">
+          <div class="shirt-photos" tabindex="0" role="region" aria-label="Zombie Lit photos">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202839916b072761cb4ce" alt="Zombie Lit, photo 1 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202839916b072762002fa" alt="Zombie Lit, photo 2 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202839916b0727621795a" alt="Zombie Lit, photo 3 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202839916b0727623653f" alt="Zombie Lit, photo 4 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202839916b0727625c098" alt="Zombie Lit, photo 5 of 6" loading="lazy" decoding="async">
+            <img src="https://cdn.printful.me/t/quick-stores/variants/202839916b072762733dc" alt="Zombie Lit, photo 6 of 6" loading="lazy" decoding="async">
+          </div>
+          <div class="shirt-photo-controls" hidden>
+            <button class="btn" type="button" data-photo-step="-1" aria-label="Previous Zombie Lit photo">‹</button>
+            <span>6 photos</span>
+            <button class="btn" type="button" data-photo-step="1" aria-label="Next Zombie Lit photo">›</button>
+          </div>
         </div>
         <div class="product-body">
           <p class="tag">$19.99</p>
@@ -87,5 +139,19 @@
     <strong>Raise Up Entertainment LLC</strong>
     <p>Questions about an apparel order? <a href="mailto:raiseupentllc@gmail.com">Email us directly.</a></p>
   <p class="privacy-links"><a href="privacy.html">Privacy</a> · <button type="button" data-analytics-preferences>Analytics preferences</button></p></footer>
+  <script>
+    document.querySelectorAll('.shirt-photo-controls').forEach(controls => {
+      const gallery = controls.previousElementSibling;
+      controls.hidden = false;
+      controls.addEventListener('click', event => {
+        const button = event.target.closest('button[data-photo-step]');
+        if (!button) return;
+        const current = Math.round(gallery.scrollLeft / gallery.clientWidth);
+        const count = gallery.children.length;
+        const next = (current + Number(button.dataset.photoStep) + count) % count;
+        gallery.scrollTo({ left: next * gallery.clientWidth });
+      });
+    });
+  </script>
 </body>
 </html>
