@@ -25,6 +25,14 @@
     const card=el('article',undefined,'product-card');card.dataset.productId=p.id;
     const art=el('div',undefined,'product-art'),image=document.createElement('img');image.src=p.image;image.alt=p.title;image.loading='lazy';art.append(image);
     const body=el('div',undefined,'product-body'),price=el('p',p.price,'tag'),title=el('h3',p.title);
+    if (p.id === 498140720) {
+      const link = el('a', 'Buy on Printful', 'btn primary');
+      link.href = 'https://raiseupapparel.printful.me/product/the-flower';
+      body.append(price, title, link);
+      card.append(art, body);
+      grid.append(card);
+      continue;
+    }
     const color=select([...new Set(p.variants.map(v=>v.color))]),size=document.createElement('select'),quantity=document.createElement('input');quantity.type='number';quantity.min='1';quantity.max='5';quantity.step='1';quantity.value='1';
     const controls=el('div',undefined,'apparel-options');controls.append(labeled('Color',color),labeled('Size',size),labeled('Quantity',quantity));
     const button=el('button','Request order','btn primary');button.type='button';buttons.push(button);
