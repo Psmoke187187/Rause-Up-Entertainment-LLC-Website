@@ -6,7 +6,7 @@ The root of this repository is deployed by `.github/workflows/static.yml` to Git
 
 ## Catalog and previews
 
-`scripts/catalog.js` contains 20 beats, each with a distinct live $100 Stripe Payment Link. The published audio paths contain 30 decoded seconds taken from the midpoint of each private master. `docs/preview-manifest.json` records the source duration and excerpt boundaries, without publishing masters or private file links. Rebuild using:
+`scripts/catalog.js` lists the 20 beats and their preview files. Standard and Exclusive ordering starts on `beats.html`. The published audio paths contain 30 decoded seconds taken from the midpoint of each private master. `docs/preview-manifest.json` records the source duration and excerpt boundaries, without publishing masters or private file links. Rebuild using:
 
 ```sh
 python scripts/build_previews.py /absolute/path/to/private-masters
