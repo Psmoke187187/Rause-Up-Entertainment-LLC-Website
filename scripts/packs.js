@@ -50,16 +50,17 @@ function sampleGroups(p,term,matchedPack){
 function card(p,term){
   const price='$'+p.price.toFixed(2);
   const hay=[p.title,p.category,p.description].join(' ').toLowerCase(),matchedPack=!term||hay.includes(term);
-  const matchedSamples=p.samples.filter(s=>!keyFilter?.value||s.key===keyFilter.value);
+  const featured = !term && !keyFilter?.value && p.samples[0];
+  const featuredButton = featured ? '<button type="button" class="pack-expand" data-pack="'+esc(p.id)+'" data-sample="0" aria-label="Play featured sound: '+esc(featured.name)+'">▶ Play featured sound</button>' : '';
   const availability=p.samples.length?'<span class="sample-available">'+p.samples.length+' samples to hear</span>':'<span class="sample-unavailable">Audio previews coming soon</span>';
   const preview=p.samples.length?
-    '<button type="button" class="pack-expand" data-expand="'+esc(p.id)+'" aria-expanded="'+expanded.has(p.id)+'" aria-controls="preview-'+esc(p.id)+'">'+(expanded.has(p.id)?'Hide sounds':'Explore folders & listen')+' <span aria-hidden="true">'+(expanded.has(p.id)?'−':'+')+'</span></button>'+
+    '<button type="button" class="pack-expand" data-expand="'+esc(p.id)+'" aria-expanded="'+expanded.has(p.id)+'" aria-controls="preview-'+esc(p.id)+'">'+(expanded.has(p.id)?'Hide sounds':'Browse all sounds')+' <span aria-hidden="true">'+(expanded.has(p.id)?'−':'+')+'</span></button>'+
     '<div id="preview-'+esc(p.id)+'" class="pack-samples"'+(expanded.has(p.id)?'':' hidden')+'>'+
       (sampleGroups(p,term,matchedPack)||'<p>No sound previews match this filter.</p>')+
     '</div>':'';
   const detail=p.deliveryCount?'<p class="pack-confirmed-count">'+p.deliveryCount+' audio files in full pack · '+p.samples.length+' previews</p>':p.soundCount?'<p class="pack-confirmed-count">'+p.soundCount+' WAV files curated · '+p.samples.length+' previews</p>' :p.sourceCount?'<p class="pack-confirmed-count">'+p.sourceCount+' source audio files inventoried · '+p.samples.length+' previews</p>':'';
   const buy=p.samples.length<20?'<button class="btn pack-buy" type="button" disabled title="This pack needs 20 playable previews before checkout is enabled">Checkout paused · '+p.samples.length+'/20 previews</button>':p.paymentUrl?'<a class="btn primary pack-buy" href="'+esc(p.paymentUrl)+'" target="_blank" rel="noopener" data-product-id="'+esc(p.id)+'" aria-label="Buy '+esc(p.title)+' for '+price+'">Buy full pack <span>'+price+' <span aria-hidden="true">↗</span></span></a>' :p.releaseStatus==='preview'?'<a class="btn pack-buy pack-soon-buy" href="mailto:raiseupentllc@gmail.com?subject='+encodeURIComponent('Sound pack launch: '+p.title)+'" aria-label="Ask when '+esc(p.title)+' will be available">Ask about launch <span>Coming soon</span></a>':'<button class="btn pack-buy" type="button" disabled>Checkout unavailable</button>';
-  return '<article class="product-card pack-card" id="'+esc(p.id)+'" data-product-id="'+esc(p.id)+'">'+artwork(p)+'<div class="pack-body"><p class="pack-category">'+esc(p.category)+'</p><h2><a href="#'+esc(p.id)+'">'+esc(p.title)+'</a></h2>'+(p.description?'<p class="pack-description">'+esc(p.description)+'</p>':'')+detail+'<div class="sample-status">'+availability+'</div>'+preview+buy+'</div></article>';
+  return '<article class="product-card pack-card" id="'+esc(p.id)+'" data-product-id="'+esc(p.id)+'">'+artwork(p)+'<div class="pack-body"><p class="pack-category">'+esc(p.category)+'</p><h2><a href="#'+esc(p.id)+'">'+esc(p.title)+'</a></h2>'+(p.description?'<p class="pack-description">'+esc(p.description)+'</p>':'')+detail+'<div class="sample-status">'+availability+'</div>'+featuredButton+preview+buy+'</div></article>';
 }
 function render(){
   const term=search.value.trim().toLowerCase(),selected=category.value,key=keyFilter?.value||'';
@@ -82,7 +83,7 @@ grid.addEventListener('click',event=>{
   const toggle=event.target.closest('[data-expand]');if(toggle){const id=toggle.dataset.expand;if(expanded.has(id))expanded.delete(id);else expanded.add(id);render();return;}
   const play=event.target.closest('[data-sample]');if(!play||!audio||!nowPlaying||!player)return;
   const pack=packs.find(p=>p.id===play.dataset.pack),s=pack?.samples[Number(play.dataset.sample)];if(!s)return;
-  const previewSrc=s.src+'?v=20261124-all29';
+  const previewSrc=s.src+'?v=curated-20261126';
   if(audio.getAttribute('src')===previewSrc&&!audio.paused){audio.pause();return;}
   audio.src=previewSrc;audio.volume=Number.isFinite(s.volume)?Math.max(0.05,Math.min(1,s.volume)):1;nowPlaying.textContent=pack.title+' · '+s.folder+' / '+s.name;
   player.hidden=false;audio.play().catch(()=>{nowPlaying.textContent+=' — Tap play to listen';});
