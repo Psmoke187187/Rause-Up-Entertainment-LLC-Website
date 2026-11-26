@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Buy Original Beats | Raise Up Entertainment LLC</title>
-  <meta name="description" content="Listen to full-length watermarked previews of 20 original Raise Up Entertainment beats and purchase a beat license for $100.">
+  <meta name="description" content="Preview original beats and choose a Standard license, three-beat bundle, or Exclusive license from Raise Up Entertainment LLC.">
   <link rel="stylesheet" href="styles.css?v=mobile-covers-20261110">
 <script defer src="scripts/analytics.js?v=20261110-owner"></script></head>
 <body>
@@ -21,14 +21,28 @@
 
   <main class="page">
     <div class="page-head">
-      <p class="eyebrow">Original Beat Store</p>
-      <h1>Find your sound. Every beat is $100.</h1>
-      <p>Explore 20 original beats with full-length watermarked previews, choose your track, and purchase your $100 license securely through Stripe.</p>
-      <div class="store-promise">
-        <span>✓ Original production</span>
-        <span>✓ $100 flat price</span>
-        <span>✓ Secure Stripe checkout</span>
-      </div>
+      <h1>Shop Beats</h1>
+      <div class="license-grid" aria-label="Beat license offers">
+<div><h2>Standard · $24.99</h2><p>One beat for one commercial song. Non-exclusive.</p><a href="#beatGrid">Choose a beat</a> · <a href="licensing.html#standard">Standard terms</a></div>
+<div><h2>Pick Any 3 · $59.99</h2><p>Choose any three available beats. Includes a Standard license for each.</p><a href="#bundle" class="btn primary">Build your bundle</a></div>
+<div><h2>Producer Picks · $49.99</h2><p>Club, Motovation and The Next Hit. Three Standard licenses.</p><a href="mailto:raiseupentllc@gmail.com?subject=Producer%20Picks%20%E2%80%94%20%2449.99&amp;body=I'd%20like%20to%20request%20Producer%20Picks%3A%20Club%2C%20Motovation%20and%20The%20Next%20Hit.%20Please%20confirm%20the%20formats%20and%20send%20the%20license%20terms%20and%20payment%20instructions.">Request Producer Picks</a></div>
+<div><h2>Exclusive · $249</h2><p>Available on selected beats after a rights and file check. Both parties sign. Prior licenses still apply.</p><a href="#beatGrid">Find a beat to request</a> · <a href="licensing.html#exclusive">Exclusive terms</a></div>
+</div>
+<p>Order by email. We confirm availability, files and license terms before payment. After payment verification, your order email includes your license and audio files or private download links.</p>
+      <section id="bundle" class="setup-card" aria-labelledby="bundleHeading">
+        <h2 id="bundleHeading">Pick Any 3 · $59.99</h2>
+        <p>Choose three different available beats.</p>
+        <form id="beatBundle">
+          <div class="filters">
+            <label>Beat 1 <select name="beat1" required><option value="">Choose a beat</option></select></label>
+            <label>Beat 2 <select name="beat2" required><option value="">Choose a beat</option></select></label>
+            <label>Beat 3 <select name="beat3" required><option value="">Choose a beat</option></select></label>
+          </div>
+          <button class="btn primary" type="submit">Email my bundle request</button>
+          <p id="bundleMessage" role="status"></p>
+        </form>
+      </section>
+      <h2>Browse beats</h2>
       <div class="filters">
         <input id="search" type="search" placeholder="Search beats" aria-label="Search beats">
         <select id="genre" aria-label="Filter by genre">
@@ -53,6 +67,6 @@
   </div>
   <script defer src="scripts/catalog.js?v=watermarked-20261125"></script>
 <script defer src="scripts/preview-metrics.js?v=20261110"></script>
-  <script defer src="scripts/app.js?v=watermarked-20261125"></script>
+  <script defer src="scripts/app.js?v=beat-licenses-1"></script>
 </body>
 </html>
