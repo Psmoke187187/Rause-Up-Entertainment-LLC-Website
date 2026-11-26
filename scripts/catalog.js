@@ -5,9 +5,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "High-energy club-ready production",
     cover: "assets/img/covers/club-cover-v2.webp",
-    preview: "assets/audio/previews/club-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/cNi7sKdzd2MwdHXcZjcs800"
+    preview: "assets/audio/previews/club-watermarked-v1.mp3"
   },
   {
     id: "dark-detroit",
@@ -15,9 +13,7 @@ window.RAISEUP_BEATS = [
     genre: "Detroit Rap",
     mood: "Dark, aggressive street energy",
     cover: "assets/img/covers/dark-detroit-cover-v2.webp",
-    preview: "assets/audio/previews/dark-detroit-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/8x26oGcv95YIavLaRbcs801"
+    preview: "assets/audio/previews/dark-detroit-watermarked-v1.mp3"
   },
   {
     id: "motovation",
@@ -25,9 +21,7 @@ window.RAISEUP_BEATS = [
     genre: "Trap",
     mood: "Driven, cinematic motivational energy",
     cover: "assets/img/covers/motovation-cover-v2.webp",
-    preview: "assets/audio/previews/motovation-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/cNi9AScv9cn633jcZjcs802"
+    preview: "assets/audio/previews/motovation-watermarked-v1.mp3"
   },
   {
     id: "bad-bitch",
@@ -35,9 +29,7 @@ window.RAISEUP_BEATS = [
     genre: "Trap",
     mood: "Bold, glamorous, high-status energy",
     cover: "assets/img/covers/bad-bitch-cover.webp",
-    preview: "assets/audio/previews/bad-bitch-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/6oU4gygLpfzi9rHbVfcs803"
+    preview: "assets/audio/previews/bad-bitch-watermarked-v1.mp3"
   },
   {
     id: "country-hore-beat",
@@ -45,9 +37,7 @@ window.RAISEUP_BEATS = [
     genre: "Country Trap",
     mood: "Rebellious western crossover energy",
     cover: "assets/img/covers/country-hore-beat-cover.webp",
-    preview: "assets/audio/previews/country-hore-beat-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/7sY5kCan1dra1Zf9N7cs804"
+    preview: "assets/audio/previews/country-hore-beat-watermarked-v1.mp3"
   },
   {
     id: "the-next-hit",
@@ -55,9 +45,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Bright, energetic production built for a standout record",
     cover: "assets/img/covers/the-next-hit.webp",
-    preview: "assets/audio/previews/the-next-hit-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/00waEWgLp0Eo6fv8J3cs805"
+    preview: "assets/audio/previews/the-next-hit-watermarked-v1.mp3"
   },
   {
     id: "violin-project",
@@ -65,9 +53,7 @@ window.RAISEUP_BEATS = [
     genre: "Trap",
     mood: "Dark, dramatic strings with heavy cinematic energy",
     cover: "assets/img/covers/violin-project.webp",
-    preview: "assets/audio/previews/violin-project-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/14A3cu1Qv1Is7jze3ncs806"
+    preview: "assets/audio/previews/violin-project-watermarked-v1.mp3"
   },
   {
     id: "swervin",
@@ -75,9 +61,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Heavy low end with a steady cruising pulse",
     cover: "assets/img/covers/swervin.webp",
-    preview: "assets/audio/previews/swervin-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/9B69AS1Qv72M8nDaRbcs807"
+    preview: "assets/audio/previews/swervin-watermarked-v1.mp3"
   },
   {
     id: "mafia-drill",
@@ -85,9 +69,7 @@ window.RAISEUP_BEATS = [
     genre: "Drill",
     mood: "144 BPM drill production with commanding low-end energy",
     cover: "assets/img/covers/mafia-drill.webp",
-    preview: "assets/audio/previews/mafia-drill-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/dRmdR852HeveeM1e3ncs808"
+    preview: "assets/audio/previews/mafia-drill-watermarked-v1.mp3"
   },
   {
     id: "western-drill",
@@ -95,9 +77,7 @@ window.RAISEUP_BEATS = [
     genre: "Country Drill",
     mood: "A rugged western-drill crossover with heavy low end",
     cover: "assets/img/covers/western-drill.webp",
-    preview: "assets/audio/previews/western-drill-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/aFa6oG66L86Q7jzaRbcs809"
+    preview: "assets/audio/previews/western-drill-watermarked-v1.mp3"
   },
   {
     id: "hard-hopes",
@@ -105,9 +85,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Weighty hip-hop production with a determined mood",
     cover: "assets/img/covers/hard-hopes.webp",
-    preview: "assets/audio/previews/hard-hopes-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/fZu9AS3YD86Q8nDe3ncs80a"
+    preview: "assets/audio/previews/hard-hopes-watermarked-v1.mp3"
   },
   {
     id: "taliban",
@@ -115,9 +93,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Heavy low end and a driving rhythmic pulse",
     cover: "assets/img/covers/taliban.webp",
-    preview: "assets/audio/previews/taliban-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/cNi9ASdzddraeM1aRbcs80b"
+    preview: "assets/audio/previews/taliban-watermarked-v1.mp3"
   },
   {
     id: "streets-of-new-york",
@@ -125,9 +101,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Urban hip-hop production with a firm low-end groove",
     cover: "assets/img/covers/streets-of-new-york.webp",
-    preview: "assets/audio/previews/streets-of-new-york-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/14AbJ052Heve6fvgbvcs80c"
+    preview: "assets/audio/previews/streets-of-new-york-watermarked-v1.mp3"
   },
   {
     id: "night-b4-halloween",
@@ -135,9 +109,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Shadowy production with a suspenseful late-night mood",
     cover: "assets/img/covers/night-b4-halloween.webp",
-    preview: "assets/audio/previews/night-b4-halloween-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/8x27sKdzd4UE5br7EZcs80d"
+    preview: "assets/audio/previews/night-b4-halloween-watermarked-v1.mp3"
   },
   {
     id: "get-back",
@@ -145,9 +117,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Forceful low-end production built for a comeback record",
     cover: "assets/img/covers/get-back.webp",
-    preview: "assets/audio/previews/get-back-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/9B6aEWbr54UE33je3ncs80e"
+    preview: "assets/audio/previews/get-back-watermarked-v1.mp3"
   },
   {
     id: "twisted-minds",
@@ -155,9 +125,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Hypnotic production with a twisted, off-center mood",
     cover: "assets/img/covers/twisted-minds.webp",
-    preview: "assets/audio/previews/twisted-minds-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/28E8wO52HevebzP7EZcs80f"
+    preview: "assets/audio/previews/twisted-minds-watermarked-v1.mp3"
   },
   {
     id: "hero",
@@ -165,9 +133,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Bold 122 BPM production in E minor",
     cover: "assets/img/covers/hero.webp",
-    preview: "assets/audio/previews/hero-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/fZu14man19aU5brgbvcs80g"
+    preview: "assets/audio/previews/hero-watermarked-v1.mp3"
   },
   {
     id: "music-box",
@@ -175,9 +141,7 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Hypnotic hip-hop production with a weighty low-end pulse",
     cover: "assets/img/covers/music-box.webp",
-    preview: "assets/audio/previews/music-box-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/14AcN466L9aUgU9cZjcs80h"
+    preview: "assets/audio/previews/music-box-watermarked-v1.mp3"
   },
   {
     id: "dark-drill",
@@ -185,9 +149,7 @@ window.RAISEUP_BEATS = [
     genre: "Drill",
     mood: "Dark drill production with a deep, insistent groove",
     cover: "assets/img/covers/dark-drill.webp",
-    preview: "assets/audio/previews/dark-drill-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/aFabJ01QvevecDT1gBcs80i"
+    preview: "assets/audio/previews/dark-drill-watermarked-v1.mp3"
   },
   {
     id: "viking",
@@ -195,8 +157,6 @@ window.RAISEUP_BEATS = [
     genre: "Hip-Hop",
     mood: "Heavy, cinematic hip-hop with a relentless pulse",
     cover: "assets/img/covers/viking.webp",
-    preview: "assets/audio/previews/viking-watermarked-v1.mp3",
-    price: "$100",
-    checkout: "https://buy.stripe.com/bJecN4eDh72McDT3oJcs80j"
+    preview: "assets/audio/previews/viking-watermarked-v1.mp3"
   }
 ];
