@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sound Packs | Raise Up Entertainment LLC</title>
-<meta name="description" content="Explore Raise Up Entertainment sound packs, playable audio previews, upcoming size-based pricing tiers and bundle options.">
+<meta name="description" content="Preview and shop Raise Up Entertainment sound packs and producer bundles.">
 <link rel="canonical" href="https://raiseupentertainmentllc.com/packs.html">
 <link rel="stylesheet" href="styles.css?v=packs-preview-20261111">
 <style>
@@ -27,27 +27,8 @@
 @media(max-width:1000px){.pack-toolbar{grid-template-columns:1fr 1fr}.pack-toolbar .pack-field:first-child{grid-column:1/-1}}
 @media(max-width:680px){.pack-toolbar{grid-template-columns:1fr}.pack-toolbar .pack-field:first-child{grid-column:auto}.pack-samples{max-height:270px}.pack-player{bottom:8px}}
 
-/* 2026-11-12: size-based storefront and bundle request preview */
+/* Bundle offers and custom requests */
 .pack-confirmed-count{font-size:13px;color:#f5d28d;font-weight:700;margin:0 0 12px}.pack-soon-buy{background:#282435;color:#f7d796;border:1px solid #bd9968}.pack-soon-buy:hover{background:#33293c}
-.shop-tier-zone,.shop-bundle-zone,.shop-inventory-zone{margin:32px 0 40px}
-.shop-zone-heading{max-width:850px;margin:0 0 18px}
-.shop-zone-heading h2{font-size:clamp(24px,3.3vw,38px);line-height:1.15;margin:0 0 10px}
-.shop-zone-heading p{color:#c8c4ce;line-height:1.6;font-size:15px;margin:0 0 10px}
-.shop-tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.shop-tier{border:1px solid #ffffff28;border-radius:18px;background:linear-gradient(155deg,#1d1c29,#11111a);padding:23px;min-width:0}
-.shop-tier.featured{border-color:#f5bd4980;background:linear-gradient(155deg,#352915,#15131b)}
-.shop-tier-eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#e9be6c;font-weight:800}
-.shop-tier h3{font-size:19px;margin:12px 0 2px}
-.shop-tier .shop-tier-price{font-size:30px;font-weight:800;line-height:1.3;color:#fff;margin:3px 0}
-.shop-tier .shop-tier-size{font-size:14px;font-weight:750;color:#f5dca4;margin:8px 0}
-.shop-tier .shop-tier-note{font-size:13px;line-height:1.5;color:#bfb9cc;margin:8px 0 0}
-.shop-tier-zone .shop-coming-note{color:#f0d39c;font-size:13px;line-height:1.6;margin:16px 0 0;border-left:3px solid #d2a54d;padding-left:14px}
-.shop-bundle-zone{padding:25px;border:1px solid #ffffff28;border-radius:21px;background:linear-gradient(135deg,#171520,#241b22)}
-.shop-bundle-deals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:15px 0 24px}
-.shop-bundle-deal{border:1px solid #ffffff27;background:#0c0e17a8;border-radius:15px;padding:19px}
-.shop-bundle-deal h3{font-size:18px;margin:0 0 4px}
-.shop-bundle-deal strong{color:#ffcd76;font-size:27px}
-.shop-bundle-deal p{font-size:13px;color:#c3c0cf;margin:7px 0 0}
 .bundle-builder{border-top:1px solid #ffffff22;padding-top:18px}
 .bundle-builder label[for=bundleSize]{font-size:14px;font-weight:800;display:block;margin:0 0 9px}
 .bundle-builder select{background:#14141f;color:#fff;border:1px solid #ffffff40;border-radius:9px;padding:10px;font:inherit;max-width:100%}
@@ -60,12 +41,18 @@
 .bundle-status{font-size:13px;color:#e9d6b2;margin:13px 0}
 .bundle-request{padding:12px 18px;border:0;border-radius:10px;background:#f5bd49;color:#18110a;cursor:pointer;font:800 13px Inter,Arial,sans-serif}
 .bundle-request:disabled{cursor:not-allowed;background:#34313a;color:#d0c9d5}
-.shop-inventory-zone{padding:21px 24px;border:1px dashed #ffffff40;border-radius:17px;background:#ffffff05}
-.shop-inventory-zone h2{font-size:20px;margin:0 0 8px}
-.shop-inventory-zone p{font-size:14px;line-height:1.6;color:#bfbec9;margin:5px 0}
-@media(max-width:1100px){.shop-tier-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bundle-choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:680px){.shop-tier-grid,.shop-bundle-deals,.bundle-choice-grid{grid-template-columns:1fr}.shop-bundle-zone{padding:20px}.shop-tier{padding:19px}}
+@media(max-width:680px){.bundle-choice-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.bundle-choice-grid{grid-template-columns:1fr}}
 
+.pack-hero{padding:0;border:0}.packs-page h1{font-size:clamp(32px,5vw,54px);margin:0 0 4px}.pack-intro{margin:0}
+.pack-offers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0 20px}
+.pack-offer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:start;padding:12px;border:1px solid #b58a45;border-radius:12px;background:#221b22;color:#fff;text-decoration:none}
+.pack-offer:hover,.pack-offer:focus-visible{background:#332718;outline:2px solid #f5bd49;outline-offset:2px}
+.pack-offer-title,.pack-offer strong{font-weight:800}.pack-offer strong,.pack-offer-action{color:#ffcf79}.pack-offer-contents{grid-column:1/-1;color:#ded8e3;font-size:.875rem}.pack-offer-action{grid-column:1/-1;font-size:.875rem;font-weight:700}
+#browsePacks{margin:0 0 8px;font-size:1.4rem}.pack-toolbar{margin:0 0 8px;gap:8px}.pack-toolbar input,.pack-toolbar select{padding:8px 10px;font-size:1rem}.pack-count{margin-bottom:10px}
+.pack-cover{display:none}.pack-body{padding:16px}.packs-page .pack-description{margin-bottom:12px}
+details.pack-help summary{cursor:pointer;font-weight:800;font-size:1.125rem}details.pack-help[open] summary{margin-bottom:14px}
+@media(max-width:680px){.pack-toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}.pack-toolbar .pack-field:first-child{grid-column:1/-1}.pack-offer-title{font-size:.875rem}.pack-offer{grid-template-columns:1fr}.pack-offer-contents{font-size:.875rem}}
 </style>
 <script defer src="scripts/analytics.js?v=packs-20261111"></script>
 <script defer src="scripts/packs-catalog.js?v=20261124-all29-complete"></script>
@@ -76,42 +63,39 @@
 </head><body>
 <nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><span>Raise Up</span> Entertainment</a><div><a href="beats.html">Beats</a><a href="apparel.html">Apparel</a><a href="packs.html" aria-current="page">Sound Packs</a><a href="licensing.html">Licensing</a><a href="mailto:raiseupentllc@gmail.com">Contact</a></div></nav>
 <main class="page packs-page">
-<header class="pack-hero"><p class="eyebrow">The Raise Up Sound Library</p><h1>Build your next sound.</h1><p class="pack-intro">Explore drums, melodies, vocals and instrument samples for your next session. Choose your collection and check out through Stripe. Shop verified-price collections from <strong>$6.99</strong> to <strong>$24.99</strong>, plus ready-made bundles. Browse the sounds, choose your pack, and check out through Stripe.</p><div class="pack-promise" aria-label="Store information"><span>29 sound pack listings</span><span>20 individual previews per pack</span><span>Size-based prices live</span><span>Secure Stripe checkout</span></div></header>
-
-<section class="shop-tier-zone" aria-labelledby="shopTierHeading">
-  <div class="shop-zone-heading"><p class="eyebrow">PRICING BY COLLECTION SIZE</p><h2 id="shopTierHeading">More sounds. Better value.</h2><p>Every pack has 20 individually playable previews. Full-pack audio file counts appear on each listing and match the delivery folders. Your access instructions arrive by email after payment verification.</p></div>
-  <div class="shop-tier-grid">
-<article class="shop-tier featured"><span class="shop-tier-eyebrow">Standard</span><h3>Essential Collection</h3><p class="shop-tier-price">$6.99</p><p class="shop-tier-size">60–99 audio files</p><p class="shop-tier-note">The starting point for producers. All 60-WAV curated packs land here.</p></article>
-<article class="shop-tier"><span class="shop-tier-eyebrow">Pro</span><h3>Extended Library</h3><p class="shop-tier-price">$9.99</p><p class="shop-tier-size">100–199 audio files</p><p class="shop-tier-note">Broader palettes for beat-making and arranging.</p></article>
-<article class="shop-tier"><span class="shop-tier-eyebrow">Ultimate</span><h3>Large Sound Vault</h3><p class="shop-tier-price">$14.99</p><p class="shop-tier-size">200–499 audio files</p><p class="shop-tier-note">Larger inventory organized into one convenient collection.</p></article>
-<article class="shop-tier"><span class="shop-tier-eyebrow">Studio Pro</span><h3>Studio Vault</h3><p class="shop-tier-price">$19.99</p><p class="shop-tier-size">500–999 audio files</p><p class="shop-tier-note">Expanded libraries at a single purchase price.</p></article>
-<article class="shop-tier"><span class="shop-tier-eyebrow">Mega</span><h3>Producer Archive</h3><p class="shop-tier-price">$24.99</p><p class="shop-tier-size">1,000+ audio files</p><p class="shop-tier-note">Our biggest organized sound libraries.</p></article>
-</div>
-  <p class="shop-coming-note"><strong>Secure checkout is live.</strong> Prices displayed on product cards match the linked Stripe checkout. Full-pack counts show audio file entries in the delivery folders; preview counts are separate. Digital download access is emailed after payment verification.</p>
+<header class="pack-hero">
+  <h1>Sound Packs</h1>
+  <p class="pack-intro">Preview sounds, then buy the full pack.</p>
+</header>
+<section class="pack-offers" aria-label="Bundle deals">
+  <a class="pack-offer" href="https://buy.stripe.com/dRm00i0MrgDm0Vbe3ncs81a" data-product-id="bundle-producer-starter-3">
+    <span class="pack-offer-title">3-pack · Producer Starter Bundle</span><strong>$17.99</strong>
+    <span class="pack-offer-contents">Growth Essentials, Legacy Drum Essentials and Trap Toolkit: 180 curated WAVs.</span><span class="pack-offer-action">Buy bundle</span>
+  </a>
+  <a class="pack-offer" href="https://buy.stripe.com/14AdR8eDh2MwfQ51gBcs81b" data-product-id="bundle-producer-collection-5">
+    <span class="pack-offer-title">5-pack · Producer Collection</span><strong>$27.99</strong>
+    <span class="pack-offer-contents">Growth Essentials, Legacy Drum Essentials, Trap Toolkit, Snares Kit 1, and Drum and Bass.</span><span class="pack-offer-action">Buy bundle</span>
+  </a>
 </section>
-<section class="shop-bundle-zone" id="bundleDeals" aria-labelledby="shopBundleHeading">
-  <div class="shop-zone-heading"><p class="eyebrow">BUILD YOUR COLLECTION</p><h2 id="shopBundleHeading">Bundle up and save.</h2><p>Buy one of our preselected bundles through Stripe, or request a different combination below.</p></div>
-  <div class="shop-bundle-deals">
-    <article class="shop-bundle-deal"><h3>Producer Starter Bundle</h3><strong>$17.99</strong><p>Growth Essentials, Legacy Drum Essentials and Trap Toolkit: 180 curated WAVs.</p><p><a class="btn primary" href="https://buy.stripe.com/dRm00i0MrgDm0Vbe3ncs81a" target="_blank" rel="noopener" data-product-id="bundle-producer-starter-3">Buy this 3-pack — $17.99</a></p></article>
-    <article class="shop-bundle-deal"><h3>Producer Collection</h3><strong>$27.99</strong><p>Growth Essentials, Legacy Drum Essentials, Trap Toolkit, Snares Kit 1, and Drum and Bass.</p><p><a class="btn primary" href="https://buy.stripe.com/14AdR8eDh2MwfQ51gBcs81b" target="_blank" rel="noopener" data-product-id="bundle-producer-collection-5">Buy this 5-pack — $27.99</a></p></article>
-  </div>
+<section aria-labelledby="browsePacks">
+<h2 id="browsePacks">Browse packs</h2>
+<div class="pack-toolbar" role="search" aria-label="Find sound packs"><label class="pack-field"><span>Search the library</span><input id="packSearch" type="search" placeholder="Search packs, sounds, folders, keys or BPM" autocomplete="off"></label><label class="pack-field"><span>Category</span><select id="packCategory"><option value="">All categories</option></select></label><label class="pack-field"><span>Musical key</span><select id="packKey"><option value="">All labeled keys</option></select></label></div>
+<output id="packCount" class="pack-count" role="status" aria-live="polite" aria-atomic="true">Loading the sound library…</output>
+<section id="packGrid" class="shop-grid pack-grid" aria-label="Sound pack catalog"></section>
+</section>
+<details id="bundleDeals" class="pack-help">
+  <summary>Request a custom bundle</summary>
   <div id="bundleBuilder" class="bundle-builder">
-    <label for="bundleSize">Request a custom bundle</label>
+    <label for="bundleSize">Bundle size</label>
     <select id="bundleSize"><option value="3">3 Standard packs — proposed $17.99</option><option value="5">5 Standard packs — proposed $27.99</option></select>
-    <p class="shop-coming-note">These fixed Stripe bundles contain the packs named above. For a different combination, use the selector below to email a request (no payment taken). Available choices are based on the source-folder audit.</p>
+    <p class="shop-coming-note">Choose your packs and email your request. Payment is handled separately.</p>
     <div id="bundleChoiceGrid" class="bundle-choice-grid" aria-label="Select sound packs for your bundle"></div>
     <p id="bundleStatus" class="bundle-status" aria-live="polite">Loading bundle options…</p>
     <button type="button" id="bundleRequest" class="bundle-request" disabled>Choose your packs to request</button>
   </div>
-</section>
-<section class="shop-inventory-zone" aria-labelledby="newSourcesTitle"><h2 id="newSourcesTitle">New collections & source libraries</h2><p><strong>Growth Essentials, Legacy Drum Essentials, and Trap Toolkit</strong> have 60 curated WAVs each, 20 listening previews, and individual $6.99 Stripe checkouts. Four undersized collections were removed and their payment links deactivated.</p><p>The Boominati upload was curated into Trap Toolkit; <strong>LOOPS DRUMS SAMPLES</strong> remains source material for future packs.</p></section>
-
-<div class="pack-toolbar" role="search" aria-label="Find sound packs"><label class="pack-field"><span>Search the library</span><input id="packSearch" type="search" placeholder="Search packs, sounds, folders, keys or BPM" autocomplete="off"></label><label class="pack-field"><span>Category</span><select id="packCategory"><option value="">All categories</option></select></label><label class="pack-field"><span>Musical key</span><select id="packKey"><option value="">All labeled keys</option></select></label></div>
-<output id="packCount" class="pack-count" role="status" aria-live="polite" aria-atomic="true">Loading the sound library…</output>
-<p class="pack-preview-note">Open each pack and click Play on the individual sounds you want to hear. Browse folders such as Kicks, Snares, 808s, Keys, and Melody Loops. Musical keys and BPM are shown only when labeled in the source filename; chord progressions have not been verified.</p>
-<section id="packGrid" class="shop-grid pack-grid" aria-label="Sound pack catalog"></section>
-<section id="packPlayer" class="pack-player" aria-label="Audio sample player" hidden><div><strong id="packNowPlaying">Choose a sound to preview</strong><p>Listen to available samples. Paid download counts are being audited separately from the preview list.</p></div><audio id="packAudio" controls preload="none" aria-label="Sound pack sample preview"></audio></section>
+</details>
+<section id="packPlayer" class="pack-player" aria-label="Audio sample player" hidden><div><strong id="packNowPlaying">Choose a sound to preview</strong></div><audio id="packAudio" controls preload="none" aria-label="Sound pack sample preview"></audio></section>
 <noscript><p>Please enable JavaScript to view the sound pack catalog, or contact <a href="mailto:raiseupentllc@gmail.com">raiseupentllc@gmail.com</a> for help.</p></noscript>
-<section class="pack-help" aria-labelledby="packHelpTitle"><h2 id="packHelpTitle">From the library to your next session.</h2><p>Your purchase includes the audio files in the selected collection. Software, installers, legacy program files and project files are excluded. Preview counts are not the number of sounds delivered in the full collection. Displayed individual and bundle checkout prices are active. Download access is delivered by email after verification, not instantly at checkout.</p><p>Download instructions are sent to your checkout email after successful payment verification. Delivery is processed periodically, rather than instantly at checkout. Private Google Drive links may require a Google account or email verification. Keep your Stripe receipt for your records.</p><p>Questions about a pack or an order? <a href="mailto:raiseupentllc@gmail.com?subject=Sound%20Pack%20Question">Email Raise Up Entertainment.</a></p></section>
+<section class="pack-help" aria-labelledby="packHelpTitle"><h2 id="packHelpTitle">Download help</h2><p>We email download instructions to your checkout address after payment verification. <a href="mailto:raiseupentllc@gmail.com?subject=Sound%20Pack%20Question">Email us for help.</a></p></section>
 </main><footer class="footer"><strong>Raise Up Entertainment LLC</strong><p>Beats • Sound Packs • Apparel • Mixing • Mastering</p><p><a href="mailto:raiseupentllc@gmail.com">raiseupentllc@gmail.com</a></p><p class="privacy-links"><a href="privacy.html">Privacy</a> · <button type="button" data-analytics-preferences>Analytics preferences</button></p></footer>
 </body></html>
