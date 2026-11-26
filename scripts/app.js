@@ -32,7 +32,89 @@ const impressions = new Set();
 const observer = typeof IntersectionObserver === 'function' ? new IntersectionObserver(entries => {entries.forEach(entry=>{const id=entry.target.dataset.beatId;if(entry.isIntersecting&&!impressions.has(id)&&track('beat_impression',{beat:id})){impressions.add(id);observer.unobserve(entry.target)}})}, {threshold:.5}) : null;
 function observeCards(){observer?.disconnect();grid?.querySelectorAll('.beat-card').forEach(card=>observer?.observe(card));}
 const orderEmail = (subject, body) => 'mailto:raiseupentllc@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-const standardRequest = beat => orderEmail('Standard beat request — ' + beat.title, 'I would like a $24.99 Standard license for ' + beat.title + ' (' + beat.id + '). Please confirm the files, terms and payment instructions.');
+const standardCheckouts = {
+  "club": {
+    "url": "https://buy.stripe.com/cNi5kC7aPfzi47nf7rcs81c",
+    "format": "MP3"
+  },
+  "dark-detroit": {
+    "url": "https://buy.stripe.com/7sY28q9iX2MwcDT1gBcs81e",
+    "format": "MP3"
+  },
+  "motovation": {
+    "url": "https://buy.stripe.com/8x28wO8eT0EodHXbVfcs81d",
+    "format": "MP3"
+  },
+  "bad-bitch": {
+    "url": "https://buy.stripe.com/dRm3cu0Mr5YIdHX7EZcs81f",
+    "format": "MP3"
+  },
+  "country-hore-beat": {
+    "url": "https://buy.stripe.com/5kQ00i9iX4UEcDT8J3cs81i",
+    "format": "MP3"
+  },
+  "the-next-hit": {
+    "url": "https://buy.stripe.com/5kQdR89iX1Is6fv4sNcs81h",
+    "format": "MP3"
+  },
+  "violin-project": {
+    "url": "https://buy.stripe.com/14A00i66L86Q5brgbvcs81j",
+    "format": "MP3"
+  },
+  "swervin": {
+    "url": "https://buy.stripe.com/9B6aEW66L5YI9rH8J3cs81g",
+    "format": "MP3"
+  },
+  "mafia-drill": {
+    "url": "https://buy.stripe.com/fZubJ01Qv5YI6fvaRbcs81k",
+    "format": "MP3"
+  },
+  "western-drill": {
+    "url": "https://buy.stripe.com/5kQ6oG66LdrabzP9N7cs81n",
+    "format": "WAV"
+  },
+  "hard-hopes": {
+    "url": "https://buy.stripe.com/fZueVc8eTgDm9rHcZjcs81l",
+    "format": "WAV"
+  },
+  "taliban": {
+    "url": "https://buy.stripe.com/eVqcN4an1eve1ZfaRbcs81m",
+    "format": "MP3"
+  },
+  "streets-of-new-york": {
+    "url": "https://buy.stripe.com/5kQbJ0br51Is6fv6AVcs81p",
+    "format": "MP3"
+  },
+  "night-b4-halloween": {
+    "url": "https://buy.stripe.com/5kQfZg1Qv5YI0Vb5wRcs81q",
+    "format": "MP3"
+  },
+  "get-back": {
+    "url": "https://buy.stripe.com/eVq6oGgLpfzi1Zf7EZcs81r",
+    "format": "MP3"
+  },
+  "twisted-minds": {
+    "url": "https://buy.stripe.com/fZucN4br53QA9rHgbvcs81o",
+    "format": "MP3"
+  },
+  "hero": {
+    "url": "https://buy.stripe.com/00w8wObr51IseM17EZcs81t",
+    "format": "WAV"
+  },
+  "music-box": {
+    "url": "https://buy.stripe.com/6oU8wO7aP0EocDT6AVcs81u",
+    "format": "MP3"
+  },
+  "dark-drill": {
+    "url": "https://buy.stripe.com/9B6eVcbr5gDm5br1gBcs81v",
+    "format": "WAV"
+  },
+  "viking": {
+    "url": "https://buy.stripe.com/bJe4gycv9cn6gU96AVcs81s",
+    "format": "WAV"
+  }
+};
+const bundleCheckout = "https://buy.stripe.com/eVqeVcdzdfzi33j1gBcs81w";
 const exclusiveRequest = beat => orderEmail('Exclusive beat inquiry — ' + beat.title, 'I am interested in the $249 Exclusive offer for ' + beat.title + ' (' + beat.id + '). Please confirm eligibility, previous licenses, trackouts and any Standard upgrade credit.');
 const bundleForm = document.getElementById('beatBundle');
 if (bundleForm) {
@@ -48,12 +130,12 @@ if (bundleForm) {
       message.textContent = 'Choose three different beats.';
       return;
     }
-    const chosen = ids.map(id => beats.find(beat => beat.id === id));
-    message.textContent = 'Your email app should open with the three selected beats.';
-    window.location.href = orderEmail('Pick Any 3 — $59.99', 'I would like Standard licenses for:\n' + chosen.map(beat => beat.title + ' (' + beat.id + ')').join('\n') + '\nPlease confirm the files, terms and payment instructions.');
+    const checkout = new URL(bundleCheckout);
+    checkout.searchParams.set('client_reference_id', ['pick3', ...ids].join('__'));
+    window.location.assign(checkout.href);
   });
 }
-function card(b) { return `<article class="beat-card" data-beat-id="${esc(b.id)}"><img src="${esc(b.cover)}" alt="${esc(b.title)} beat cover" loading="lazy" width="768" height="768"><div class="beat-body"><div class="beat-heading"><p class="tag">${esc(b.genre)}</p><p class="beat-price">$24.99</p></div><h2>${esc(b.title)}</h2><p>${esc(b.mood)}</p><p class="meta">Full-length watermarked preview</p><button class="preview" data-preview-id="${esc(b.id)}" aria-label="Preview ${esc(b.title)}" aria-pressed="false">▶ Play Preview</button><div class="buy-row"><a href="${esc(standardRequest(b))}">Request Standard · $24.99</a> <a href="${esc(exclusiveRequest(b))}">Ask about Exclusive</a></div></div></article>`; }
+function card(b) { return `<article class="beat-card" data-beat-id="${esc(b.id)}"><img src="${esc(b.cover)}" alt="${esc(b.title)} beat cover" loading="lazy" width="768" height="768"><div class="beat-body"><div class="beat-heading"><p class="tag">${esc(b.genre)}</p><p class="beat-price">$24.99</p></div><h2>${esc(b.title)}</h2><p>${esc(b.mood)}</p><p class="meta">Full-length watermarked preview · ${esc(standardCheckouts[b.id].format)} master</p><button class="preview" data-preview-id="${esc(b.id)}" aria-label="Preview ${esc(b.title)}" aria-pressed="false">▶ Play Preview</button><div class="buy-row"><a href="${esc(standardCheckouts[b.id].url)}">Buy Standard · $24.99</a> <a href="${esc(exclusiveRequest(b))}">Ask about Exclusive</a></div></div></article>`; }
 function render(){if(!grid)return 0;const term=(search?.value||'').toLowerCase().trim(),style=genre?.value||'';const list=beats.filter(b=>(!style||b.genre===style)&&`${b.title} ${b.genre} ${b.mood}`.toLowerCase().includes(term));grid.innerHTML=list.length?list.map(card).join(''):'<div class="empty-state"><h3>No beats found</h3><p>Try another search or style.</p></div>';grid.querySelectorAll('[data-preview-id]').forEach(button=>button.addEventListener('click',()=>playBeat(beats.find(b=>b.id===button.dataset.previewId))));updatePlayer();observeCards();return list.length;}
 if(genre){[...new Set(beats.map(b=>b.genre))].sort().forEach(name=>{const option=document.createElement('option');option.value=name;option.textContent=name;genre.appendChild(option)});genre.addEventListener('change',()=>{const count=render();track('genre_filter',{detail:genre.value||'All styles',percent:count});});}
 let searchTimer;search?.addEventListener('input',()=>{const count=render();clearTimeout(searchTimer);searchTimer=setTimeout(()=>track('search',{detail:'results-'+count}),700);});
